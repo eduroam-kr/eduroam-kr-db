@@ -60,9 +60,13 @@ def addresses(parent, value, where):
     if REQUIRED_LANG not in value:
         raise BuildError(f"{where}: address 에 '{REQUIRED_LANG}' 가 없다")
     for lang, parts in value.items():
+        missing = [k for k in ("street", "city") if not parts.get(k)]
+        if missing:
+            raise BuildError(f"{where}: address.{lang} 에 {', '.join(missing)} 가 없다")
         a = ET.SubElement(parent, "address")
         el(a, "street", parts["street"], lang=lang)
         el(a, "city", parts["city"], lang=lang)
+        # postcode 는 XSD 에 없는 항목이다. YAML 에는 남겨두되 XML 로는 내보내지 않는다.
 
 
 def contacts(parent, value, where):
