@@ -54,6 +54,7 @@ locations:
         street: (35365) 158 Gwanjeodong-ro, Seo-gu, Daejeon
         city: Daejeon
       ko:
-        street: "(35365)+N11+A12:M12+D12:M12N+A12:M12"
+        street: (35365) 대전광역시 서구 관저동로 158
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
