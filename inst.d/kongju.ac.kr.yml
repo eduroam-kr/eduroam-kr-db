@@ -1,0 +1,59 @@
+# 국립공주대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: kongju.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - kongju.ac.kr
+name:
+  en: Kongju National University
+  ko: 국립공주대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://www.kongju.ac.kr/KNU/16898/subview.do"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: kongju.ac.kr.01
+    coordinates: 127.1408071,36.4689627
+    stage: 1
+    type: 1
+    name:
+      en: Kongju National University Singwan (Gongju) Campus
+      ko: 국립공주대학교 신관(공주)캠퍼스
+    address:
+      en: { street: "(32588) 56 Gongjudaehak-ro, Gongju-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
+      ko: { street: "(32588) 충청남도 공주시 공주대학로 56", city: "충청남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: kongju.ac.kr.02
+    coordinates: 127.1510205,36.8508401
+    stage: 1
+    type: 1
+    name:
+      en: Kongju National University Cheonan Campus
+      ko: 국립공주대학교 천안캠퍼스
+    address:
+      en: { street: "(31080) 1223-24 Cheonan-daero, Seobuk-gu, Cheonan-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
+      ko: { street: "(31080) 충청남도 천안시 서북구 천안대로 1223-24", city: "충청남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: kongju.ac.kr.03
+    coordinates: 126.8594774,36.6697682
+    stage: 1
+    type: 1
+    name:
+      en: Kongju National University Yesan Campus
+      ko: 국립공주대학교 예산캠퍼스
+    address:
+      en: { street: "(32439) 54 Daehak-ro, Yesan-eup, Yesan-gun, Chungcheongnam-do", city: "Chungcheongnam-do" }
+      ko: { street: "(32439) 충청남도 예산군 예산읍 대학로 54", city: "충청남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

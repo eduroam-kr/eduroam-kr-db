@@ -1,0 +1,35 @@
+# 인제대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: inje.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - inje.ac.kr
+name:
+  en: Inje University
+  ko: 인제대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 사립
+
+locations:
+  - id: inje.ac.kr.01
+    coordinates: 128.9005160,35.2528091
+    stage: 1
+    type: 1
+    name:
+      en: Inje University, Gimhae Campus
+      ko: 인제대학교 김해캠퍼스
+    address:
+      en: { street: "(50834) 197 Inje-ro, Gimhae-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(50834) 경상남도 김해시 인제로 197", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

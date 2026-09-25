@@ -1,0 +1,98 @@
+# 경상국립대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: gnu.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - gnu.ac.kr
+name:
+  en: Gyeongsang National University
+  ko: 경상국립대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: gnu.ac.kr.01
+    coordinates: 128.3991592,34.8364215
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Tongyeong Campus
+      ko: 경상국립대학교 통영캠퍼스
+    address:
+      en: { street: "(53064) 2 Tongyeonghaean-ro, Tongyeong-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(53064) 경상남도 통영시 통영해안로 2", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 85
+  - id: gnu.ac.kr.02
+    coordinates: 128.0824681,35.1570935
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Naedong Campus
+      ko: 경상국립대학교 내동캠퍼스
+    address:
+      en: { street: "(52725) 8 Naedong-ro 139beon-gil, Jinju-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(52725) 경상남도 진주시 내동로139번길 8", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: gnu.ac.kr.03
+    coordinates: 128.0980021,35.1567151
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Gaejwa Campus
+      ko: 경상국립대학교 가좌캠퍼스
+    address:
+      en: { street: "(52828) 501 Jinju-daero, Jinju-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(52828) 경상남도 진주시 진주대로 501", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 435
+  - id: gnu.ac.kr.04
+    coordinates: 128.0949157,35.1759389
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Chilam Campus
+      ko: 경상국립대학교 칠암캠퍼스 (의과대학·간호대학)
+    address:
+      en: { street: "(52727) 15 Jinju-daero 816beon-gil, Jinju-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(52727) 경상남도 진주시 진주대로816번길 15", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 39
+  - id: gnu.ac.kr.05
+    coordinates: 128.0920809,35.1792659
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Chilam Campus
+      ko: 경상국립대학교 칠암캠퍼스
+    address:
+      en: { street: "(52725) 33 Dongjin-ro, Jinju-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(52725) 경상남도 진주시 동진로 33", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: gnu.ac.kr.06
+    coordinates: 128.6319248,35.2408683
+    stage: 1
+    type: 1
+    name:
+      en: Gyeongsang National University Changwon Industry-Academia Campus
+      ko: 경상국립대학교 창원산학캠퍼스
+    address:
+      en: { street: "(51391) 54 Charyong-ro 48beon-gil, Uichang-gu, Changwon-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
+      ko: { street: "(51391) 경상남도 창원시 의창구 차룡로48번길 54", city: "경상남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

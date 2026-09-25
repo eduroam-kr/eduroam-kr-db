@@ -1,0 +1,33 @@
+# 과학기술연합대학원대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: ust.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - ust.ac.kr
+name:
+  en: University of Science and Technology
+  ko: 과학기술연합대학원대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 기타
+
+locations:
+  - id: ust.ac.kr.01
+    coordinates: 127.3676230,36.3849081
+    stage: 1
+    type: 1
+    name:
+      en: University of Science and Technology
+      ko: 과학기술연합대학원대학교
+    address:
+      en: { street: "(34113) 217 Gajeong-ro, Yuseong-gu, Daejeon", city: "Daejeon" }
+      ko: { street: "(34113) 대전광역시 유성구 가정로 217", city: "대전광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES

@@ -1,0 +1,48 @@
+# 금오공과대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: kumoh.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - kumoh.ac.kr
+name:
+  en: Kumoh National Institute of Technology
+  ko: 금오공과대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://cic.kumoh.ac.kr/cic/sub020202.do"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: kumoh.ac.kr.01
+    coordinates: 128.3878839,36.1456313
+    stage: 1
+    type: 1
+    name:
+      en: Kumoh National Institute of Technology Yangho Campus
+      ko: 국립금오공과대학교 양호캠퍼스
+    address:
+      en: { street: "(39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
+      ko: { street: "(39177) 경상북도 구미시 대학로 61", city: "경상북도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 315
+  - id: kumoh.ac.kr.02
+    coordinates: 128.3656895,36.1192093
+    stage: 1
+    type: 1
+    name:
+      en: Kumoh National Institute of Technology, Sinpyeong Campus
+      ko: 국립금오공과대학교 신평동캠퍼스
+    address:
+      en: { street: "(39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
+      ko: { street: "(39177) 경상북도 구미시 대학로 61", city: "경상북도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

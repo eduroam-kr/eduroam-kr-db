@@ -1,0 +1,45 @@
+# 세한대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: sehan.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - sehan.ac.kr
+name:
+  en: Sehan University
+  ko: 세한대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 사립
+
+locations:
+  - id: sehan.ac.kr.01
+    coordinates: 126.4832658,34.7453782
+    stage: 1
+    type: 1
+    name:
+      en: Sehan University, Yeongam Campus
+      ko: 세한대학교 영암캠퍼스
+    address:
+      en: { street: "(58447) 1113 Noksaek-ro, Samho-eup, Yeongam-gun, Jeollanam-do", city: "Jeollanam-do" }
+      ko: { street: "(58447) 전라남도 영암군 삼호읍 녹색로 1113", city: "전라남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: sehan.ac.kr.02
+    coordinates: 126.7806583,36.8761556
+    stage: 1
+    type: 1
+    name:
+      en: Sehan University, Dangjin Campus
+      ko: 세한대학교 당진캠퍼스
+    address:
+      en: { street: "(31746) 7065 Seohae-ro, Sinpyeong-myeon, Dangjin-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
+      ko: { street: "(31746) 충청남도 당진시 신평면 서해로 7065", city: "충청남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

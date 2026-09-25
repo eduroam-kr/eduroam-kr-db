@@ -1,0 +1,36 @@
+# 경북대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: knu.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - knu.ac.kr
+name:
+  en: Kyungpook National University
+  ko: 경북대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://wifi.knu.ac.kr/"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: knu.ac.kr.01
+    coordinates: 128.6143223,35.8890975
+    stage: 1
+    type: 1
+    name:
+      en: Kyungpook National University Daegu Campus
+      ko: 국립경북대학교 대구캠퍼스(산격)
+    address:
+      en: { street: "(41566) 80 Daehak-ro, Buk-gu, Daegu", city: "Daegu" }
+      ko: { street: "(41566) 대구광역시 북구 대학로 80", city: "대구광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 223

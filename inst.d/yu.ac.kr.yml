@@ -1,0 +1,35 @@
+# 영남대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: yu.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - yu.ac.kr
+name:
+  en: Yeungnam University
+  ko: 영남대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 사립
+
+locations:
+  - id: yu.ac.kr.01
+    coordinates: 128.7521818,35.8304926
+    stage: 1
+    type: 1
+    name:
+      en: Yeungnam University, Gyeongsan Campus
+      ko: 영남대학교 경산캠퍼스
+    address:
+      en: { street: "(38541) 280 Daehak-ro, Gyeongsan-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
+      ko: { street: "(38541) 경상북도 경산시 대학로 280", city: "경상북도" }
+    ssid: eduroam
+    enc_level: WPA2/AES

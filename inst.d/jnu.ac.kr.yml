@@ -1,0 +1,75 @@
+# 전남대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: jnu.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - jnu.ac.kr
+name:
+  en: Chonnam National University
+  ko: 전남대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: jnu.ac.kr.01
+    coordinates: 127.0032186,35.0611776
+    stage: 1
+    type: 1
+    name:
+      en: Chonnam National University, Hwasun Campus
+      ko: 전남대학교 화순캠퍼스
+    address:
+      en: { street: "(58128) 264 Seoyang-ro, Hwasun-eup, Hwasun-gun, Jeollanam-do", city: "Jeollanam-do" }
+      ko: { street: "(58128) 전라남도 화순군 화순읍 서양로 264", city: "전라남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 162
+  - id: jnu.ac.kr.02
+    coordinates: 126.9232647,35.1431670
+    stage: 1
+    type: 1
+    name:
+      en: Chonnam National University, Hakdong Campus
+      ko: 전남대학교 학동캠퍼스
+    address:
+      en: { street: "(61469) 42 Jebong-ro, Dong-gu, Gwangju", city: "Gwangju" }
+      ko: { street: "(61469) 광주광역시 동구 제봉로 42", city: "광주광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 156
+  - id: jnu.ac.kr.03
+    coordinates: 127.6994546,34.7748700
+    stage: 1
+    type: 1
+    name:
+      en: Chonnam National University, Yeosu Campus
+      ko: 전남대학교 여수캠퍼스
+    address:
+      en: { street: "(59626) 50 Daehak-ro, Yeosu-si, Jeollanam-do", city: "Jeollanam-do" }
+      ko: { street: "(59626) 전라남도 여수시 대학로 50", city: "전라남도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 403
+  - id: jnu.ac.kr.04
+    coordinates: 126.9111430,35.1738807
+    stage: 1
+    type: 1
+    name:
+      en: Chonnam National University, Gwangju Campus
+      ko: 전남대학교 광주캠퍼스
+    address:
+      en: { street: "(61186) 77 Yongbong-ro, Buk-gu, Gwangju", city: "Gwangju" }
+      ko: { street: "(61186) 광주광역시 북구 용봉로 77", city: "광주광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 2101

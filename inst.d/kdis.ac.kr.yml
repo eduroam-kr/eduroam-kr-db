@@ -1,0 +1,36 @@
+# KDI국제정책대학원대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: kdis.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - kdis.ac.kr
+name:
+  en: KDI School of Public Policy and Management
+  ko: KDI국제정책대학원대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://www.kdischool.ac.kr/"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 기타
+
+locations:
+  - id: kdis.ac.kr.01
+    coordinates: 127.2612,36.4802
+    stage: 1
+    type: 1
+    name:
+      en: KDI School of Public Policy and Management
+      ko: KDI국제정책대학원대학교
+    address:
+      en: { street: "263 Namsejong-ro", city: "Sejong", postcode: 30149 }
+      ko: { street: "남세종로 263", city: "세종특별자치시", postcode: 30149 }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0

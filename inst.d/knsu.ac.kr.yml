@@ -1,0 +1,36 @@
+# 한국체육대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: knsu.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - knsu.ac.kr
+name:
+  en: Korea National Sport University
+  ko: 한국체육대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+info_url:
+  ko: "https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do"
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 국립
+
+locations:
+  - id: knsu.ac.kr.01
+    coordinates: 127.1320016,37.5199058
+    stage: 1
+    type: 1
+    name:
+      en: Korea National Sport University
+      ko: 국립한국체육대학교
+    address:
+      en: { street: "(05541) 1239 Yangjae-daero, Songpa-gu, Seoul", city: "Seoul" }
+      ko: { street: "(05541) 서울특별시 송파구 양재대로 1239", city: "서울특별시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 416

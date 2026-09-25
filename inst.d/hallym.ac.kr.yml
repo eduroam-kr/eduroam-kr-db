@@ -1,0 +1,34 @@
+# 한림대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: hallym.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - hallym.ac.kr
+name:
+  en: Hallym University
+  ko: 한림대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 사립
+
+locations:
+  - id: hallym.ac.kr.01
+    coordinates: 127.7399038,37.8861062
+    stage: 1
+    type: 1
+    name:
+      en: Hallym University
+      ko: 한림대학교
+    address:
+      en: { street: "(24252) 1 Hallymdaehak-gil, Chuncheon-si, Gangwon-do", city: "Gangwon-do" }
+      ko: { street: "(24252) 강원특별자치도 춘천시 한림대학길 1", city: "강원특별자치도" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 944

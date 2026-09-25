@@ -1,0 +1,60 @@
+# 동아대학교
+# 기존 institution.xml 에서 자동 변환됨 (2026-09-25).
+# ROid 와 ts 는 build.py 가 넣으므로 여기 쓰지 않는다.
+
+instid: donga.ac.kr
+type: IdP+SP
+stage: 1
+realms:
+  - donga.ac.kr
+name:
+  en: Dong-A University
+  ko: 동아대학교
+# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
+#       institution.xml 이 빌드된다.
+# contacts:
+#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+
+# ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
+kr_type: 사립
+
+locations:
+  - id: donga.ac.kr.01
+    coordinates: 129.0187421,35.1200013
+    stage: 1
+    type: 1
+    name:
+      en: Dong-A University, Gudeok Campus
+      ko: 동아대학교 구덕캠퍼스
+    address:
+      en: { street: "(49201) 32, Daesingongwon-ro, Seo-gu, Busan", city: "Busan" }
+      ko: { street: "(49201) 부산광역시 서구 대신공원로 32", city: "부산광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 35
+  - id: donga.ac.kr.02
+    coordinates: 128.9680846,35.1188089
+    stage: 1
+    type: 1
+    name:
+      en: Dong-A University, Seunghak Campus
+      ko: 동아대학교 승학캠퍼스
+    address:
+      en: { street: "(49315) 37 Nakdong-daero 550beon-gil, Saha-gu, Busan", city: "Busan" }
+      ko: { street: "(49315) 부산광역시 사하구 낙동대로550번길 37", city: "부산광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 403
+  - id: donga.ac.kr.03
+    coordinates: 129.0194155,35.1037401
+    stage: 1
+    type: 1
+    name:
+      en: Dong-A University, Bumin Campus
+      ko: 동아대학교 부민캠퍼스
+    address:
+      en: { street: "(49236) 225 Gudeok-ro, Seo-gu, Busan", city: "Busan" }
+      ko: { street: "(49236) 부산광역시 서구 구덕로 225", city: "부산광역시" }
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 186
