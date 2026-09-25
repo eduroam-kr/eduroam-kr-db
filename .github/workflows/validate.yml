@@ -1,0 +1,32 @@
+name: Validate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # ts 를 파일별 마지막 커밋 시각에서 뽑는다. 얕은 클론이면 모든 파일의
+          # 커밋이 하나로 보여서 ts 가 전부 같아진다 — 전체 이력이 필요하다.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+      - name: Build and validate against the official XSD
+        run: python3 build.py --validate
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '### 빌드 결과'
+            echo
+            if [ -f dist/institution.xml ]; then
+              echo "- \`institution.xml\` — 기관 $(grep -c '<institution>' dist/institution.xml)개"
+            fi
+            [ -f dist/ro.xml ] && echo "- \`ro.xml\` — OK"
+          } >> "$GITHUB_STEP_SUMMARY"

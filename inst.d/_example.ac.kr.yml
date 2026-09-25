@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────
+# 기관 등록 예시 — 파일명 앞의 _ 는 "빌드에서 제외"를 뜻한다.
+# 자기 기관을 등록할 때는 이 파일을 복사해서 inst.d/<realm>.yml 로 만든다.
+#   예)  inst.d/kaist.ac.kr.yml
+#
+# ROid(kr01) 는 build.py 가 넣는다. ts 는 커밋 시각에서 자동으로 들어간다.
+# lang 이 붙는 항목(name, address, info_url, policy_url, loc_name)은 en 이 필수다.
+# ─────────────────────────────────────────────────────────────────
+
+instid: example.ac.kr          # 도메인 형식, 기관 고유 ID
+type: IdP+SP                   # IdP | SP | IdP+SP
+stage: 1                       # 0=preprod/test, 1=active
+
+realms:                        # SP 전용 기관이면 이 항목을 통째로 지운다
+  - example.ac.kr
+
+servers:                       # 선택. type 은 전송 방식: 0=UDP, 1=TLS, 2=F-ticks
+  - { name: "radius.example.ac.kr", type: 0 }
+
+name:
+  en: Example University
+  ko: 예시대학교
+
+address:
+  en: { street: "1 Example-ro, Yuseong-gu", city: "Daejeon" }
+  ko: { street: "대전광역시 유성구 예시로 1", city: "대전" }
+
+coordinates: "127.3594198,36.3657991"   # 경도,위도 (선택)
+
+# IEEE 802.11-2012 Venue Info 기준 "group,type"
+#   3,3 대학교 · 3,1 초등학교 · 2,8 연구소 · 5,1 종합병원
+#   1,8 도서관 · 1,9 박물관 · 11,1 공공 옥외 · 0,0 미분류
+inst_type: "3,3"
+
+contacts:                      # 최소 1개. 연락처는 lang 이 없어 영/국문을 각각 넣는다
+  - { name: "IT Helpdesk",  email: "helpdesk@example.ac.kr", phone: "+82-42-000-0000", type: 1, privacy: 1 }
+  - { name: "정보통신팀",     email: "helpdesk@example.ac.kr", phone: "+82-42-000-0000", type: 1, privacy: 1 }
+
+info_url:
+  en: "https://eduroam.example.ac.kr/en/"
+  ko: "https://eduroam.example.ac.kr/"
+
+policy_url:
+  en: "https://eduroam.example.ac.kr/en/policy/"
+  ko: "https://eduroam.example.ac.kr/policy/"
+
+locations:                     # hotspot. 건물별 관리가 번거로우면 본관 하나로 몰아도 된다
+  - id: example.ac.kr.01
+    coordinates: "127.3594198,36.3657991"
+    stage: 1
+    type: 0                    # 0=단일 지점, 1=영역, 2=이동체
+    name:
+      en: Example Univ. Main Bld.
+      ko: 예시대학교 본관
+    address:
+      en: { street: "1 Example-ro, Yuseong-gu", city: "Daejeon" }
+      ko: { street: "대전광역시 유성구 예시로 1", city: "대전" }
+    location_type: "3,3"
+    ssid: eduroam              # 고정. 생략하면 eduroam 이 들어간다
+    enc_level: WPA2/AES
+    ap_no: 200                 # AP 개수
+    # wired_no: 10             # 802.1X 유선 포트 수, 없으면 지운다
+    tag: NAT                   # port_restrict, transp_proxy, IPv6, NAT, HS2.0 (쉼표 구분)
+    availability: 1            # 0=제한없음, 1=물리 접근 제한
+    # operation_hours: "평일 09:00-18:00"   # 24시간이 아니면 자유 기술
+    info_url:
+      en: "https://eduroam.example.ac.kr/en/"
+      ko: "https://eduroam.example.ac.kr/"
