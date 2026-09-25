@@ -201,8 +201,12 @@ def write(root, path):
 
 
 def validate(xml_path, xsd_path):
-    r = subprocess.run(["xmllint", "--noout", "--schema", str(xsd_path), str(xml_path)],
-                       capture_output=True, text=True)
+    try:
+        r = subprocess.run(["xmllint", "--noout", "--schema", str(xsd_path), str(xml_path)],
+                           capture_output=True, text=True)
+    except FileNotFoundError:
+        sys.exit("xmllint 이 없어 --validate 를 할 수 없다.\n"
+                 "  macOS: 기본 포함  ·  Debian/Ubuntu: apt-get install -y libxml2-utils")
     sys.stderr.write(r.stderr)
     return r.returncode == 0
 
