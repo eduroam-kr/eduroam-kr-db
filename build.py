@@ -140,7 +140,18 @@ def build_institution(root, data, src, default_contact=None, fallback_log=None):
     el(inst, "type", data["type"])
     el(inst, "stage", data.get("stage", 1))
 
-    for r in data.get("realms", []):
+    # XSD 는 realm 을 0..N 으로만 정의한다. "SP 에는 realm 을 적지 않는다" 는
+    # 스펙 본문에만 있는 규칙이라 (표의 inst_realm 설명이 "only for IdP or IdP+SP")
+    # 검증기로는 안 걸린다. 여기서 막는다.
+    realms = data.get("realms") or []
+    inst_type_ = data["type"]
+    if inst_type_ == "SP" and realms:
+        raise BuildError(f"{where}: type 이 SP 인데 realms 가 있다. "
+                         f"SP 에는 realm 을 적지 않는다 — {', '.join(realms)}")
+    if inst_type_ != "SP" and not realms:
+        WARNINGS.append(f"{where}: type 이 {inst_type_} 인데 realms 가 없다. "
+                        f"IdP 는 realm 이 있어야 인증 요청이 도달한다")
+    for r in realms:
         el(inst, "inst_realm", r)
 
     servers(inst, data.get("servers"), where)

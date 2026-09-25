@@ -58,6 +58,16 @@ ROid → country → stage → org_name+ → address+ → coordinates? → serve
 
 새 필드를 다루기 전에 XSD 를 열어 `simpleType` 의 `enumeration` 을 읽는다.
 
+## XSD 가 못 잡는 규칙은 빌드가 잡는다
+
+스펙 본문에는 있는데 스키마로 표현할 수 없는 규칙이 있다. 검증기를 통과해도 틀린 것이므로 `build.py` 가 막는다.
+
+- **`type: SP` 에는 realm 을 적지 않는다.** 스펙 표의 `inst_realm` 설명이 `(only for IdP or IdP+SP)` 이고 각주가 "for type SP no realms should be specified" 다. XSD 는 `minOccurs="0" maxOccurs="unbounded"` 라서 SP 에 realm 이 있어도 통과시킨다. → 오류로 막음.
+- **IdP 인데 realm 이 없으면** 인증 요청이 도달하지 않는다. 스펙이 명시적으로 금지하진 않아 → 경고.
+- **영문(`en`)** 은 이름에만 필수다. 스펙 각주가 `name in English is required` 라고 이름에 대해서만 말하고, URL 은 `language info` 만 요구한다. → 이름은 오류, URL 은 경고.
+
+같은 성격의 규칙을 새로 발견하면 여기에 적고 `build.py` 에 넣는다. XML 에서 realm 은 `<inst_realm>` 엘리먼트를 반복해서 표현한다 — 구분자도 속성도 없다.
+
 ## `ts` 는 사람이 관리하지 않는다
 
 `build.py` 가 각 파일의 **마지막 커밋 시각**(`git log -1 --format=%cI -- <file>`)을 `ts` 로 넣는다. 기관이 내용을 고치면 커밋 시각이 자동으로 따라오므로 "ts 갱신을 잊었다" 는 실패 유형이 아예 없어진다.
