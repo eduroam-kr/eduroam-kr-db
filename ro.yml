@@ -21,8 +21,11 @@ address:
     street: 대전광역시 유성구 대학로 245
     city: 대전
 
-# 경도,위도 순
-coordinates: "127.3656,36.3778"
+# OpenStreetMap 에서 주소보기로 좌표값 획득
+# latitude 위도, longitude 경도
+coordinate:
+  latitude: 36.3778
+  longitude: 127.3656
 
 # 원본 ro.xml 에 <server> 가 없었다. 국가 RADIUS 서버를 노출하려면 아래 주석을 푼다.
 # type 은 전송 방식이다: 0=UDP, 1=TLS, 2=F-ticks
@@ -30,19 +33,15 @@ coordinates: "127.3656,36.3778"
 #   - name: radius1.eduroam.kr
 #     type: 0
 
-# type    : 0=person, 1=service/department
-# privacy : 0=private, 1=public
+# 부서 수준에서 공개 가능한 정보를 기술한다.
+# type=1(부서) · privacy=1(공개) 이 기본값이라 적지 않아도 된다.
 contacts:
   - name: Minseok Jang
     email: msjang@kisti.re.kr
     phone: "+82-42-869-1292"
-    type: 1
-    privacy: 1
   - name: Buseung Cho
     email: bscho@kisti.re.kr
     phone: "+82-42-869-0584"
-    type: 1
-    privacy: 1
 
 info_url:
   en: "https://eduroam.kreonet.net/en/"
@@ -67,5 +66,4 @@ default_contact:
   name: eduroamKR NOC
   email: eduroam@kreonet.net
   phone: "+82-42-869-0800"
-  type: 1
   privacy: 0

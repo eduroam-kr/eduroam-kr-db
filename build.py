@@ -47,7 +47,7 @@ def el(parent, tag, text=None, **attrs):
     return e
 
 
-def lang_fields(parent, tag, value, where, require_en=True):
+def lang_fields(parent, tag, value, where, require_en=True, warn=True):
     """{en: ..., ko: ...} → <tag lang="en">…</tag> 를 언어 수만큼."""
     if value is None:
         return
@@ -57,7 +57,8 @@ def lang_fields(parent, tag, value, where, require_en=True):
         msg = f"{where}: {tag} 에 '{REQUIRED_LANG}' 가 없다"
         if require_en:
             raise BuildError(msg + ". 스펙상 영문은 필수다")
-        WARNINGS.append(msg)
+        if warn:
+            WARNINGS.append(msg)
     for lang, text in value.items():
         el(parent, tag, text, lang=lang)
 
@@ -87,12 +88,27 @@ def contacts(parent, value, where):
         el(e, "name", c["name"])
         el(e, "email", c["email"])
         el(e, "phone", c["phone"])
-        el(e, "type", c.get("type", 0))
-        el(e, "privacy", c.get("privacy", 0))
+        # 기관 연락처는 부서 수준에서 공개 가능한 것만 적는 것이 이 저장소의 방침이라
+        # type=1(부서) · privacy=1(공개) 이 기본이다. 필요하면 파일에서 덮어쓴다.
+        el(e, "type", c.get("type", 1))
+        el(e, "privacy", c.get("privacy", 1))
 
 
 # 전송 방식이다. 기관 종류(IdP/SP)가 아니다 — 그건 institution 의 type 이다.
 SERVER_TYPES = {0: "UDP", 1: "TLS", 2: "F-ticks"}
+
+
+def coord(value, where, field="coordinates"):
+    """{latitude: .., longitude: ..} → "경도,위도". XSD 가 요구하는 순서가 경도 먼저다."""
+    if value is None:
+        return None
+    if isinstance(value, str):
+        raise BuildError(f"{where}: {field} 는 latitude/longitude 로 나눠 쓴다. "
+                         f'문자열 "{value}" 은 경도·위도 순서를 헷갈리기 쉬워 받지 않는다')
+    missing = [k for k in ("latitude", "longitude") if value.get(k) is None]
+    if missing:
+        raise BuildError(f"{where}: {field} 에 {', '.join(missing)} 가 없다")
+    return f'{value["longitude"]},{value["latitude"]}'
 
 
 def servers(parent, value, where):
@@ -158,8 +174,9 @@ def build_institution(root, data, src, default_contact=None, fallback_log=None):
     lang_fields(inst, "inst_name", data.get("name"), where)
     addresses(inst, data.get("address"), where)
 
-    if data.get("coordinates"):
-        el(inst, "coordinates", data["coordinates"])
+    c = coord(data.get("coordinate") or data.get("coordinates"), where, "coordinate")
+    if c:
+        el(inst, "coordinates", c)
     if data.get("inst_type"):
         el(inst, "inst_type", data["inst_type"])
 
@@ -175,15 +192,16 @@ def build_institution(root, data, src, default_contact=None, fallback_log=None):
     el(inst, "ts", data.get("ts") or git_ts(src))
 
     for loc in data.get("locations", []):
-        build_location(inst, loc, where)
+        build_location(inst, loc, where, data.get("info_url"))
 
 
-def build_location(inst, loc, where):
+def build_location(inst, loc, where, inherit_info_url=None):
     e = ET.SubElement(inst, "location")
     el(e, "locationid", loc["id"])
-    el(e, "coordinates", loc["coordinates"])
+    el(e, "coordinates", coord(loc.get("coordinates") or loc.get("coordinate"), where))
     el(e, "stage", loc.get("stage", 1))
-    el(e, "type", loc.get("type", 0))
+    # 0=단일 지점, 1=영역, 2=이동체. 캠퍼스 단위로 잡으므로 영역이 기본이다.
+    el(e, "type", loc.get("type", 1))
     lang_fields(e, "loc_name", loc.get("name"), where, require_en=False)
     addresses(e, loc.get("address"), where)
     if loc.get("location_type"):
@@ -196,7 +214,11 @@ def build_location(inst, loc, where):
                      ("availability", "availability"), ("operation_hours", "operation_hours")):
         if loc.get(key) is not None:
             el(e, tag, loc[key])
-    lang_fields(e, "info_URL", loc.get("info_url"), where, require_en=False)
+    # location 의 안내 URL 은 대개 기관 것과 같다. 없으면 기관 값을 물려받는다.
+    # 물려받은 값은 기관 쪽에서 이미 검사했으므로 여기서 또 경고하지 않는다.
+    own = loc.get("info_url")
+    lang_fields(e, "info_URL", own or inherit_info_url, where,
+                require_en=False, warn=bool(own))
 
 
 # ── RO ────────────────────────────────────────────────────────────
@@ -211,8 +233,9 @@ def build_ro(data, src):
     el(ro, "stage", data.get("stage", 1))
     lang_fields(ro, "org_name", data.get("name"), where)
     addresses(ro, data.get("address"), where)
-    if data.get("coordinates"):
-        el(ro, "coordinates", data["coordinates"])
+    c = coord(data.get("coordinate") or data.get("coordinates"), where, "coordinate")
+    if c:
+        el(ro, "coordinates", c)
     servers(ro, data.get("servers"), where)
     contacts(ro, data.get("contacts"), where)
     lang_fields(ro, "info_URL", data.get("info_url"), where, require_en=False)

@@ -11,7 +11,7 @@
 # 영문(en)이 반드시 있어야 검증을 통과한다.
 # ─────────────────────────────────────────────────────────────────
 
-# 도메인 형식의 기관 고유 ID
+# instid: 기관 고유 ID. 한국 eduroam 에서는 도메인 형식으로 한다
 instid: example.ac.kr
 
 # IdP | SP | IdP+SP
@@ -23,13 +23,6 @@ stage: 1
 # SP 전용 기관이면 이 항목을 통째로 지운다. 빈 목록으로 두지 않는다.
 realms:
   - example.ac.kr
-
-# 선택 항목.
-# type 은 전송 방식이다: 0=UDP, 1=TLS, 2=F-ticks
-# 기관 종류(IdP/SP)가 아니다 — 그건 위의 type 이다.
-servers:
-  - name: radius.example.ac.kr
-    type: 0
 
 name:
   en: Example University
@@ -43,36 +36,35 @@ address:
     street: 대전광역시 유성구 예시로 1
     city: 대전
 
-# 경도,위도 순이다. 지도 앱에서 복사하면 대개 반대라 뒤집어야 한다. 선택 항목.
-coordinates: "127.3594198,36.3657991"
+# OpenStreetMap 에서 주소보기로 좌표값 획득
+# https://www.openstreetmap.org/#map=19/36.365800/127.359418
+# latitude 위도, longitude 경도
+coordinate:
+  latitude: 36.3657991
+  longitude: 127.3594198
 
 # IEEE 802.11-2012 Venue Info 기준 "group,type"
-# 확인된 값 (Wireshark 디섹터 + 802.11u 문서 기준)
+# 표 8-52(group) 와 8-53(type) 에서 고른다. 원문은 아래 468쪽부터.
+# https://www.trincoll.edu/engineering/wp-content/uploads/
+# sites/31/2019/09/IEEE-StandardforInformationTechnology.pdf
 #   0    Unspecified
-#   1    Assembly
-#   2    Business
-#   3    Educational   → 3,1 초등  3,2 중등  3,3 대학
-#   5    Institutional
+#   1    Assembly      → 1,7 (컨벤션센터)  1,8 (도서관)  1,9 (박물관)
+#   2    Business      → 2,7 (사무소)  2,8 (연구소)
+#   3    Educational   → 3,1 (초등)  3,2 (중등)  3,3 (대학)
+#   5    Institutional → 5,1 (병원)
 #   11   Outdoor
-# 대학이면 3,3 이다. 그 밖의 유형은 IEEE 802.11-2012 clause 8.4.1.34 의
-# Venue Type 표를 확인하고 넣는다. 확실하지 않으면 이 항목을 지운다 —
-# 선택 항목이라 없어도 검증을 통과한다.
 inst_type: "3,3"
 
 # 최소 1개. 연락처에는 lang 속성이 없으므로 영문·국문을 각각 항목으로 넣는다.
-# type    : 0=person, 1=service/department
-# privacy : 0=private, 1=public
+# 부서 수준에서 공개 가능한 정보를 기술한다.
+# 그래서 type=1(부서) · privacy=1(공개) 이 기본값이라 적지 않아도 된다.
 contacts:
   - name: IT Helpdesk
     email: helpdesk@example.ac.kr
     phone: "+82-42-000-0000"
-    type: 1
-    privacy: 1
   - name: 정보통신팀
     email: helpdesk@example.ac.kr
     phone: "+82-42-000-0000"
-    type: 1
-    privacy: 1
 
 info_url:
   en: "https://eduroam.example.ac.kr/en/"
@@ -82,19 +74,19 @@ policy_url:
   en: "https://eduroam.example.ac.kr/en/policy/"
   ko: "https://eduroam.example.ac.kr/policy/"
 
-# hotspot. 건물별로 나누는 게 번거로우면 본관 하나로 몰아도 된다.
+# AP 위치. 건물별로 나누는 게 번거로우면 본관 하나로 표시한다.
+# 안내 URL 은 위 info_url 을 물려받으므로 여기 다시 적지 않는다.
 locations:
+  # id: 위치 고유 ID. 한국 eduroam 에서는 도메인.숫자 형식으로 한다
   - id: example.ac.kr.01
-    coordinates: "127.3594198,36.3657991"
+    coordinates:
+      latitude: 36.3657991
+      longitude: 127.3594198
+    # stage: 0=preprod/test, 1=active
     stage: 1
-
-    # 0=단일 지점, 1=영역, 2=이동체
-    type: 0
-
     name:
       en: Example Univ. Main Bld.
       ko: 예시대학교 본관
-
     address:
       en:
         street: 1 Example-ro, Yuseong-gu
@@ -102,30 +94,12 @@ locations:
       ko:
         street: 대전광역시 유성구 예시로 1
         city: 대전
-
-    location_type: "3,3"
-
     # 고정값. 생략하면 eduroam 이 들어간다.
     ssid: eduroam
-
     enc_level: WPA2/AES
-
-    # AP 개수
+    # ap_no: AP 개수
     ap_no: 200
-
-    # 802.1X 로 인증하는 유선 포트 수. 해당 없으면 지운다.
-    # wired_no: 10
-
-    # port_restrict, transp_proxy, IPv6, NAT, HS2.0 중 해당하는 것을 쉼표로 구분.
-    # 해당 없으면 지운다.
-    tag: NAT
-
-    # 0=제한 없음, 1=물리적 접근 제한
+    # availability: 0=제한 없음, 1=물리적 접근 제한
     availability: 1
-
-    # 24시간 제공이 아닌 경우에만 자유롭게 기술한다.
-    # operation_hours: 평일 09:00-18:00
-
-    info_url:
-      en: "https://eduroam.example.ac.kr/en/"
-      ko: "https://eduroam.example.ac.kr/"
+    # operation_hours: 24시간 제공이 아닌 경우에만 자유롭게 기술한다.
+    # operation_hours: 09:00-18:00
