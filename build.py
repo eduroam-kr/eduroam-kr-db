@@ -26,8 +26,12 @@ except ImportError:
 ROID = "kr01"
 COUNTRY = "kr"
 
-# lang 속성이 있는 필드는 en 이 반드시 있어야 검증을 통과한다
+# 스펙 문서는 lang 이 붙는 항목에 영문을 요구하지만 XSD 는 강제하지 않는다.
+# 기관명은 GÉANT monitor 에 국제적으로 노출되므로 없으면 오류로 막고,
+# 안내 URL 은 한국어 페이지밖에 없는 기관이 많아 경고만 낸다.
 REQUIRED_LANG = "en"
+
+WARNINGS = []
 
 
 class BuildError(Exception):
@@ -43,14 +47,17 @@ def el(parent, tag, text=None, **attrs):
     return e
 
 
-def lang_fields(parent, tag, value, where):
+def lang_fields(parent, tag, value, where, require_en=True):
     """{en: ..., ko: ...} → <tag lang="en">…</tag> 를 언어 수만큼."""
     if value is None:
         return
     if not isinstance(value, dict):
         raise BuildError(f"{where}: {tag} 는 언어별 매핑이어야 한다 (예: {{en: ..., ko: ...}})")
     if REQUIRED_LANG not in value:
-        raise BuildError(f"{where}: {tag} 에 '{REQUIRED_LANG}' 가 없다. 스펙상 영문은 필수다")
+        msg = f"{where}: {tag} 에 '{REQUIRED_LANG}' 가 없다"
+        if require_en:
+            raise BuildError(msg + ". 스펙상 영문은 필수다")
+        WARNINGS.append(msg)
     for lang, text in value.items():
         el(parent, tag, text, lang=lang)
 
@@ -73,7 +80,8 @@ def addresses(parent, value, where):
 
 def contacts(parent, value, where):
     if not value:
-        raise BuildError(f"{where}: contacts 가 최소 하나 있어야 한다")
+        raise BuildError(f"{where}: contacts 가 최소 하나 있어야 한다. "
+                         f"기관 연락처가 없으면 ro.yml 의 default_contact 가 대신 들어간다")
     for c in value:
         e = ET.SubElement(parent, "contact")
         el(e, "name", c["name"])
@@ -123,7 +131,7 @@ def git_ts(path):
 
 # ── institution ───────────────────────────────────────────────────
 
-def build_institution(root, data, src):
+def build_institution(root, data, src, default_contact=None, fallback_log=None):
     where = src.name
     inst = ET.SubElement(root, "institution")
 
@@ -144,9 +152,14 @@ def build_institution(root, data, src):
     if data.get("inst_type"):
         el(inst, "inst_type", data["inst_type"])
 
-    contacts(inst, data.get("contacts"), where)
-    lang_fields(inst, "info_URL", data.get("info_url"), where)
-    lang_fields(inst, "policy_URL", data.get("policy_url"), where)
+    cs = data.get("contacts")
+    if not cs and default_contact:
+        cs = [default_contact]
+        if fallback_log is not None:
+            fallback_log.append(data["instid"])
+    contacts(inst, cs, where)
+    lang_fields(inst, "info_URL", data.get("info_url"), where, require_en=False)
+    lang_fields(inst, "policy_URL", data.get("policy_url"), where, require_en=False)
 
     el(inst, "ts", data.get("ts") or git_ts(src))
 
@@ -160,7 +173,7 @@ def build_location(inst, loc, where):
     el(e, "coordinates", loc["coordinates"])
     el(e, "stage", loc.get("stage", 1))
     el(e, "type", loc.get("type", 0))
-    lang_fields(e, "loc_name", loc.get("name"), where)
+    lang_fields(e, "loc_name", loc.get("name"), where, require_en=False)
     addresses(e, loc.get("address"), where)
     if loc.get("location_type"):
         el(e, "location_type", loc["location_type"])
@@ -172,7 +185,7 @@ def build_location(inst, loc, where):
                      ("availability", "availability"), ("operation_hours", "operation_hours")):
         if loc.get(key) is not None:
             el(e, tag, loc[key])
-    lang_fields(e, "info_URL", loc.get("info_url"), where)
+    lang_fields(e, "info_URL", loc.get("info_url"), where, require_en=False)
 
 
 # ── RO ────────────────────────────────────────────────────────────
@@ -191,8 +204,8 @@ def build_ro(data, src):
         el(ro, "coordinates", data["coordinates"])
     servers(ro, data.get("servers"), where)
     contacts(ro, data.get("contacts"), where)
-    lang_fields(ro, "info_URL", data.get("info_url"), where)
-    lang_fields(ro, "policy_URL", data.get("policy_url"), where)
+    lang_fields(ro, "info_URL", data.get("info_url"), where, require_en=False)
+    lang_fields(ro, "policy_URL", data.get("policy_url"), where, require_en=False)
 
     el(ro, "ts", data.get("ts") or git_ts(src))
     return root
@@ -227,23 +240,28 @@ def main():
     here = pathlib.Path(__file__).parent
     errors = []
 
+    ro_src = here / "ro.yml"
+    ro_data = yaml.safe_load(ro_src.read_text())
+
+    # 기관이 자기 연락처를 주지 않았을 때 대신 들어가는 값. ro.yml 에서 정한다.
+    default_contact = ro_data.get("default_contact")
+    fallback = []
+
     # institution.xml — 앞에 _ 나 . 이 붙은 파일은 예시/초안으로 보고 건너뛴다
     root = ET.Element("institutions")
     files = sorted(f for f in (here / "inst.d").glob("*.y*ml")
                    if not f.name.startswith(("_", ".")))
     for f in files:
         try:
-            build_institution(root, yaml.safe_load(f.read_text()), f)
+            build_institution(root, yaml.safe_load(f.read_text()), f, default_contact, fallback)
         except BuildError as e:
             errors.append(str(e))
         except KeyError as e:
             errors.append(f"{f.name}: 필수 항목 {e} 가 없다")
 
-    # ro.xml
-    ro_src = here / "ro.yml"
     ro_root = None
     try:
-        ro_root = build_ro(yaml.safe_load(ro_src.read_text()), ro_src)
+        ro_root = build_ro(ro_data, ro_src)
     except (BuildError, KeyError) as e:
         errors.append(f"ro.yml: {e}")
 
@@ -267,6 +285,18 @@ def main():
     else:
         # XSD 가 institution 최소 1개를 요구하므로 빈 문서는 만들지 않는다
         print("inst.d 에 기관 파일이 없다 — institution.xml 은 만들지 않았다", file=sys.stderr)
+
+    if WARNINGS:
+        print(f"\n경고 {len(WARNINGS)}건 — 빌드는 되지만 스펙 문서의 권고를 벗어난다")
+        for w in WARNINGS[:10]:
+            print(f"  ! {w}")
+        if len(WARNINGS) > 10:
+            print(f"  … 외 {len(WARNINGS) - 10}건")
+
+    if fallback:
+        print(f"\n기관 연락처가 없어 ro.yml 의 default_contact 를 쓴 곳: {len(fallback)}곳")
+        print("  " + ", ".join(fallback))
+        print("  해당 기관이 자기 연락처를 PR 로 넣으면 그 값이 이긴다.")
 
     if not ok:
         sys.exit("XSD 검증 실패")
