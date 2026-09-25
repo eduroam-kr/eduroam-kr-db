@@ -15,14 +15,16 @@ name:
 # 3,3 = Educational + University or College
 inst_type: "3,3"
 
-# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
-# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
-# contacts:
-#   - name:
-#     email:
-#     phone:
-#     type: 1
-#     privacy: 1
+# 기관 eduroam 안내 페이지에서 확인한 담당 부서 (2026-09-26)
+# "관련 문의 : 정보인프라팀, 3290-4197, parkj2@korea.ac.kr"
+# 개인 업무 계정이라 privacy: 0 (비공개) 으로 둔다 — DB 에는 들어가되
+# 공개되지는 않는다. 부서 대표 연락처를 확보하면 교체한다.
+# 전화는 내선 3290-4197 에 지역번호(02)를 붙인 값이라 확인이 필요하다.
+contacts:
+  - name: 정보인프라팀 wifi 담당
+    email: parkj2@korea.ac.kr
+    phone: "02-3290-4197"
+    privacy: 0
 info_url:
   ko: "http://wifi.korea.ac.kr/"
 
