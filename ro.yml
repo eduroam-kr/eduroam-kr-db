@@ -1,27 +1,28 @@
 # eduroamKR — 대한민국 국가 로밍 운영자(NRO) 정보
-# 여기는 NRO 담당자만 고친다. 기관 정보는 inst.d/ 로.
-# ROid(kr01) 와 country(kr) 는 build.py 가 넣으므로 여기 쓰지 않는다.
+# 기존 nro-site 의 general/ro.xml 에서 옮겨왔다 (공식 XSD 검증 통과본).
+# ROid(kr01) 와 country(kr) 는 build.py 가 넣는다. 기관 정보는 inst.d/ 로.
 
 stage: 1                       # 0=preprod/test, 1=active
 
 name:
-  en: eduroam Korea
-  ko: 한국 eduroam
+  en: Korea Institute of Science and Technology Information
+  ko: 한국과학기술정보연구원
 
 address:
-  en: { street: "245 Daehak-ro, Yuseong-gu", city: "Daejeon" }
+  en: { street: "245 Daehak-ro, Yuseong-gu", city: "Daejeon 34141" }
   ko: { street: "대전광역시 유성구 대학로 245", city: "대전" }
 
-coordinates: "127.3594198,36.3657991"   # 경도,위도
+coordinates: "127.3656,36.3778"         # 경도,위도
 
-servers:
-  # TODO: 실제 국가 RADIUS 서버로 교체
-  # type 은 전송 방식이다: 0=UDP, 1=TLS, 2=F-ticks
-  - { name: "radius1.eduroam.kr", type: 0 }
+# 원본 ro.xml 에 <server> 가 없었다. 국가 RADIUS 서버를 노출하려면 아래를 푼다.
+# type 은 전송 방식이다: 0=UDP, 1=TLS, 2=F-ticks
+# servers:
+#   - { name: "radius1.eduroam.kr", type: 0 }
 
 contacts:
   # type: 0=person, 1=service/department · privacy: 0=private, 1=public
-  - { name: "eduroamKR NOC", email: "eduroam@kreonet.net", phone: "+82-42-869-0800", type: 1, privacy: 1 }
+  - { name: "Minseok Jang", email: "msjang@kisti.re.kr", phone: "+82-42-869-1292", type: 1, privacy: 1 }
+  - { name: "Buseung Cho",  email: "bscho@kisti.re.kr",  phone: "+82-42-869-0584", type: 1, privacy: 1 }
 
 info_url:
   en: "https://eduroam.kreonet.net/en/"
@@ -31,4 +32,4 @@ policy_url:
   en: "https://eduroam.kreonet.net/en/policy/"
   ko: "https://eduroam.kreonet.net/policy/"
 
-# ts 는 이 파일의 마지막 커밋 시각에서 자동으로 들어간다. 직접 적으려면 ts: 로 덮어쓴다.
+# ts 는 이 파일의 마지막 커밋 시각에서 자동으로 들어간다.
