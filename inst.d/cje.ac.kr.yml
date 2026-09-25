@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: cje.ac.kr.01
-    coordinates: 127.4840113,36.6154305
+    coordinates:
+      latitude: 36.6154305
+      longitude: 127.4840113
     stage: 1
-    type: 1
     name:
       en: Cheongju National University of Education
       ko: 청주교육대학교

@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: donga.ac.kr.01
-    coordinates: 129.0187421,35.1200013
+    coordinates:
+      latitude: 35.1200013
+      longitude: 129.0187421
     stage: 1
-    type: 1
     name:
       en: Dong-A University, Gudeok Campus
       ko: 동아대학교 구덕캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 35
   - id: donga.ac.kr.02
-    coordinates: 128.9680846,35.1188089
+    coordinates:
+      latitude: 35.1188089
+      longitude: 128.9680846
     stage: 1
-    type: 1
     name:
       en: Dong-A University, Seunghak Campus
       ko: 동아대학교 승학캠퍼스
@@ -63,9 +65,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 403
   - id: donga.ac.kr.03
-    coordinates: 129.0194155,35.1037401
+    coordinates:
+      latitude: 35.1037401
+      longitude: 129.0194155
     stage: 1
-    type: 1
     name:
       en: Dong-A University, Bumin Campus
       ko: 동아대학교 부민캠퍼스

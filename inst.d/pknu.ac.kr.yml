@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: pknu.ac.kr.01
-    coordinates: 129.1078781,35.1347078
+    coordinates:
+      latitude: 35.1347078
+      longitude: 129.1078781
     stage: 1
-    type: 1
     name:
       en: Pukyong National University, Daeyeon Campus
       ko: 국립부경대학교 대연캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 742
   - id: pknu.ac.kr.02
-    coordinates: 129.0894358,35.1159984
+    coordinates:
+      latitude: 35.1159984
+      longitude: 129.0894358
     stage: 1
-    type: 1
     name:
       en: Pukyong National University, Yongdang Campus
       ko: 국립부경대학교 용당캠퍼스

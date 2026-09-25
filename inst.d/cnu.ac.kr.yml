@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: cnu.ac.kr.01
-    coordinates: 127.3420001,36.3683682
+    coordinates:
+      latitude: 36.3683682
+      longitude: 127.3420001
     stage: 1
-    type: 1
     name:
       en: Chungnam National University, Daedeok Campus
       ko: 충남대학교 대덕캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 2414
   - id: cnu.ac.kr.02
-    coordinates: 127.4138007,36.3163192
+    coordinates:
+      latitude: 36.3163192
+      longitude: 127.4138007
     stage: 1
-    type: 1
     name:
       en: Chungnam National University, Boun Campus
       ko: 충남대학교 보운캠퍼스

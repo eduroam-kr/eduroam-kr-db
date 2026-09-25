@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: deu.ac.kr.01
-    coordinates: 129.0352536,35.1437214
+    coordinates:
+      latitude: 35.1437214
+      longitude: 129.0352536
     stage: 1
-    type: 1
     name:
       en: Dong-Eui University, Gaya Campus
       ko: 동의대학교 가야캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 499
   - id: deu.ac.kr.02
-    coordinates: 129.0773841,35.1693164
+    coordinates:
+      latitude: 35.1693164
+      longitude: 129.0773841
     stage: 1
-    type: 1
     name:
       en: Dong-Eui University, Yangjeong Campus
       ko: 동의대학교 양정캠퍼스

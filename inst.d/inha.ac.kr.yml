@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: inha.ac.kr.01
-    coordinates: 126.6534880,37.4500221
+    coordinates:
+      latitude: 37.4500221
+      longitude: 126.6534880
     stage: 1
-    type: 1
     name:
       en: Inha University
       ko: 인하대학교

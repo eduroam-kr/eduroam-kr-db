@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: kau.ac.kr.01
-    coordinates: 126.8641855,37.5989369
+    coordinates:
+      latitude: 37.5989369
+      longitude: 126.8641855
     stage: 1
-    type: 1
     name:
       en: Korea Aerospace University
       ko: 한국항공대학교

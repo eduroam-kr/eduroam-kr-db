@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: yu.ac.kr.01
-    coordinates: 128.7521818,35.8304926
+    coordinates:
+      latitude: 35.8304926
+      longitude: 128.7521818
     stage: 1
-    type: 1
     name:
       en: Yeungnam University, Gyeongsan Campus
       ko: 영남대학교 경산캠퍼스

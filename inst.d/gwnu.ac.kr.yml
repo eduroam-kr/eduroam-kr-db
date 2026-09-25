@@ -29,9 +29,10 @@ kr_type: 국립
 
 locations:
   - id: gwnu.ac.kr.01
-    coordinates: 128.8701,37.7688
+    coordinates:
+      latitude: 37.7688
+      longitude: 128.8701
     stage: 1
-    type: 1
     name:
       en: Gangneung-Wonju National University Gangneung Campus
       ko: 강릉원주대학교 강릉캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 0
   - id: gwnu.ac.kr.02
-    coordinates: 127.9236,37.3048
+    coordinates:
+      latitude: 37.3048
+      longitude: 127.9236
     stage: 1
-    type: 1
     name:
       en: Gangneung-Wonju National University Wonju Campus
       ko: 강릉원주대학교 원주캠퍼스

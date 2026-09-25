@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: sehan.ac.kr.01
-    coordinates: 126.4832658,34.7453782
+    coordinates:
+      latitude: 34.7453782
+      longitude: 126.4832658
     stage: 1
-    type: 1
     name:
       en: Sehan University, Yeongam Campus
       ko: 세한대학교 영암캠퍼스
@@ -45,9 +46,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: sehan.ac.kr.02
-    coordinates: 126.7806583,36.8761556
+    coordinates:
+      latitude: 36.8761556
+      longitude: 126.7806583
     stage: 1
-    type: 1
     name:
       en: Sehan University, Dangjin Campus
       ko: 세한대학교 당진캠퍼스

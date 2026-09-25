@@ -10,6 +10,7 @@ realms:
 name:
   en: Korea Research Institute of Standards and Science
   ko: 한국표준과학연구원
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -24,9 +25,10 @@ kr_type: 기타
 
 locations:
   - id: kriss.re.kr.01
-    coordinates: 127.3723140,36.3879830
+    coordinates:
+      latitude: 36.3879830
+      longitude: 127.3723140
     stage: 1
-    type: 1
     name:
       en: KRISS, Korea Research Institute of Standards and Science
       ko: 본원

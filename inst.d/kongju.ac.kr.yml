@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: kongju.ac.kr.01
-    coordinates: 127.1408071,36.4689627
+    coordinates:
+      latitude: 36.4689627
+      longitude: 127.1408071
     stage: 1
-    type: 1
     name:
       en: Kongju National University Singwan (Gongju) Campus
       ko: 국립공주대학교 신관(공주)캠퍼스
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: kongju.ac.kr.02
-    coordinates: 127.1510205,36.8508401
+    coordinates:
+      latitude: 36.8508401
+      longitude: 127.1510205
     stage: 1
-    type: 1
     name:
       en: Kongju National University Cheonan Campus
       ko: 국립공주대학교 천안캠퍼스
@@ -63,9 +65,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: kongju.ac.kr.03
-    coordinates: 126.8594774,36.6697682
+    coordinates:
+      latitude: 36.6697682
+      longitude: 126.8594774
     stage: 1
-    type: 1
     name:
       en: Kongju National University Yesan Campus
       ko: 국립공주대학교 예산캠퍼스

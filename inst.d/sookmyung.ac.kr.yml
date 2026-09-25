@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: sookmyung.ac.kr.01
-    coordinates: 126.9650253,37.5449609
+    coordinates:
+      latitude: 37.5449609
+      longitude: 126.9650253
     stage: 1
-    type: 1
     name:
       en: "Sookmyung Women's University, Cheongpa Campus"
       ko: 숙명여자대학교 청파캠퍼스

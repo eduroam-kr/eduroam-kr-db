@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: inje.ac.kr.01
-    coordinates: 128.9005160,35.2528091
+    coordinates:
+      latitude: 35.2528091
+      longitude: 128.9005160
     stage: 1
-    type: 1
     name:
       en: Inje University, Gimhae Campus
       ko: 인제대학교 김해캠퍼스

@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: hufs.ac.kr.01
-    coordinates: 127.0579417,37.5982980
+    coordinates:
+      latitude: 37.5982980
+      longitude: 127.0579417
     stage: 1
-    type: 1
     name:
       en: Hankuk University of Foreign Studies, Seoul Campus
       ko: 한국외국어대학교 서울캠퍼스

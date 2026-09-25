@@ -29,9 +29,10 @@ kr_type: 국립
 
 locations:
   - id: pusan.ac.kr.01
-    coordinates: 128.9883383,35.3111639
+    coordinates:
+      latitude: 35.3111639
+      longitude: 128.9883383
     stage: 1
-    type: 1
     name:
       en: Pusan National University, Yangsan Campus
       ko: 국립부산대학교 양산캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 352
   - id: pusan.ac.kr.02
-    coordinates: 129.0843625,35.2314426
+    coordinates:
+      latitude: 35.2314426
+      longitude: 129.0843625
     stage: 1
-    type: 1
     name:
       en: Pusan National University, Busan Campus
       ko: 국립부산대학교 부산캠퍼스
@@ -63,9 +65,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1867
   - id: pusan.ac.kr.03
-    coordinates: 128.8084336,35.4540299
+    coordinates:
+      latitude: 35.4540299
+      longitude: 128.8084336
     stage: 1
-    type: 1
     name:
       en: Pusan National University, Miryang Campus
       ko: 국립부산대학교 밀양캠퍼스

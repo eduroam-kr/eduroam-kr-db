@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: gjue.ac.kr.01
-    coordinates: 127.1196553,36.4452027
+    coordinates:
+      latitude: 36.4452027
+      longitude: 127.1196553
     stage: 1
-    type: 1
     name:
       en: Gongju National University of Education
       ko: 국립공주교육대학교

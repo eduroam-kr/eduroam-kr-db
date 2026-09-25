@@ -10,6 +10,7 @@ realms:
 name:
   en: KIAS, Korea Institute for Advanced Study
   ko: 고등과학원
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -24,9 +25,10 @@ kr_type: 기타
 
 locations:
   - id: kias.re.kr.01
-    coordinates: 127.0534,37.5926
+    coordinates:
+      latitude: 37.5926
+      longitude: 127.0534
     stage: 1
-    type: 1
     name:
       en: Korea Institute for Advanced Study
       ko: 고등과학원

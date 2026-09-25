@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: konyang.ac.kr.01
-    coordinates: 127.1096874,36.1821519
+    coordinates:
+      latitude: 36.1821519
+      longitude: 127.1096874
     stage: 1
-    type: 1
     name:
       en: Konyang University Changui Convergence Campus
       ko: 건양대학교 글로벌캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 400
   - id: konyang.ac.kr.02
-    coordinates: 127.3432143,36.3067742
+    coordinates:
+      latitude: 36.3067742
+      longitude: 127.3432143
     stage: 1
-    type: 1
     name:
       en: Konyang University Medical Campus
       ko: 건양대학교 메디컬캠퍼스

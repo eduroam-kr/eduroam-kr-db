@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: hongik.ac.kr.01
-    coordinates: 127.2880980,36.6197753
+    coordinates:
+      latitude: 36.6197753
+      longitude: 127.2880980
     stage: 1
-    type: 1
     name:
       en: Hongik University, Sejong Campus
       ko: 홍익대학교 세종캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1291
   - id: hongik.ac.kr.02
-    coordinates: 126.9250355,37.5525246
+    coordinates:
+      latitude: 37.5525246
+      longitude: 126.9250355
     stage: 1
-    type: 1
     name:
       en: Hongik University, Seoul Campus
       ko: 홍익대학교 서울캠퍼스

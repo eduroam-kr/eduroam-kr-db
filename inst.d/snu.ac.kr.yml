@@ -31,9 +31,10 @@ kr_type: 국립대법인
 
 locations:
   - id: snu.ac.kr.01
-    coordinates: 126.9592961,37.4680385
+    coordinates:
+      latitude: 37.4680385
+      longitude: 126.9592961
     stage: 1
-    type: 1
     name:
       en: Seoul National University, Gwanak Campus
       ko: 서울대학교 관악캠퍼스

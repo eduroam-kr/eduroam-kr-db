@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: jbnu.ac.kr.01
-    coordinates: 127.1299221,35.8468171
+    coordinates:
+      latitude: 35.8468171
+      longitude: 127.1299221
     stage: 1
-    type: 1
     name:
       en: Jeonbuk National University, Jeonju Campus
       ko: 전북대학교 전주캠퍼스
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: jbnu.ac.kr.02
-    coordinates: 126.9597161,35.9428616
+    coordinates:
+      latitude: 35.9428616
+      longitude: 126.9597161
     stage: 1
-    type: 1
     name:
       en: Jeonbuk National University, Iksan Specialized Campus
       ko: 전북대학교 익산캠퍼스(특성화)

@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: jnu.ac.kr.01
-    coordinates: 127.0032186,35.0611776
+    coordinates:
+      latitude: 35.0611776
+      longitude: 127.0032186
     stage: 1
-    type: 1
     name:
       en: Chonnam National University, Hwasun Campus
       ko: 전남대학교 화순캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 162
   - id: jnu.ac.kr.02
-    coordinates: 126.9232647,35.1431670
+    coordinates:
+      latitude: 35.1431670
+      longitude: 126.9232647
     stage: 1
-    type: 1
     name:
       en: Chonnam National University, Hakdong Campus
       ko: 전남대학교 학동캠퍼스
@@ -65,9 +67,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 156
   - id: jnu.ac.kr.03
-    coordinates: 127.6994546,34.7748700
+    coordinates:
+      latitude: 34.7748700
+      longitude: 127.6994546
     stage: 1
-    type: 1
     name:
       en: Chonnam National University, Yeosu Campus
       ko: 전남대학교 여수캠퍼스
@@ -82,9 +85,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 403
   - id: jnu.ac.kr.04
-    coordinates: 126.9111430,35.1738807
+    coordinates:
+      latitude: 35.1738807
+      longitude: 126.9111430
     stage: 1
-    type: 1
     name:
       en: Chonnam National University, Gwangju Campus
       ko: 전남대학교 광주캠퍼스

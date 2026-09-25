@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: dju.ac.kr.01
-    coordinates: 127.4590019,36.3366962
+    coordinates:
+      latitude: 36.3366962
+      longitude: 127.4590019
     stage: 1
-    type: 1
     name:
       en: Daejeon University
       ko: 대전대학교

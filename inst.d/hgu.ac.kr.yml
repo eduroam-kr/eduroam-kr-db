@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: hgu.ac.kr.01
-    coordinates: 129.3892651,36.1023020
+    coordinates:
+      latitude: 36.1023020
+      longitude: 129.3892651
     stage: 1
-    type: 1
     name:
       en: Handong Global University
       ko: 한동대학교

@@ -31,9 +31,10 @@ kr_type: 기타
 
 locations:
   - id: kdis.ac.kr.01
-    coordinates: 127.2612,36.4802
+    coordinates:
+      latitude: 36.4802
+      longitude: 127.2612
     stage: 1
-    type: 1
     name:
       en: KDI School of Public Policy and Management
       ko: KDI국제정책대학원대학교

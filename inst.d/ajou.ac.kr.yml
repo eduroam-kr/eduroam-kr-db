@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: ajou.ac.kr.01
-    coordinates: 127.0441282,37.2831922
+    coordinates:
+      latitude: 37.2831922
+      longitude: 127.0441282
     stage: 1
-    type: 1
     name:
       en: Ajou University, Suwon Campus
       ko: 아주대학교 수원캠퍼스

@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: gwangju.ac.kr.01
-    coordinates: 126.8961681,35.1059025
+    coordinates:
+      latitude: 35.1059025
+      longitude: 126.8961681
     stage: 1
-    type: 1
     name:
       en: Gwangju University
       ko: 광주대학교

@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: kmu.ac.kr.01
-    coordinates: 128.4890149,35.8545309
+    coordinates:
+      latitude: 35.8545309
+      longitude: 128.4890149
     stage: 1
-    type: 1
     name:
       en: Keimyung University Seongseo Campus
       ko: 계명대학교 성서캠퍼스
@@ -45,9 +46,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: kmu.ac.kr.02
-    coordinates: 128.5798284,35.8563266
+    coordinates:
+      latitude: 35.8563266
+      longitude: 128.5798284
     stage: 1
-    type: 1
     name:
       en: Keimyung University Daemyung Campus
       ko: 계명대학교 대명캠퍼스

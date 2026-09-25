@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: knu.ac.kr.01
-    coordinates: 128.6143223,35.8890975
+    coordinates:
+      latitude: 35.8890975
+      longitude: 128.6143223
     stage: 1
-    type: 1
     name:
       en: Kyungpook National University Daegu Campus
       ko: 국립경북대학교 대구캠퍼스(산격)

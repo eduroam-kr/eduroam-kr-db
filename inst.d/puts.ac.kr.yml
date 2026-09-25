@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: puts.ac.kr.01
-    coordinates: 127.1031345,37.5502658
+    coordinates:
+      latitude: 37.5502658
+      longitude: 127.1031345
     stage: 1
-    type: 1
     name:
       en: Presbyterian University and Theological Seminary
       ko: 장로회신학대학교

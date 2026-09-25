@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: kornu.ac.kr.01
-    coordinates: 127.1194762,36.7983486
+    coordinates:
+      latitude: 36.7983486
+      longitude: 127.1194762
     stage: 1
-    type: 1
     name:
       en: Korea Nazarene University
       ko: 나사렛대학교

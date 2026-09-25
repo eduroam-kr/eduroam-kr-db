@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: kunsan.ac.kr.01
-    coordinates: 126.6803558,35.9503465
+    coordinates:
+      latitude: 35.9503465
+      longitude: 126.6803558
     stage: 1
-    type: 1
     name:
       en: Kunsan National University Miryong Campus
       ko: 국립군산대학교 미룡캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1352
   - id: kunsan.ac.kr.02
-    coordinates: 126.5596494,35.9616980
+    coordinates:
+      latitude: 35.9616980
+      longitude: 126.5596494
     stage: 1
-    type: 1
     name:
       en: Kunsan National University Saemangeum Campus
       ko: 국립군산대학교 새만금캠퍼스

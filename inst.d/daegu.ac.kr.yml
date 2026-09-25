@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: daegu.ac.kr.01
-    coordinates: 128.8428145,35.9045377
+    coordinates:
+      latitude: 35.9045377
+      longitude: 128.8428145
     stage: 1
-    type: 1
     name:
       en: Daegu University, Gyeongsan Campus
       ko: 대구대학교 경산캠퍼스

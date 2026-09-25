@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: ut.ac.kr.01
-    coordinates: 127.8727696,36.9688463
+    coordinates:
+      latitude: 36.9688463
+      longitude: 127.8727696
     stage: 1
-    type: 1
     name:
       en: Korea National University of Transportation Chungju Campus
       ko: 국립한국교통대학교 충주캠퍼스
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: ut.ac.kr.02
-    coordinates: 127.6240460,36.7685562
+    coordinates:
+      latitude: 36.7685562
+      longitude: 127.6240460
     stage: 1
-    type: 1
     name:
       en: Korea National University of Transportation Jeungpyeong Campus
       ko: 국립한국교통대학교 증평캠퍼스
@@ -63,9 +65,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: ut.ac.kr.03
-    coordinates: 126.9545634,37.3158108
+    coordinates:
+      latitude: 37.3158108
+      longitude: 126.9545634
     stage: 1
-    type: 1
     name:
       en: Korea National University of Transportation Uiwang Campus
       ko: 국립한국교통대학교 의왕캠퍼스

@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: seowon.ac.kr.01
-    coordinates: 127.4821185,36.6259814
+    coordinates:
+      latitude: 36.6259814
+      longitude: 127.4821185
     stage: 1
-    type: 1
     name:
       en: Seowon University
       ko: 서원대학교

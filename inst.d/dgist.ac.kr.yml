@@ -29,9 +29,10 @@ kr_type: 특별법법인
 
 locations:
   - id: dgist.ac.kr.01
-    coordinates: 128.4550107,35.7056378
+    coordinates:
+      latitude: 35.7056378
+      longitude: 128.4550107
     stage: 1
-    type: 1
     name:
       en: Daegu Gyeongbuk Institute of Science and Technology
       ko: 대구경북과학기술원(DGIST)

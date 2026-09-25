@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: cau.ac.kr.01
-    coordinates: 127.2287087,37.0004292
+    coordinates:
+      latitude: 37.0004292
+      longitude: 127.2287087
     stage: 1
-    type: 1
     name:
       en: Chung-Ang University, Da Vinci Campus
       ko: 중앙대학교 다빈치캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1026
   - id: cau.ac.kr.02
-    coordinates: 126.9538339,37.5047256
+    coordinates:
+      latitude: 37.5047256
+      longitude: 126.9538339
     stage: 1
-    type: 1
     name:
       en: Chung-Ang University, Seoul Campus
       ko: 중앙대학교 서울캠퍼스

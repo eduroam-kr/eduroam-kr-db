@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: kookmin.ac.kr.01
-    coordinates: 126.9985231,37.6102882
+    coordinates:
+      latitude: 37.6102882
+      longitude: 126.9985231
     stage: 1
-    type: 1
     name:
       en: Kookmin University Bukak Campus
       ko: 국민대학교 북악캠퍼스

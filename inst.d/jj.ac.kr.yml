@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: jj.ac.kr.01
-    coordinates: 127.0888855,35.8162221
+    coordinates:
+      latitude: 35.8162221
+      longitude: 127.0888855
     stage: 1
-    type: 1
     name:
       en: Jeonju University
       ko: 전주대학교

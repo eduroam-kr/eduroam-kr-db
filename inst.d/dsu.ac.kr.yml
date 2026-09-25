@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: dsu.ac.kr.01
-    coordinates: 126.7179925,35.0496249
+    coordinates:
+      latitude: 35.0496249
+      longitude: 126.7179925
     stage: 1
-    type: 1
     name:
       en: Dongshin University
       ko: 동신대학교

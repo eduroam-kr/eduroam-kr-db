@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: scnu.ac.kr.01
-    coordinates: 127.4809263,34.9667702
+    coordinates:
+      latitude: 34.9667702
+      longitude: 127.4809263
     stage: 1
-    type: 1
     name:
       en: Sunchon National University
       ko: 국립순천대학교

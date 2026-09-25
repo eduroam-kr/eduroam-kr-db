@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: bu.ac.kr.01
-    coordinates: 127.1873755,36.8413484
+    coordinates:
+      latitude: 36.8413484
+      longitude: 127.1873755
     stage: 1
-    type: 1
     name:
       en: Baekseok University
       ko: 백석대학교
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: bu.ac.kr.02
-    coordinates: 127.1830368,36.8385690
+    coordinates:
+      latitude: 36.8385690
+      longitude: 127.1830368
     stage: 1
-    type: 1
     name:
       en: Baekseok Culture University
       ko: 백석문화대학교

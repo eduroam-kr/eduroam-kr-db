@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: ginue.ac.kr.01
-    coordinates: 126.7164,37.5383
+    coordinates:
+      latitude: 37.5383
+      longitude: 126.7164
     stage: 1
-    type: 1
     name:
       en: Gyeongin National University of Education Incheon Campus
       ko: 경인교육대학교 인천캠퍼스
@@ -50,9 +51,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 0
   - id: ginue.ac.kr.02
-    coordinates: 126.9520,37.3930
+    coordinates:
+      latitude: 37.3930
+      longitude: 126.9520
     stage: 1
-    type: 1
     name:
       en: Gyeongin National University of Education Gyeonggi Campus
       ko: 경인교육대학교 경기캠퍼스

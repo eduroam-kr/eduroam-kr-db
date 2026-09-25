@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: dankook.ac.kr.01
-    coordinates: 127.1325359,37.3211939
+    coordinates:
+      latitude: 37.3211939
+      longitude: 127.1325359
     stage: 1
-    type: 1
     name:
       en: Dankook University, Jukjeon Campus
       ko: 단국대학교 죽전캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 2812
   - id: dankook.ac.kr.02
-    coordinates: 127.1652134,36.8359525
+    coordinates:
+      latitude: 36.8359525
+      longitude: 127.1652134
     stage: 1
-    type: 1
     name:
       en: Dankook University, Cheonan Campus
       ko: 단국대학교 천안캠퍼스

@@ -10,6 +10,7 @@ realms:
 name:
   en: Korea Institute for Basic Science
   ko: 기초과학연구원
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -26,9 +27,10 @@ kr_type: 기타
 
 locations:
   - id: ibs.re.kr.01
-    coordinates: 127.4001240,36.4018360
+    coordinates:
+      latitude: 36.4018360
+      longitude: 127.4001240
     stage: 1
-    type: 1
     name:
       en: IBS, Institute for Basic Science
       ko: 본원

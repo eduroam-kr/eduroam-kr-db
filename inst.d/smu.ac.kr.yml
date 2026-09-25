@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: smu.ac.kr.01
-    coordinates: 126.9551595,37.6041089
+    coordinates:
+      latitude: 37.6041089
+      longitude: 126.9551595
     stage: 1
-    type: 1
     name:
       en: Sangmyung University, Seoul Campus
       ko: 상명대학교 서울캠퍼스

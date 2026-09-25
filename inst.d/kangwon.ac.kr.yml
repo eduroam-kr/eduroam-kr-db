@@ -29,9 +29,10 @@ kr_type: 국립
 
 locations:
   - id: kangwon.ac.kr.01
-    coordinates: 127.7483872,37.8680051
+    coordinates:
+      latitude: 37.8680051
+      longitude: 127.7483872
     stage: 1
-    type: 1
     name:
       en: Kangwon National University Chuncheon Campus
       ko: 강원대학교 춘천캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1472
   - id: kangwon.ac.kr.02
-    coordinates: 129.0968009,37.2240561
+    coordinates:
+      latitude: 37.2240561
+      longitude: 129.0968009
     stage: 1
-    type: 1
     name:
       en: Kangwon National University Dogye Campus
       ko: 국립강원대학교 도계캠퍼스
@@ -63,9 +65,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 225
   - id: kangwon.ac.kr.03
-    coordinates: 129.1599444,37.4507957
+    coordinates:
+      latitude: 37.4507957
+      longitude: 129.1599444
     stage: 1
-    type: 1
     name:
       en: Kangwon National University Samcheok Campus
       ko: 국립강원대학교 삼척캠퍼스

@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: cnue.ac.kr.01
-    coordinates: 127.7486049,37.8594161
+    coordinates:
+      latitude: 37.8594161
+      longitude: 127.7486049
     stage: 1
-    type: 1
     name:
       en: Chuncheon National University of Education
       ko: 춘천교육대학교

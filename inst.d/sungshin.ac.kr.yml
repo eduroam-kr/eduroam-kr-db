@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: sungshin.ac.kr.01
-    coordinates: 127.0221456,37.5916525
+    coordinates:
+      latitude: 37.5916525
+      longitude: 127.0221456
     stage: 1
-    type: 1
     name:
       en: "Sungshin Women's University, Sujeong Campus"
       ko: 성신여자대학교 수정캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 494
   - id: sungshin.ac.kr.02
-    coordinates: 127.0271242,37.6320380
+    coordinates:
+      latitude: 37.6320380
+      longitude: 127.0271242
     stage: 1
-    type: 1
     name:
       en: "Sungshin Women's University, Unjeong Green Campus"
       ko: 성신여자대학교 운정그린캠퍼스

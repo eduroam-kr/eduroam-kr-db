@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: jejunu.ac.kr.01
-    coordinates: 126.5643602,33.4572478
+    coordinates:
+      latitude: 33.4572478
+      longitude: 126.5643602
     stage: 1
-    type: 1
     name:
       en: Jeju National University, Ara Campus
       ko: 국립제주대학교 아라캠퍼스

@@ -10,6 +10,7 @@ realms:
 name:
   en: NIMS, National Institute for Mathematical Sciences
   ko: 국가수리과학연구소
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -24,9 +25,10 @@ kr_type: 기타
 
 locations:
   - id: nims.re.kr.01
-    coordinates: 127.4008,36.4016
+    coordinates:
+      latitude: 36.4016
+      longitude: 127.4008
     stage: 1
-    type: 1
     name:
       en: National Institute for Mathematical Sciences
       ko: 국가수리과학연구소

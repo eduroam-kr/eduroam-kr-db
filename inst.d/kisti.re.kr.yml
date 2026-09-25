@@ -10,6 +10,7 @@ realms:
 name:
   en: Korea Institute of Science and Technology Information
   ko: 한국과학기술정보연구원
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -26,9 +27,10 @@ kr_type: 기타
 
 locations:
   - id: kisti.re.kr.01
-    coordinates: 127.3592660,36.3657860
+    coordinates:
+      latitude: 36.3657860
+      longitude: 127.3592660
     stage: 1
-    type: 1
     name:
       ko: 본원
     address:

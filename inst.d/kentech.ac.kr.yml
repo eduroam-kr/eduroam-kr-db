@@ -29,9 +29,10 @@ kr_type: 특별법법인
 
 locations:
   - id: kentech.ac.kr.01
-    coordinates: 126.8032939,35.0106284
+    coordinates:
+      latitude: 35.0106284
+      longitude: 126.8032939
     stage: 1
-    type: 1
     name:
       en: Korea Institute of Energy Technology
       ko: 한국에너지공과대학교

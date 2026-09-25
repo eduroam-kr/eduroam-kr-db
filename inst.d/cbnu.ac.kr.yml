@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: cbnu.ac.kr.01
-    coordinates: 127.4547920,36.6300393
+    coordinates:
+      latitude: 36.6300393
+      longitude: 127.4547920
     stage: 1
-    type: 1
     name:
       en: Chungbuk National University
       ko: 충북대학교

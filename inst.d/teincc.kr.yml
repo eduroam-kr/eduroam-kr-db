@@ -24,9 +24,10 @@ kr_type: 기타
 
 locations:
   - id: teincc.kr.01
-    coordinates: 126.8857,37.5849
+    coordinates:
+      latitude: 37.5849
+      longitude: 126.8857
     stage: 1
-    type: 1
     name:
       en: TEIN Cooperation Centre
       ko: (재)테인협력센터

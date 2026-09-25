@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: wku.ac.kr.01
-    coordinates: 126.9602243,35.9717140
+    coordinates:
+      latitude: 35.9717140
+      longitude: 126.9602243
     stage: 1
-    type: 1
     name:
       en: Wonkwang University, Iksan Campus
       ko: 원광대학교 익산캠퍼스

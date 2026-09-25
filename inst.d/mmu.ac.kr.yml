@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: mmu.ac.kr.01
-    coordinates: 126.3627663,34.7909665
+    coordinates:
+      latitude: 34.7909665
+      longitude: 126.3627663
     stage: 1
-    type: 1
     name:
       en: Mokpo National Maritime University
       ko: 국립목포해양대학교

@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: dnue.ac.kr.01
-    coordinates: 128.5877407,35.8514318
+    coordinates:
+      latitude: 35.8514318
+      longitude: 128.5877407
     stage: 1
-    type: 1
     name:
       en: Daegu National University of Education
       ko: 국립대구교육대학교

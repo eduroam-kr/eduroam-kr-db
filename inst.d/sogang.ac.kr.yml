@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: sogang.ac.kr.01
-    coordinates: 126.9430270,37.5514684
+    coordinates:
+      latitude: 37.5514684
+      longitude: 126.9430270
     stage: 1
-    type: 1
     name:
       en: Sogang University
       ko: 서강대학교

@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: gachon.ac.kr.01
-    coordinates: 127.1293943,37.4512349
+    coordinates:
+      latitude: 37.4512349
+      longitude: 127.1293943
     stage: 1
-    type: 1
     name:
       en: Gachon University Global Campus
       ko: 가천대학교 글로벌캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 2360
   - id: gachon.ac.kr.02
-    coordinates: 126.6874834,37.4222545
+    coordinates:
+      latitude: 37.4222545
+      longitude: 126.6874834
     stage: 1
-    type: 1
     name:
       en: Gachon University Medical Campus
       ko: 가천대학교 메디컬캠퍼스

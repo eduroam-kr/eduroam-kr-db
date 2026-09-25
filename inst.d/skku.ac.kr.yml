@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: skku.ac.kr.01
-    coordinates: 126.9936060,37.5882270
+    coordinates:
+      latitude: 37.5882270
+      longitude: 126.9936060
     stage: 1
-    type: 1
     name:
       en: Sungkyunkwan University, Humanities and Social Sciences Campus
       ko: 성균관대학교 인문사회과학캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 1053
   - id: skku.ac.kr.02
-    coordinates: 126.9748767,37.2950354
+    coordinates:
+      latitude: 37.2950354
+      longitude: 126.9748767
     stage: 1
-    type: 1
     name:
       en: Sungkyunkwan University, Natural Sciences Campus
       ko: 성균관대학교 자연과학캠퍼스

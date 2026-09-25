@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: kyungnam.ac.kr.01
-    coordinates: 128.5550972,35.1843204
+    coordinates:
+      latitude: 35.1843204
+      longitude: 128.5550972
     stage: 1
-    type: 1
     name:
       en: Kyungnam University Wolyeong Campus
       ko: 경남대학교 월영캠퍼스

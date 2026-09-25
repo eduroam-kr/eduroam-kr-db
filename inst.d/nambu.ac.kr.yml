@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: nambu.ac.kr.01
-    coordinates: 126.8422582,35.2070609
+    coordinates:
+      latitude: 35.2070609
+      longitude: 126.8422582
     stage: 1
-    type: 1
     name:
       en: Nambu University
       ko: 남부대학교

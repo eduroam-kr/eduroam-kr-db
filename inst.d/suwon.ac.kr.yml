@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: suwon.ac.kr.01
-    coordinates: 126.9794804,37.2101175
+    coordinates:
+      latitude: 37.2101175
+      longitude: 126.9794804
     stage: 1
-    type: 1
     name:
       en: The University of Suwon, Hwaseong Campus
       ko: 수원대학교 화성캠퍼스

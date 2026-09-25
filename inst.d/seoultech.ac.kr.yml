@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: seoultech.ac.kr.01
-    coordinates: 127.0768337,37.6328059
+    coordinates:
+      latitude: 37.6328059
+      longitude: 127.0768337
     stage: 1
-    type: 1
     name:
       en: Seoul National University of Science and Technology
       ko: 국립서울과학기술대학교

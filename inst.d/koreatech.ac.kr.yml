@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: koreatech.ac.kr.01
-    coordinates: 127.2812004,36.7651050
+    coordinates:
+      latitude: 36.7651050
+      longitude: 127.2812004
     stage: 1
-    type: 1
     name:
       en: Korea University of Technology and Education
       ko: 한국기술교육대학교

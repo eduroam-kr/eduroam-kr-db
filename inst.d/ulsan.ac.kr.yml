@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: ulsan.ac.kr.01
-    coordinates: 129.2575865,35.5418772
+    coordinates:
+      latitude: 35.5418772
+      longitude: 129.2575865
     stage: 1
-    type: 1
     name:
       en: University of Ulsan
       ko: 울산대학교

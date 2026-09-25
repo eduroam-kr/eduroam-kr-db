@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: ync.ac.kr.01
-    coordinates: 128.5857555,35.8457916
+    coordinates:
+      latitude: 35.8457916
+      longitude: 128.5857555
     stage: 1
-    type: 1
     name:
       en: Yeungnam University College
       ko: 영남이공대학교

@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: chosun.ac.kr.01
-    coordinates: 126.9343632,35.1460038
+    coordinates:
+      latitude: 35.1460038
+      longitude: 126.9343632
     stage: 1
-    type: 1
     name:
       en: Chosun University
       ko: 조선대학교

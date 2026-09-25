@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: hanyang.ac.kr.01
-    coordinates: 127.0482318,37.5582766
+    coordinates:
+      latitude: 37.5582766
+      longitude: 127.0482318
     stage: 1
-    type: 1
     name:
       en: Hanyang University, Seoul Campus
       ko: 한양대학교 서울캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 2525
   - id: hanyang.ac.kr.02
-    coordinates: 126.8343934,37.2980037
+    coordinates:
+      latitude: 37.2980037
+      longitude: 126.8343934
     stage: 1
-    type: 1
     name:
       en: Hanyang University, ERICA Campus
       ko: 한양대학교 ERICA캠퍼스

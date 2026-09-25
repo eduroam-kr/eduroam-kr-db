@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: hanbat.ac.kr.01
-    coordinates: 127.3957887,36.4283490
+    coordinates:
+      latitude: 36.4283490
+      longitude: 127.3957887
     stage: 1
-    type: 1
     name:
       en: Hanbat National University Daedeok Industry-Academia Convergence Campus
       ko: 국립한밭대학교 대덕산학융합캠퍼스
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: hanbat.ac.kr.02
-    coordinates: 127.3005622,36.3487944
+    coordinates:
+      latitude: 36.3487944
+      longitude: 127.3005622
     stage: 1
-    type: 1
     name:
       en: Hanbat National University Yuseong Deokmyeong Campus
       ko: 국립한밭대학교 유성덕명캠퍼스

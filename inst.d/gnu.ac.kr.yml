@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: gnu.ac.kr.01
-    coordinates: 128.3991592,34.8364215
+    coordinates:
+      latitude: 34.8364215
+      longitude: 128.3991592
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Tongyeong Campus
       ko: 경상국립대학교 통영캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 85
   - id: gnu.ac.kr.02
-    coordinates: 128.0824681,35.1570935
+    coordinates:
+      latitude: 35.1570935
+      longitude: 128.0824681
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Naedong Campus
       ko: 경상국립대학교 내동캠퍼스
@@ -64,9 +66,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: gnu.ac.kr.03
-    coordinates: 128.0980021,35.1567151
+    coordinates:
+      latitude: 35.1567151
+      longitude: 128.0980021
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Gaejwa Campus
       ko: 경상국립대학교 가좌캠퍼스
@@ -81,9 +84,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 435
   - id: gnu.ac.kr.04
-    coordinates: 128.0949157,35.1759389
+    coordinates:
+      latitude: 35.1759389
+      longitude: 128.0949157
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Chilam Campus
       ko: 경상국립대학교 칠암캠퍼스 (의과대학·간호대학)
@@ -98,9 +102,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 39
   - id: gnu.ac.kr.05
-    coordinates: 128.0920809,35.1792659
+    coordinates:
+      latitude: 35.1792659
+      longitude: 128.0920809
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Chilam Campus
       ko: 경상국립대학교 칠암캠퍼스
@@ -114,9 +119,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: gnu.ac.kr.06
-    coordinates: 128.6319248,35.2408683
+    coordinates:
+      latitude: 35.2408683
+      longitude: 128.6319248
     stage: 1
-    type: 1
     name:
       en: Gyeongsang National University Changwon Industry-Academia Campus
       ko: 경상국립대학교 창원산학캠퍼스

@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: chsu.ac.kr.01
-    coordinates: 127.5533575,36.7035004
+    coordinates:
+      latitude: 36.7035004
+      longitude: 127.5533575
     stage: 1
-    type: 1
     name:
       en: "Chungbuk Health & Science University"
       ko: 충북보건과학대학교

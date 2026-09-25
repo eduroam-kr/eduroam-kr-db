@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: ghu.ac.kr.01
-    coordinates: 126.8446634,35.1919706
+    coordinates:
+      latitude: 35.1919706
+      longitude: 126.8446634
     stage: 1
-    type: 1
     name:
       en: Gwangju Health University
       ko: 광주보건대학교

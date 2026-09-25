@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: dongguk.ac.kr.01
-    coordinates: 126.9980035,37.5581784
+    coordinates:
+      latitude: 37.5581784
+      longitude: 126.9980035
     stage: 1
-    type: 1
     name:
       en: Dongguk University, Seoul Campus
       ko: 동국대학교 서울캠퍼스

@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: kmou.ac.kr.01
-    coordinates: 129.0873486,35.0744078
+    coordinates:
+      latitude: 35.0744078
+      longitude: 129.0873486
     stage: 1
-    type: 1
     name:
       en: Korea Maritime and Ocean University
       ko: 국립한국해양대학교

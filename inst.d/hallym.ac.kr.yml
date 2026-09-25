@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: hallym.ac.kr.01
-    coordinates: 127.7399038,37.8861062
+    coordinates:
+      latitude: 37.8861062
+      longitude: 127.7399038
     stage: 1
-    type: 1
     name:
       en: Hallym University
       ko: 한림대학교

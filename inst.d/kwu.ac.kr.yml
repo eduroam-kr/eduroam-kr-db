@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: kwu.ac.kr.01
-    coordinates: 126.7964100,35.1631675
+    coordinates:
+      latitude: 35.1631675
+      longitude: 126.7964100
     stage: 1
-    type: 1
     name:
       en: "Kwangju Women's University"
       ko: 광주여자대학교

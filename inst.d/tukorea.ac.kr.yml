@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: tukorea.ac.kr.01
-    coordinates: 126.7335394,37.3397327
+    coordinates:
+      latitude: 37.3397327
+      longitude: 126.7335394
     stage: 1
-    type: 1
     name:
       en: Tech University of Korea, Siheung Campus
       ko: 한국공학대학교 시흥캠퍼스
@@ -46,9 +47,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 724
   - id: tukorea.ac.kr.02
-    coordinates: 126.6894889,37.3305323
+    coordinates:
+      latitude: 37.3305323
+      longitude: 126.6894889
     stage: 1
-    type: 1
     name:
       en: Tech University of Korea, 2nd Campus
       ko: 한국공학대학교 제2캠퍼스(정왕)

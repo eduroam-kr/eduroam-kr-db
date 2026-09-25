@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: kmcu.ac.kr.01
-    coordinates: 128.4910262,35.8590061
+    coordinates:
+      latitude: 35.8590061
+      longitude: 128.4910262
     stage: 1
-    type: 1
     name:
       en: Keimyung College University
       ko: 계명문화대학교

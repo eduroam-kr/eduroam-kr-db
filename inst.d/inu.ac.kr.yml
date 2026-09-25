@@ -29,9 +29,10 @@ kr_type: 공립
 
 locations:
   - id: inu.ac.kr.01
-    coordinates: 126.6325053,37.3778557
+    coordinates:
+      latitude: 37.3778557
+      longitude: 126.6325053
     stage: 1
-    type: 1
     name:
       en: Incheon National University, Songdo Campus
       ko: 국립인천대학교 송도캠퍼스

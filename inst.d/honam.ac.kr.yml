@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: honam.ac.kr.01
-    coordinates: 126.7650387,35.1499689
+    coordinates:
+      latitude: 35.1499689
+      longitude: 126.7650387
     stage: 1
-    type: 1
     name:
       en: Honam University, Gwangsan Campus
       ko: 호남대학교 광산캠퍼스

@@ -8,6 +8,7 @@ stage: 1
 name:
   en: Daejeon Convention Center
   ko: 대전컨벤션센터
+
 # contacts 는 스펙상 필수인데 원본 XML 에 없었다.
 # 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
@@ -22,9 +23,10 @@ kr_type: 기타
 
 locations:
   - id: dcckorea.or.kr.01
-    coordinates: 127.3876,36.3743
+    coordinates:
+      latitude: 36.3743
+      longitude: 127.3876
     stage: 1
-    type: 1
     name:
       en: Daejeon Convention Center
       ko: 대전컨벤션센터

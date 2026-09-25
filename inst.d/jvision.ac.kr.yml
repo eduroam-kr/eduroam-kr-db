@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: jvision.ac.kr.01
-    coordinates: 127.0909641,35.8108779
+    coordinates:
+      latitude: 35.8108779
+      longitude: 127.0909641
     stage: 1
-    type: 1
     name:
       en: Vision College of Jeonju
       ko: 전주비전대학교

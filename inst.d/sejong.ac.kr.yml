@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: sejong.ac.kr.01
-    coordinates: 127.0745756,37.5507981
+    coordinates:
+      latitude: 37.5507981
+      longitude: 127.0745756
     stage: 1
-    type: 1
     name:
       en: Sejong University
       ko: 세종대학교

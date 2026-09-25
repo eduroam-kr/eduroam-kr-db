@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: mokpo.ac.kr.01
-    coordinates: 126.4402121,34.9103089
+    coordinates:
+      latitude: 34.9103089
+      longitude: 126.4402121
     stage: 1
-    type: 1
     name:
       en: Mokpo National University
       ko: 국립목포대학교

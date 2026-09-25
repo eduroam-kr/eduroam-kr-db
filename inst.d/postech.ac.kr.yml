@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: postech.ac.kr.01
-    coordinates: 129.3212998,36.0105874
+    coordinates:
+      latitude: 36.0105874
+      longitude: 129.3212998
     stage: 1
-    type: 1
     name:
       en: Pohang University of Science and Technology
       ko: 포항공과대학교

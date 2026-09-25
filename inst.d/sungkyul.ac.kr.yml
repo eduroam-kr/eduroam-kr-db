@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: sungkyul.ac.kr.01
-    coordinates: 126.9288086,37.3798649
+    coordinates:
+      latitude: 37.3798649
+      longitude: 126.9288086
     stage: 1
-    type: 1
     name:
       en: Sungkyul University
       ko: 성결대학교

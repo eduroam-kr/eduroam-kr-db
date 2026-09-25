@@ -29,9 +29,10 @@ kr_type: 국립대법인
 
 locations:
   - id: unist.ac.kr.01
-    coordinates: 129.1896290,35.5734176
+    coordinates:
+      latitude: 35.5734176
+      longitude: 129.1896290
     stage: 1
-    type: 1
     name:
       en: Ulsan National Institute of Science and Technology
       ko: 울산과학기술원

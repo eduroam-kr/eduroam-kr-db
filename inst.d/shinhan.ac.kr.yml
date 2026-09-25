@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: shinhan.ac.kr.01
-    coordinates: 127.0462897,37.7102010
+    coordinates:
+      latitude: 37.7102010
+      longitude: 127.0462897
     stage: 1
-    type: 1
     name:
       en: Shinhan University, Campus 1
       ko: 신한대학교 제1캠퍼스

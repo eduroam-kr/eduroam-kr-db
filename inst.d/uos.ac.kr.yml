@@ -31,9 +31,10 @@ kr_type: 공립
 
 locations:
   - id: uos.ac.kr.01
-    coordinates: 127.0599901,37.5825765
+    coordinates:
+      latitude: 37.5825765
+      longitude: 127.0599901
     stage: 1
-    type: 1
     name:
       en: University of Seoul
       ko: 서울시립대학교

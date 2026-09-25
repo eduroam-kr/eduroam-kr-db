@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: cu.ac.kr.01
-    coordinates: 128.8074220,35.9089671
+    coordinates:
+      latitude: 35.9089671
+      longitude: 128.8074220
     stage: 1
-    type: 1
     name:
       en: Daegu Catholic University, Hyoseong Campus
       ko: 대구가톨릭대학교 효성캠퍼스

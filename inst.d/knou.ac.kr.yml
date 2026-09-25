@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: knou.ac.kr.01
-    coordinates: 127.0032909,37.5791955
+    coordinates:
+      latitude: 37.5791955
+      longitude: 127.0032909
     stage: 1
-    type: 1
     name:
       en: Korea National Open University
       ko: 국립한국방송통신대학교 본부
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 348
   - id: knou.ac.kr.02
-    coordinates: 128.9303092,37.7748776
+    coordinates:
+      latitude: 37.7748776
+      longitude: 128.9303092
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gangwon Regional College Gangneung Study Center
       ko: 국립한국방송통신대학교 강원지역대학 강릉시학습관
@@ -64,9 +66,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: knou.ac.kr.03
-    coordinates: 126.4736310,33.4859246
+    coordinates:
+      latitude: 33.4859246
+      longitude: 126.4736310
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Jeju Regional College
       ko: 국립한국방송통신대학교 제주지역대학
@@ -81,9 +84,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 16
   - id: knou.ac.kr.04
-    coordinates: 129.0064812,35.2240259
+    coordinates:
+      latitude: 35.2240259
+      longitude: 129.0064812
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Busan Regional College
       ko: 국립한국방송통신대학교 부산지역대학
@@ -98,9 +102,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 18
   - id: knou.ac.kr.05
-    coordinates: 127.4010500,36.4150616
+    coordinates:
+      latitude: 36.4150616
+      longitude: 127.4010500
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Daejeon-Chungnam Regional College
       ko: 국립한국방송통신대학교 대전충남지역대학
@@ -115,9 +120,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 18
   - id: knou.ac.kr.06
-    coordinates: 127.0456712,37.5475777
+    coordinates:
+      latitude: 37.5475777
+      longitude: 127.0456712
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Seoul Regional College
       ko: 국립한국방송통신대학교 서울지역대학
@@ -132,9 +138,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 77
   - id: knou.ac.kr.07
-    coordinates: 128.4948399,35.8597865
+    coordinates:
+      latitude: 35.8597865
+      longitude: 128.4948399
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Daegu-Gyeongbuk Regional College
       ko: 국립한국방송통신대학교 대구경북지역대학
@@ -149,9 +156,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 18
   - id: knou.ac.kr.08
-    coordinates: 126.8653435,37.5294934
+    coordinates:
+      latitude: 37.5294934
+      longitude: 126.8653435
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Seoul Regional College Southern Study Center
       ko: 국립한국방송통신대학교 서울지역대학 남부학습센터
@@ -165,9 +173,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: knou.ac.kr.09
-    coordinates: 126.8764479,37.6505307
+    coordinates:
+      latitude: 37.6505307
+      longitude: 126.8764479
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Seoul Regional College Western Study Center
       ko: 국립한국방송통신대학교 서울지역대학 서부학습센터
@@ -181,9 +190,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: knou.ac.kr.10
-    coordinates: 127.1408141,35.8249177
+    coordinates:
+      latitude: 35.8249177
+      longitude: 127.1408141
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Jeonbuk Regional College
       ko: 국립한국방송통신대학교 전북지역대학
@@ -198,9 +208,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 16
   - id: knou.ac.kr.11
-    coordinates: 127.7211125,37.8713418
+    coordinates:
+      latitude: 37.8713418
+      longitude: 127.7211125
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gangwon Regional College
       ko: 국립한국방송통신대학교 강원지역대학
@@ -215,9 +226,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 21
   - id: knou.ac.kr.12
-    coordinates: 129.3142890,35.5784695
+    coordinates:
+      latitude: 35.5784695
+      longitude: 129.3142890
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Ulsan Regional College
       ko: 국립한국방송통신대학교 울산지역대학
@@ -232,9 +244,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 20
   - id: knou.ac.kr.13
-    coordinates: 126.7044411,37.4528465
+    coordinates:
+      latitude: 37.4528465
+      longitude: 126.7044411
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Incheon Regional College
       ko: 국립한국방송통신대학교 인천지역대학
@@ -249,9 +262,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 22
   - id: knou.ac.kr.14
-    coordinates: 127.4677602,36.6241354
+    coordinates:
+      latitude: 36.6241354
+      longitude: 127.4677602
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Chungbuk Regional College
       ko: 국립한국방송통신대학교 충북지역대학
@@ -266,9 +280,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 16
   - id: knou.ac.kr.15
-    coordinates: 126.8360555,35.2074520
+    coordinates:
+      latitude: 35.2074520
+      longitude: 126.8360555
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gwangju-Jeonnam Regional College
       ko: 국립한국방송통신대학교 광주전남지역대학
@@ -283,9 +298,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 18
   - id: knou.ac.kr.16
-    coordinates: 128.5670251,35.1771144
+    coordinates:
+      latitude: 35.1771144
+      longitude: 128.5670251
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gyeongnam Regional College Changwon Study Center
       ko: 국립한국방송통신대학교 경남지역대학 창원시학습관
@@ -299,9 +315,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: knou.ac.kr.17
-    coordinates: 126.9582424,37.2407527
+    coordinates:
+      latitude: 37.2407527
+      longitude: 126.9582424
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gyeonggi Regional College
       ko: 국립한국방송통신대학교 경기지역대학
@@ -316,9 +333,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 37
   - id: knou.ac.kr.18
-    coordinates: 127.1095216,37.3493348
+    coordinates:
+      latitude: 37.3493348
+      longitude: 127.1095216
     stage: 1
-    type: 1
     name:
       en: Korea National Open University Gyeonggi Regional College Seongnam Study Center
       ko: 국립한국방송통신대학교 경기지역대학 성남시학습관

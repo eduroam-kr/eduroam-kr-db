@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: yonsei.ac.kr.01
-    coordinates: 126.9387066,37.5663937
+    coordinates:
+      latitude: 37.5663937
+      longitude: 126.9387066
     stage: 1
-    type: 1
     name:
       en: Yonsei University, Sinchon Campus
       ko: 연세대학교 신촌캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 2800
   - id: yonsei.ac.kr.02
-    coordinates: 127.9043280,37.2748317
+    coordinates:
+      latitude: 37.2748317
+      longitude: 127.9043280
     stage: 1
-    type: 1
     name:
       en: Yonsei University, Mirae Campus
       ko: 연세대학교 미래캠퍼스
@@ -65,9 +67,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 490
   - id: yonsei.ac.kr.03
-    coordinates: 126.6672446,37.3818221
+    coordinates:
+      latitude: 37.3818221
+      longitude: 126.6672446
     stage: 1
-    type: 1
     name:
       en: Yonsei University, International Campus
       ko: 연세대학교 국제캠퍼스

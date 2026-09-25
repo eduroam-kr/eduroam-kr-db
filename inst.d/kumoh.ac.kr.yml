@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: kumoh.ac.kr.01
-    coordinates: 128.3878839,36.1456313
+    coordinates:
+      latitude: 36.1456313
+      longitude: 128.3878839
     stage: 1
-    type: 1
     name:
       en: Kumoh National Institute of Technology Yangho Campus
       ko: 국립금오공과대학교 양호캠퍼스
@@ -48,9 +49,10 @@ locations:
     enc_level: WPA2/AES
     ap_no: 315
   - id: kumoh.ac.kr.02
-    coordinates: 128.3656895,36.1192093
+    coordinates:
+      latitude: 36.1192093
+      longitude: 128.3656895
     stage: 1
-    type: 1
     name:
       en: Kumoh National Institute of Technology, Sinpyeong Campus
       ko: 국립금오공과대학교 신평동캠퍼스

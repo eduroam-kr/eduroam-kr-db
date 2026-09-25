@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: yuhan.ac.kr.01
-    coordinates: 126.8223663,37.4881299
+    coordinates:
+      latitude: 37.4881299
+      longitude: 126.8223663
     stage: 1
-    type: 1
     name:
       en: Yuhan University
       ko: 유한대학교

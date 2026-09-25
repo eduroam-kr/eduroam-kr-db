@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: hnu.ac.kr.01
-    coordinates: 127.4233081,36.3527987
+    coordinates:
+      latitude: 36.3527987
+      longitude: 127.4233081
     stage: 1
-    type: 1
     name:
       en: Hannam University, Daedeok Campus
       ko: 한남대학교 오정동캠퍼스
@@ -47,9 +48,10 @@ locations:
     ssid: eduroam
     enc_level: WPA2/AES
   - id: hnu.ac.kr.02
-    coordinates: 127.3907660,36.3995578
+    coordinates:
+      latitude: 36.3995578
+      longitude: 127.3907660
     stage: 1
-    type: 1
     name:
       en: Hannam University, Daedeok Valley Campus
       ko: 한남대학교 대덕밸리캠퍼스

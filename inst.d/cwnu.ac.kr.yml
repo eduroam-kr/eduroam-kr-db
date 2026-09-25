@@ -31,9 +31,10 @@ kr_type: 국립
 
 locations:
   - id: cwnu.ac.kr.01
-    coordinates: 128.6948485,35.2459592
+    coordinates:
+      latitude: 35.2459592
+      longitude: 128.6948485
     stage: 1
-    type: 1
     name:
       en: Changwon National University
       ko: 국립창원대학교

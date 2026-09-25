@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: ewha.ac.kr.01
-    coordinates: 126.9502883,37.5644641
+    coordinates:
+      latitude: 37.5644641
+      longitude: 126.9502883
     stage: 1
-    type: 1
     name:
       en: Ewha Womans University
       ko: 이화여자대학교

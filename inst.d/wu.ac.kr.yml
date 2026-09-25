@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: wu.ac.kr.01
-    coordinates: 126.9561967,35.9727469
+    coordinates:
+      latitude: 35.9727469
+      longitude: 126.9561967
     stage: 1
-    type: 1
     name:
       en: Wonkwang Health Science University
       ko: 원광보건대학교

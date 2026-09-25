@@ -29,9 +29,10 @@ kr_type: 사립
 
 locations:
   - id: seoil.ac.kr.01
-    coordinates: 127.0976268,37.5858310
+    coordinates:
+      latitude: 37.5858310
+      longitude: 127.0976268
     stage: 1
-    type: 1
     name:
       en: Seoil University
       ko: 서일대학교

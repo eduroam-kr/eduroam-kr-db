@@ -29,9 +29,10 @@ kr_type: 국립
 
 locations:
   - id: bnue.ac.kr.01
-    coordinates: 129.0772329,35.1949371
+    coordinates:
+      latitude: 35.1949371
+      longitude: 129.0772329
     stage: 1
-    type: 1
     name:
       en: Busan National University of Education
       ko: 국립부산교육대학교

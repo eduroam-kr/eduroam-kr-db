@@ -29,9 +29,10 @@ kr_type: 기타
 
 locations:
   - id: ust.ac.kr.01
-    coordinates: 127.3676230,36.3849081
+    coordinates:
+      latitude: 36.3849081
+      longitude: 127.3676230
     stage: 1
-    type: 1
     name:
       en: University of Science and Technology
       ko: 과학기술연합대학원대학교

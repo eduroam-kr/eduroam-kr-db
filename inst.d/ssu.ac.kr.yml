@@ -31,9 +31,10 @@ kr_type: 사립
 
 locations:
   - id: ssu.ac.kr.01
-    coordinates: 126.9551579,37.4964290
+    coordinates:
+      latitude: 37.4964290
+      longitude: 126.9551579
     stage: 1
-    type: 1
     name:
       en: Soongsil University, Sangdo Campus
       ko: 숭실대학교 상도캠퍼스

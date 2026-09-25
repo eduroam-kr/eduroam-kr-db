@@ -29,9 +29,10 @@ kr_type: 국립
 
 locations:
   - id: gnue.ac.kr.01
-    coordinates: 126.9256988,35.1647147
+    coordinates:
+      latitude: 35.1647147
+      longitude: 126.9256988
     stage: 1
-    type: 1
     name:
       en: Gwangju National University of Education
       ko: 국립광주교육대학교
