@@ -85,9 +85,11 @@ def contacts(parent, value, where):
                          f"기관 연락처가 없으면 ro.yml 의 default_contact 가 대신 들어간다")
     for c in value:
         e = ET.SubElement(parent, "contact")
+        # XSD 는 셋 다 요구하지만 빈 문자열을 허용한다. 전화만 있고 메일이 없는
+        # 기관이 많아서, 없는 것은 빈 값으로 두고 있는 것만 채운다.
         el(e, "name", c["name"])
-        el(e, "email", c["email"])
-        el(e, "phone", c["phone"])
+        el(e, "email", c.get("email", ""))
+        el(e, "phone", c.get("phone", ""))
         # 기관 연락처는 부서 수준에서 공개 가능한 것만 적는 것이 이 저장소의 방침이라
         # type=1(부서) · privacy=1(공개) 이 기본이다. 필요하면 파일에서 덮어쓴다.
         el(e, "type", c.get("type", 1))

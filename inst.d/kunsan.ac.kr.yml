@@ -15,14 +15,10 @@ name:
 # 3,3 = Educational + University or College
 inst_type: "3,3"
 
-# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
-# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
-# contacts:
-#   - name:
-#     email:
-#     phone:
-#     type: 1
-#     privacy: 1
+# 기관 eduroam 안내 페이지에서 확인한 담당 부서 (2026-09-25)
+contacts:
+  - name: 정보서비스 eduroam 담당
+    phone: "063-469-4235"
 info_url:
   ko: "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000"
 
