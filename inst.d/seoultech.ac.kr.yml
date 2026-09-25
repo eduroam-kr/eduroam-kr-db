@@ -10,10 +10,14 @@ realms:
 name:
   en: Seoul National University of Science and Technology
   ko: 서울과학기술대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://itc.seoultech.ac.kr/service/wifi"
 
@@ -29,8 +33,12 @@ locations:
       en: Seoul National University of Science and Technology
       ko: 국립서울과학기술대학교
     address:
-      en: { street: "(01811) 232 Gongneung-ro, Nowon-gu, Seoul", city: "Seoul" }
-      ko: { street: "(01811) 서울특별시 노원구 공릉로 232", city: "서울특별시" }
+      en:
+        street: (01811) 232 Gongneung-ro, Nowon-gu, Seoul
+        city: Seoul
+      ko:
+        street: (01811) 서울특별시 노원구 공릉로 232
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1201

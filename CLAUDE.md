@@ -96,6 +96,32 @@ python3 build.py --validate
 
 커밋은 한 줄, 주제별로 쪼갠다. `Co-Authored-By: Claude <noreply@anthropic.com>` 는 붙이고 `Claude-Session` 은 붙이지 않는다 (public 저장소).
 
+## 주석은 줄 끝에 달지 않는다
+
+YAML 이든 Python 이든, 주석은 **자기 줄에** 쓴다.
+
+```yaml
+# 도메인 형식의 기관 고유 ID
+instid: example.ac.kr
+```
+
+```yaml
+instid: example.ac.kr          # 이렇게 쓰지 않는다
+```
+
+`cat x.yml | grep -v '#'` 로 값만 훑는 사용 방식 때문이다. 줄 끝 주석이 있으면 그 줄이 통째로 사라져서 데이터까지 안 보인다.
+
+같은 이유로 **플로우 매핑(`{ a: 1, b: 2 }`)을 쓰지 않는다.** 한 줄에 여러 값이 들어가면 그 줄 하나가 사라질 때 잃는 게 많고, diff 에서도 무엇이 바뀌었는지 안 보인다. 블록 스타일로 편다.
+
+```yaml
+contacts:
+  - name: IT Helpdesk
+    email: helpdesk@example.ac.kr
+    type: 1
+```
+
+`inst.d/` 파일을 생성하는 도구를 쓸 때도 이 두 규칙을 지킨다.
+
 ## 문서
 
 하드 랩 금지 — 문단·목록 항목을 각각 한 줄로 쓰고 줄바꿈은 렌더러에 맡긴다. 하드 랩이 있으면 단어 하나 고쳤을 때 이후 모든 줄이 리플로우되어 diff 가 못 쓰게 된다.

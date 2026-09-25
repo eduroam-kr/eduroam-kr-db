@@ -10,10 +10,14 @@ realms:
 name:
   en: Dong-Eui University
   ko: 동의대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10"
 
@@ -29,8 +33,12 @@ locations:
       en: Dong-Eui University, Gaya Campus
       ko: 동의대학교 가야캠퍼스
     address:
-      en: { street: "(47340) 176 Eomgwang-ro, Busanjin-gu, Busan", city: "Busan" }
-      ko: { street: "(47340) 부산광역시 부산진구 엄광로 176", city: "부산광역시" }
+      en:
+        street: (47340) 176 Eomgwang-ro, Busanjin-gu, Busan
+        city: Busan
+      ko:
+        street: (47340) 부산광역시 부산진구 엄광로 176
+        city: 부산광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 499
@@ -42,8 +50,12 @@ locations:
       en: Dong-Eui University, Yangjeong Campus
       ko: 동의대학교 양정캠퍼스
     address:
-      en: { street: "(47227) 54 Yangji-ro, Busanjin-gu, Busan", city: "Busan" }
-      ko: { street: "(47227) 부산광역시 부산진구 양지로 54", city: "부산광역시" }
+      en:
+        street: (47227) 54 Yangji-ro, Busanjin-gu, Busan
+        city: Busan
+      ko:
+        street: (47227) 부산광역시 부산진구 양지로 54
+        city: 부산광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 32

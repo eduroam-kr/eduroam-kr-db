@@ -10,10 +10,14 @@ realms:
 name:
   en: Presbyterian University and Theological Seminary
   ko: 장로회신학대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp"
 
@@ -29,7 +33,11 @@ locations:
       en: Presbyterian University and Theological Seminary
       ko: 장로회신학대학교
     address:
-      en: { street: "(04965) 25-1 Gwangjang-ro 5-gil, Gwangjin-gu, Seoul", city: "Seoul" }
-      ko: { street: "(04965) 서울특별시 광진구 광장로5길 25-1", city: "서울특별시" }
+      en:
+        street: (04965) 25-1 Gwangjang-ro 5-gil, Gwangjin-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04965) 서울특별시 광진구 광장로5길 25-1
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES

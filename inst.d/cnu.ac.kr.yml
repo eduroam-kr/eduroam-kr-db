@@ -10,10 +10,14 @@ realms:
 name:
   en: Chungnam National University
   ko: 충남대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://homepage.cnu.ac.kr/cic/service/eduroam.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Chungnam National University, Daedeok Campus
       ko: 충남대학교 대덕캠퍼스
     address:
-      en: { street: "(34134) 99 Daehak-ro, Yuseong-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(34134) 대전광역시 유성구 대학로 99", city: "대전광역시" }
+      en:
+        street: (34134) 99 Daehak-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34134) 대전광역시 유성구 대학로 99
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2414
@@ -42,8 +50,12 @@ locations:
       en: Chungnam National University, Boun Campus
       ko: 충남대학교 보운캠퍼스
     address:
-      en: { street: "(35015) 266 Munhwa-ro, Jung-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(35015) 대전광역시 중구 문화로 266", city: "대전광역시" }
+      en:
+        street: (35015) 266 Munhwa-ro, Jung-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (35015) 대전광역시 중구 문화로 266
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 160

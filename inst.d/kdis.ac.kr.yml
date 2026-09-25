@@ -10,10 +10,14 @@ realms:
 name:
   en: KDI School of Public Policy and Management
   ko: KDI국제정책대학원대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.kdischool.ac.kr/"
 
@@ -29,8 +33,14 @@ locations:
       en: KDI School of Public Policy and Management
       ko: KDI국제정책대학원대학교
     address:
-      en: { street: "263 Namsejong-ro", city: "Sejong", postcode: 30149 }
-      ko: { street: "남세종로 263", city: "세종특별자치시", postcode: 30149 }
+      en:
+        street: 263 Namsejong-ro
+        city: Sejong
+        postcode: 30149
+      ko:
+        street: 남세종로 263
+        city: 세종특별자치시
+        postcode: 30149
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 0

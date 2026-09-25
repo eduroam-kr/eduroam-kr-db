@@ -10,10 +10,14 @@ realms:
 name:
   en: Korea National University of Transportation
   ko: 국립한국교통대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.ut.ac.kr/kor/sub06_03_03_01.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Korea National University of Transportation Chungju Campus
       ko: 국립한국교통대학교 충주캠퍼스
     address:
-      en: { street: "(27469) 50 Daehak-ro, Daesowon-myeon, Chungju-si, Chungcheongbuk-do", city: "Chungcheongbuk-do" }
-      ko: { street: "(27469) 충청북도 충주시 대소원면 대학로 50", city: "충청북도" }
+      en:
+        street: (27469) 50 Daehak-ro, Daesowon-myeon, Chungju-si, Chungcheongbuk-do
+        city: Chungcheongbuk-do
+      ko:
+        street: (27469) 충청북도 충주시 대소원면 대학로 50
+        city: 충청북도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: ut.ac.kr.02
@@ -41,8 +49,12 @@ locations:
       en: Korea National University of Transportation Jeungpyeong Campus
       ko: 국립한국교통대학교 증평캠퍼스
     address:
-      en: { street: "(27909) 61 Daehak-ro, Jeungpyeong-eup, Jeungpyeong-gun, Chungcheongbuk-do", city: "Chungcheongbuk-do" }
-      ko: { street: "(27909) 충청북도 증평군 증평읍 대학로 61", city: "충청북도" }
+      en:
+        street: (27909) 61 Daehak-ro, Jeungpyeong-eup, Jeungpyeong-gun, Chungcheongbuk-do
+        city: Chungcheongbuk-do
+      ko:
+        street: (27909) 충청북도 증평군 증평읍 대학로 61
+        city: 충청북도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: ut.ac.kr.03
@@ -53,7 +65,11 @@ locations:
       en: Korea National University of Transportation Uiwang Campus
       ko: 국립한국교통대학교 의왕캠퍼스
     address:
-      en: { street: "(16106) 157 Cheoldobangmulgwan-ro, Uiwang-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(16106) 경기도 의왕시 철도박물관로 157", city: "경기도" }
+      en:
+        street: (16106) 157 Cheoldobangmulgwan-ro, Uiwang-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (16106) 경기도 의왕시 철도박물관로 157
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES

@@ -10,10 +10,14 @@ realms:
 name:
   en: Chosun University
   ko: 조선대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://wifi.chosun.ac.kr/Main/Main.html"
 
@@ -29,7 +33,11 @@ locations:
       en: Chosun University
       ko: 조선대학교
     address:
-      en: { street: "(61452) 309 Pilmun-daero, Dong-gu, Gwangju", city: "Gwangju" }
-      ko: { street: "(61452) 광주광역시 동구 필문대로 309", city: "광주광역시" }
+      en:
+        street: (61452) 309 Pilmun-daero, Dong-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (61452) 광주광역시 동구 필문대로 309
+        city: 광주광역시
     ssid: eduroam
     enc_level: WPA2/AES

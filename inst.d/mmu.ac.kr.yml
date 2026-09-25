@@ -10,10 +10,14 @@ realms:
 name:
   en: Mokpo National Maritime University
   ko: 목포해양대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.mmu.ac.kr/main/contents/eduroam"
 
@@ -29,8 +33,12 @@ locations:
       en: Mokpo National Maritime University
       ko: 국립목포해양대학교
     address:
-      en: { street: "(58628) 91 Haeyangdaehak-ro, Mokpo-si, Jeollanam-do", city: "Jeollanam-do" }
-      ko: { street: "(58628) 전라남도 목포시 해양대학로 91", city: "전라남도" }
+      en:
+        street: (58628) 91 Haeyangdaehak-ro, Mokpo-si, Jeollanam-do
+        city: Jeollanam-do
+      ko:
+        street: (58628) 전라남도 목포시 해양대학로 91
+        city: 전라남도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1125

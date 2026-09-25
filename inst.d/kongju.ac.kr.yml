@@ -10,10 +10,14 @@ realms:
 name:
   en: Kongju National University
   ko: 국립공주대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.kongju.ac.kr/KNU/16898/subview.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Kongju National University Singwan (Gongju) Campus
       ko: 국립공주대학교 신관(공주)캠퍼스
     address:
-      en: { street: "(32588) 56 Gongjudaehak-ro, Gongju-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(32588) 충청남도 공주시 공주대학로 56", city: "충청남도" }
+      en:
+        street: (32588) 56 Gongjudaehak-ro, Gongju-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (32588) 충청남도 공주시 공주대학로 56
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: kongju.ac.kr.02
@@ -41,8 +49,12 @@ locations:
       en: Kongju National University Cheonan Campus
       ko: 국립공주대학교 천안캠퍼스
     address:
-      en: { street: "(31080) 1223-24 Cheonan-daero, Seobuk-gu, Cheonan-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(31080) 충청남도 천안시 서북구 천안대로 1223-24", city: "충청남도" }
+      en:
+        street: (31080) 1223-24 Cheonan-daero, Seobuk-gu, Cheonan-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (31080) 충청남도 천안시 서북구 천안대로 1223-24
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: kongju.ac.kr.03
@@ -53,7 +65,11 @@ locations:
       en: Kongju National University Yesan Campus
       ko: 국립공주대학교 예산캠퍼스
     address:
-      en: { street: "(32439) 54 Daehak-ro, Yesan-eup, Yesan-gun, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(32439) 충청남도 예산군 예산읍 대학로 54", city: "충청남도" }
+      en:
+        street: (32439) 54 Daehak-ro, Yesan-eup, Yesan-gun, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (32439) 충청남도 예산군 예산읍 대학로 54
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES

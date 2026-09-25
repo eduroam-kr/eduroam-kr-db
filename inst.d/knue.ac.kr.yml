@@ -10,10 +10,14 @@ realms:
 name:
   en: Korea National University of Education
   ko: 한국교원대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&uid=1974"
 
@@ -29,8 +33,12 @@ locations:
       en: Korea National University of Education
       ko: 국립한국교원대학교
     address:
-      en: { street: "(28173) 250 Taeseongtabyeon-ro, Gangnae-myeon, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do", city: "Chungcheongbuk-do" }
-      ko: { street: "(28173) 충청북도 청주시 흥덕구 강내면 태성탑연로 250", city: "충청북도" }
+      en:
+        street: (28173) 250 Taeseongtabyeon-ro, Gangnae-myeon, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do
+        city: Chungcheongbuk-do
+      ko:
+        street: (28173) 충청북도 청주시 흥덕구 강내면 태성탑연로 250
+        city: 충청북도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 512

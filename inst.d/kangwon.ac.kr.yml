@@ -10,10 +10,14 @@ realms:
 name:
   en: Kangwon National University
   ko: 강원대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 
 # ── 아래는 스펙 밖 항목. 제출 XML 에는 안 들어가고 NRO 사이트가 쓴다 ──
 kr_type: 국립
@@ -27,8 +31,12 @@ locations:
       en: Kangwon National University Chuncheon Campus
       ko: 강원대학교 춘천캠퍼스
     address:
-      en: { street: "(24341) 1 Gangwondaehak-gil, Chuncheon-si, Gangwon-do", city: "Gangwon-do" }
-      ko: { street: "(24341) 강원특별자치도 춘천시 강원대학길 1", city: "강원특별자치도" }
+      en:
+        street: (24341) 1 Gangwondaehak-gil, Chuncheon-si, Gangwon-do
+        city: Gangwon-do
+      ko:
+        street: (24341) 강원특별자치도 춘천시 강원대학길 1
+        city: 강원특별자치도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1472
@@ -40,8 +48,12 @@ locations:
       en: Kangwon National University Dogye Campus
       ko: 국립강원대학교 도계캠퍼스
     address:
-      en: { street: "(25949) 346 Hwangjo-gil, Dogye-eup, Samcheok-si, Gangwon-do", city: "Gangwon-do" }
-      ko: { street: "(25949) 강원특별자치도 삼척시 도계읍 황조길 346", city: "강원특별자치도" }
+      en:
+        street: (25949) 346 Hwangjo-gil, Dogye-eup, Samcheok-si, Gangwon-do
+        city: Gangwon-do
+      ko:
+        street: (25949) 강원특별자치도 삼척시 도계읍 황조길 346
+        city: 강원특별자치도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 225
@@ -53,7 +65,11 @@ locations:
       en: Kangwon National University Samcheok Campus
       ko: 국립강원대학교 삼척캠퍼스
     address:
-      en: { street: "(25913) 346 Jungang-ro, Samcheok-si, Gangwon-do", city: "Gangwon-do" }
-      ko: { street: "(25913) 강원특별자치도 삼척시 중앙로 346", city: "강원특별자치도" }
+      en:
+        street: (25913) 346 Jungang-ro, Samcheok-si, Gangwon-do
+        city: Gangwon-do
+      ko:
+        street: (25913) 강원특별자치도 삼척시 중앙로 346
+        city: 강원특별자치도
     ssid: eduroam
     enc_level: WPA2/AES

@@ -10,10 +10,14 @@ realms:
 name:
   en: Dongguk University
   ko: 동국대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://it.dongguk.edu/?page_id=18649"
 
@@ -29,8 +33,12 @@ locations:
       en: Dongguk University, Seoul Campus
       ko: 동국대학교 서울캠퍼스
     address:
-      en: { street: "(04620) 30 Pildong-ro 1-gil, Jung-gu, Seoul", city: "Seoul" }
-      ko: { street: "(04620) 서울특별시 중구 필동로1길 30", city: "서울특별시" }
+      en:
+        street: (04620) 30 Pildong-ro 1-gil, Jung-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04620) 서울특별시 중구 필동로1길 30
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1000

@@ -10,10 +10,14 @@ realms:
 name:
   en: Daegu National University of Education
   ko: 대구교육대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&mode=view&board_seq=14025"
 
@@ -29,7 +33,11 @@ locations:
       en: Daegu National University of Education
       ko: 국립대구교육대학교
     address:
-      en: { street: "(42411) 219 Jungang-daero, Nam-gu, Daegu", city: "Daegu" }
-      ko: { street: "(42411) 대구광역시 남구 중앙대로 219", city: "대구광역시" }
+      en:
+        street: (42411) 219 Jungang-daero, Nam-gu, Daegu
+        city: Daegu
+      ko:
+        street: (42411) 대구광역시 남구 중앙대로 219
+        city: 대구광역시
     ssid: eduroam
     enc_level: WPA2/AES

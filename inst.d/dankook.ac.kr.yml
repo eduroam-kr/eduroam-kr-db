@@ -10,10 +10,14 @@ realms:
 name:
   en: Dankook University
   ko: 단국대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-"
 
@@ -29,8 +33,12 @@ locations:
       en: Dankook University, Jukjeon Campus
       ko: 단국대학교 죽전캠퍼스
     address:
-      en: { street: "(16890) 152 Jukjeon-ro, Suji-gu, Yongin-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(16890) 경기도 용인시 수지구 죽전로 152", city: "경기도" }
+      en:
+        street: (16890) 152 Jukjeon-ro, Suji-gu, Yongin-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (16890) 경기도 용인시 수지구 죽전로 152
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2812
@@ -42,7 +50,11 @@ locations:
       en: Dankook University, Cheonan Campus
       ko: 단국대학교 천안캠퍼스
     address:
-      en: { street: "(31116) 119 Dandae-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(31116) 충청남도 천안시 동남구 단대로 119", city: "충청남도" }
+      en:
+        street: (31116) 119 Dandae-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (31116) 충청남도 천안시 동남구 단대로 119
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES

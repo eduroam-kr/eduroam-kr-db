@@ -10,10 +10,14 @@ realms:
 name:
   en: Hanbat National University
   ko: 국립한밭대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.hanbat.ac.kr/kor/sub06_080105.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Hanbat National University Daedeok Industry-Academia Convergence Campus
       ko: 국립한밭대학교 대덕산학융합캠퍼스
     address:
-      en: { street: "(34014) 75 Techno 1-ro, Yuseong-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(34014) 대전광역시 유성구 테크노1로 75", city: "대전광역시" }
+      en:
+        street: (34014) 75 Techno 1-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34014) 대전광역시 유성구 테크노1로 75
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
   - id: hanbat.ac.kr.02
@@ -41,8 +49,12 @@ locations:
       en: Hanbat National University Yuseong Deokmyeong Campus
       ko: 국립한밭대학교 유성덕명캠퍼스
     address:
-      en: { street: "(34158) 125 Dongseo-daero, Yuseong-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(34158) 대전광역시 유성구 동서대로 125", city: "대전광역시" }
+      en:
+        street: (34158) 125 Dongseo-daero, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34158) 대전광역시 유성구 동서대로 125
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1468

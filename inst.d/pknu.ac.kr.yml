@@ -10,10 +10,14 @@ realms:
 name:
   en: Pukyong National University
   ko: 부경대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://icc.pknu.ac.kr/main/17"
 
@@ -29,8 +33,12 @@ locations:
       en: Pukyong National University, Daeyeon Campus
       ko: 국립부경대학교 대연캠퍼스
     address:
-      en: { street: "(48513) 45 Yongso-ro, Nam-gu, Busan", city: "Busan" }
-      ko: { street: "(48513) 부산광역시 남구 용소로 45", city: "부산광역시" }
+      en:
+        street: (48513) 45 Yongso-ro, Nam-gu, Busan
+        city: Busan
+      ko:
+        street: (48513) 부산광역시 남구 용소로 45
+        city: 부산광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 742
@@ -42,8 +50,12 @@ locations:
       en: Pukyong National University, Yongdang Campus
       ko: 국립부경대학교 용당캠퍼스
     address:
-      en: { street: "(48547) 365 Sinseon-ro, Nam-gu, Busan", city: "Busan" }
-      ko: { street: "(48547) 부산광역시 남구 신선로 365", city: "부산광역시" }
+      en:
+        street: (48547) 365 Sinseon-ro, Nam-gu, Busan
+        city: Busan
+      ko:
+        street: (48547) 부산광역시 남구 신선로 365
+        city: 부산광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 161

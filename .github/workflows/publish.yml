@@ -20,7 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 0          # ts 를 커밋 시각에서 뽑으므로 전체 이력이 필요하다
+          # ts 를 커밋 시각에서 뽑으므로 전체 이력이 필요하다
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

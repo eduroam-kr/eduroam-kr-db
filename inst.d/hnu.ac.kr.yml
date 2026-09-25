@@ -10,10 +10,14 @@ realms:
 name:
   en: Hannam University
   ko: 한남대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://wifi.hannam.ac.kr/"
 
@@ -29,8 +33,12 @@ locations:
       en: Hannam University, Daedeok Campus
       ko: 한남대학교 오정동캠퍼스
     address:
-      en: { street: "(34430) 70 Hannam-ro, Daedeok-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(34430) 대전광역시 대덕구 한남로 70", city: "대전광역시" }
+      en:
+        street: (34430) 70 Hannam-ro, Daedeok-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34430) 대전광역시 대덕구 한남로 70
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES
   - id: hnu.ac.kr.02
@@ -41,7 +49,11 @@ locations:
       en: Hannam University, Daedeok Valley Campus
       ko: 한남대학교 대덕밸리캠퍼스
     address:
-      en: { street: "(34054) 125 Munji-ro, Yuseong-gu, Daejeon", city: "Daejeon" }
-      ko: { street: "(34054) 대전광역시 유성구 문지로 125", city: "대전광역시" }
+      en:
+        street: (34054) 125 Munji-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34054) 대전광역시 유성구 문지로 125
+        city: 대전광역시
     ssid: eduroam
     enc_level: WPA2/AES

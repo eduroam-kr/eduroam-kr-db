@@ -10,10 +10,14 @@ realms:
 name:
   en: Kyungnam University
   ko: 경남대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://library.kyungnam.ac.kr/webcontent/info/52"
 
@@ -29,8 +33,12 @@ locations:
       en: Kyungnam University Wolyeong Campus
       ko: 경남대학교 월영캠퍼스
     address:
-      en: { street: "(51767) 7 Kyungnamdaehak-ro, Masanhappo-gu, Changwon-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
-      ko: { street: "(51767) 경상남도 창원시 마산합포구 경남대학로 7", city: "경상남도" }
+      en:
+        street: (51767) 7 Kyungnamdaehak-ro, Masanhappo-gu, Changwon-si, Gyeongsangnam-do
+        city: Gyeongsangnam-do
+      ko:
+        street: (51767) 경상남도 창원시 마산합포구 경남대학로 7
+        city: 경상남도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 569

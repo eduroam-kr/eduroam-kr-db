@@ -10,10 +10,14 @@ realms:
 name:
   en: Kumoh National Institute of Technology
   ko: 금오공과대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://cic.kumoh.ac.kr/cic/sub020202.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Kumoh National Institute of Technology Yangho Campus
       ko: 국립금오공과대학교 양호캠퍼스
     address:
-      en: { street: "(39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
-      ko: { street: "(39177) 경상북도 구미시 대학로 61", city: "경상북도" }
+      en:
+        street: (39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do
+        city: Gyeongsangbuk-do
+      ko:
+        street: (39177) 경상북도 구미시 대학로 61
+        city: 경상북도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 315
@@ -42,7 +50,11 @@ locations:
       en: Kumoh National Institute of Technology, Sinpyeong Campus
       ko: 국립금오공과대학교 신평동캠퍼스
     address:
-      en: { street: "(39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
-      ko: { street: "(39177) 경상북도 구미시 대학로 61", city: "경상북도" }
+      en:
+        street: (39177) 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do
+        city: Gyeongsangbuk-do
+      ko:
+        street: (39177) 경상북도 구미시 대학로 61
+        city: 경상북도
     ssid: eduroam
     enc_level: WPA2/AES

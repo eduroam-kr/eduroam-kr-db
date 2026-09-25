@@ -10,10 +10,14 @@ realms:
 name:
   en: THE UNIVERSITY OF SUWON
   ko: 수원대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://ici.suwon.ac.kr/index.html?menuno=340"
 
@@ -29,8 +33,12 @@ locations:
       en: The University of Suwon, Hwaseong Campus
       ko: 수원대학교 화성캠퍼스
     address:
-      en: { street: "(18323) 17 Wauan-gil, Bongdam-eup, Hwaseong-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(18323) 경기도 화성시 봉담읍 와우안길 17", city: "경기도" }
+      en:
+        street: (18323) 17 Wauan-gil, Bongdam-eup, Hwaseong-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (18323) 경기도 화성시 봉담읍 와우안길 17
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 536

@@ -10,10 +10,14 @@ realms:
 name:
   en: Gachon University
   ko: 가천대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.gachon.ac.kr/ist/2990/subview.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Gachon University Global Campus
       ko: 가천대학교 글로벌캠퍼스
     address:
-      en: { street: "(13120) 1342 Seongnamdaero, Sujeong-gu, Seongnam-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(13120) 경기도 성남시 수정구 성남대로 1342", city: "경기도" }
+      en:
+        street: (13120) 1342 Seongnamdaero, Sujeong-gu, Seongnam-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (13120) 경기도 성남시 수정구 성남대로 1342
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2360
@@ -42,8 +50,12 @@ locations:
       en: Gachon University Medical Campus
       ko: 가천대학교 메디컬캠퍼스
     address:
-      en: { street: "(21936) 191 Hambangmoe-ro, Yeonsu-gu, Incheon", city: "Incheon" }
-      ko: { street: "(21936) 인천광역시 연수구 함박뫼로 191", city: "인천광역시" }
+      en:
+        street: (21936) 191 Hambangmoe-ro, Yeonsu-gu, Incheon
+        city: Incheon
+      ko:
+        street: (21936) 인천광역시 연수구 함박뫼로 191
+        city: 인천광역시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 110

@@ -10,10 +10,14 @@ realms:
 name:
   en: Jeonbuk National University
   ko: 전북대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://its.jbnu.ac.kr/its/9226/subview.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Jeonbuk National University, Jeonju Campus
       ko: 전북대학교 전주캠퍼스
     address:
-      en: { street: "(54896) 567 Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do", city: "Jeollabuk-do" }
-      ko: { street: "(54896) 전라북도 전주시 덕진구 백제대로 567", city: "전라북도" }
+      en:
+        street: (54896) 567 Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do
+        city: Jeollabuk-do
+      ko:
+        street: (54896) 전라북도 전주시 덕진구 백제대로 567
+        city: 전라북도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: jbnu.ac.kr.02
@@ -41,7 +49,11 @@ locations:
       en: Jeonbuk National University, Iksan Specialized Campus
       ko: 전북대학교 익산캠퍼스(특성화)
     address:
-      en: { street: "(54596) 79 Gobong-ro, Iksan-si, Jeollabuk-do", city: "Jeollabuk-do" }
-      ko: { street: "(54596) 전라북도 익산시 고봉로 79", city: "전라북도" }
+      en:
+        street: (54596) 79 Gobong-ro, Iksan-si, Jeollabuk-do
+        city: Jeollabuk-do
+      ko:
+        street: (54596) 전라북도 익산시 고봉로 79
+        city: 전라북도
     ssid: eduroam
     enc_level: WPA2/AES

@@ -10,10 +10,14 @@ realms:
 name:
   en: Chung-Ang University
   ko: 중앙대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01"
 
@@ -29,8 +33,12 @@ locations:
       en: Chung-Ang University, Da Vinci Campus
       ko: 중앙대학교 다빈치캠퍼스
     address:
-      en: { street: "(17546) 4726 Seodong-daero, Daedeok-myeon, Anseong-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(17546) 경기도 안성시 대덕면 서동대로 4726", city: "경기도" }
+      en:
+        street: (17546) 4726 Seodong-daero, Daedeok-myeon, Anseong-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (17546) 경기도 안성시 대덕면 서동대로 4726
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1026
@@ -42,8 +50,12 @@ locations:
       en: Chung-Ang University, Seoul Campus
       ko: 중앙대학교 서울캠퍼스
     address:
-      en: { street: "(06974) 84 Heukseok-ro, Dongjak-gu, Seoul", city: "Seoul" }
-      ko: { street: "(06974) 서울특별시 동작구 흑석로 84", city: "서울특별시" }
+      en:
+        street: (06974) 84 Heukseok-ro, Dongjak-gu, Seoul
+        city: Seoul
+      ko:
+        street: (06974) 서울특별시 동작구 흑석로 84
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2177

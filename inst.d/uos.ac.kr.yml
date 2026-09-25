@@ -10,10 +10,14 @@ realms:
 name:
   en: University of Seoul
   ko: 서울시립대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&identified=anonymous&"
 
@@ -29,8 +33,12 @@ locations:
       en: University of Seoul
       ko: 서울시립대학교
     address:
-      en: { street: "(02504) 163 Seoulsiripdae-ro, Dongdaemun-gu, Seoul", city: "Seoul" }
-      ko: { street: "(02504) 서울특별시 동대문구 서울시립대로 163", city: "서울특별시" }
+      en:
+        street: (02504) 163 Seoulsiripdae-ro, Dongdaemun-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02504) 서울특별시 동대문구 서울시립대로 163
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1164

@@ -10,10 +10,14 @@ realms:
 name:
   en: Sungkyunkwan University
   ko: 성균관대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.skku.edu/skku/campus/IT_service/it_service11.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Sungkyunkwan University, Humanities and Social Sciences Campus
       ko: 성균관대학교 인문사회과학캠퍼스
     address:
-      en: { street: "(03063) 25-2 Sungkyunkwan-ro, Jongno-gu, Seoul", city: "Seoul" }
-      ko: { street: "(03063) 서울특별시 종로구 성균관로 25-2", city: "서울특별시" }
+      en:
+        street: (03063) 25-2 Sungkyunkwan-ro, Jongno-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03063) 서울특별시 종로구 성균관로 25-2
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1053
@@ -42,8 +50,12 @@ locations:
       en: Sungkyunkwan University, Natural Sciences Campus
       ko: 성균관대학교 자연과학캠퍼스
     address:
-      en: { street: "(16419) 2066 Seobu-ro, Jangan-gu, Suwon-si, Gyeonggi-do", city: "Gyeonggi-do" }
-      ko: { street: "(16419) 경기도 수원시 장안구 서부로 2066", city: "경기도" }
+      en:
+        street: (16419) 2066 Seobu-ro, Jangan-gu, Suwon-si, Gyeonggi-do
+        city: Gyeonggi-do
+      ko:
+        street: (16419) 경기도 수원시 장안구 서부로 2066
+        city: 경기도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 1473

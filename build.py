@@ -22,10 +22,12 @@ try:
 except ImportError:
     sys.exit("PyYAML 이 필요하다:  pip install pyyaml")
 
-ROID = "kr01"       # 대한민국 eduroam 참여기관은 전부 이 값 (스펙 고정)
+# 대한민국 eduroam 참여기관은 ROid 가 전부 이 값이다 (스펙 고정)
+ROID = "kr01"
 COUNTRY = "kr"
 
-REQUIRED_LANG = "en"  # lang 속성이 있는 필드는 en 이 반드시 있어야 검증을 통과한다
+# lang 속성이 있는 필드는 en 이 반드시 있어야 검증을 통과한다
+REQUIRED_LANG = "en"
 
 
 class BuildError(Exception):
@@ -81,7 +83,8 @@ def contacts(parent, value, where):
         el(e, "privacy", c.get("privacy", 0))
 
 
-SERVER_TYPES = {0: "UDP", 1: "TLS", 2: "F-ticks"}   # 전송 방식이다. IdP/SP 구분이 아니다
+# 전송 방식이다. 기관 종류(IdP/SP)가 아니다 — 그건 institution 의 type 이다.
+SERVER_TYPES = {0: "UDP", 1: "TLS", 2: "F-ticks"}
 
 
 def servers(parent, value, where):

@@ -10,10 +10,14 @@ realms:
 name:
   en: Yeungnam University
   ko: 영남대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07"
 
@@ -29,7 +33,11 @@ locations:
       en: Yeungnam University, Gyeongsan Campus
       ko: 영남대학교 경산캠퍼스
     address:
-      en: { street: "(38541) 280 Daehak-ro, Gyeongsan-si, Gyeongsangbuk-do", city: "Gyeongsangbuk-do" }
-      ko: { street: "(38541) 경상북도 경산시 대학로 280", city: "경상북도" }
+      en:
+        street: (38541) 280 Daehak-ro, Gyeongsan-si, Gyeongsangbuk-do
+        city: Gyeongsangbuk-do
+      ko:
+        street: (38541) 경상북도 경산시 대학로 280
+        city: 경상북도
     ssid: eduroam
     enc_level: WPA2/AES

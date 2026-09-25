@@ -10,10 +10,14 @@ realms:
 name:
   en: Yonsei University
   ko: 연세대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://yis.yonsei.ac.kr/ics/service/eduroam.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Yonsei University, Sinchon Campus
       ko: 연세대학교 신촌캠퍼스
     address:
-      en: { street: "(03722) 50 Yonsei-ro, Seodaemun-gu, Seoul", city: "Seoul" }
-      ko: { street: "(03722) 서울특별시 서대문구 연세로 50", city: "서울특별시" }
+      en:
+        street: (03722) 50 Yonsei-ro, Seodaemun-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03722) 서울특별시 서대문구 연세로 50
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2800
@@ -42,8 +50,12 @@ locations:
       en: Yonsei University, Mirae Campus
       ko: 연세대학교 미래캠퍼스
     address:
-      en: { street: "(26493) 1 Yonseidae-gil, Wonju-si, Gangwon-do", city: "Gangwon-do" }
-      ko: { street: "(26493) 강원특별자치도 원주시 연세대길 1", city: "강원특별자치도" }
+      en:
+        street: (26493) 1 Yonseidae-gil, Wonju-si, Gangwon-do
+        city: Gangwon-do
+      ko:
+        street: (26493) 강원특별자치도 원주시 연세대길 1
+        city: 강원특별자치도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 490
@@ -55,7 +67,11 @@ locations:
       en: Yonsei University, International Campus
       ko: 연세대학교 국제캠퍼스
     address:
-      en: { street: "(21983) 85 Songdogwahak-ro, Yeonsu-gu, Incheon", city: "Incheon" }
-      ko: { street: "(21983) 인천광역시 연수구 송도과학로 85", city: "인천광역시" }
+      en:
+        street: (21983) 85 Songdogwahak-ro, Yeonsu-gu, Incheon
+        city: Incheon
+      ko:
+        street: (21983) 인천광역시 연수구 송도과학로 85
+        city: 인천광역시
     ssid: eduroam
     enc_level: WPA2/AES

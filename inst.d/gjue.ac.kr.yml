@@ -10,10 +10,14 @@ realms:
 name:
   en: Gongju National University of Education
   ko: 공주교육대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.gjue.ac.kr/kor/contents/68"
 
@@ -29,8 +33,12 @@ locations:
       en: Gongju National University of Education
       ko: 국립공주교육대학교
     address:
-      en: { street: "(32553) 27 Ungjin-ro, Gongju-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(32553) 충청남도 공주시 웅진로 27", city: "충청남도" }
+      en:
+        street: (32553) 27 Ungjin-ro, Gongju-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (32553) 충청남도 공주시 웅진로 27
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 324

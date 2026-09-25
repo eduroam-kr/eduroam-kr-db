@@ -10,10 +10,14 @@ realms:
 name:
   en: KONKUK University Glocal Campus
   ko: 건국대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Konkuk University Seoul Campus
       ko: 건국대학교 서울캠퍼스
     address:
-      en: { street: "(05029) 120 Neungdong-ro, Gwangjin-gu, Seoul", city: "Seoul" }
-      ko: { street: "(05029) 서울특별시 광진구 능동로 120", city: "서울특별시" }
+      en:
+        street: (05029) 120 Neungdong-ro, Gwangjin-gu, Seoul
+        city: Seoul
+      ko:
+        street: (05029) 서울특별시 광진구 능동로 120
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 2307
@@ -42,8 +50,12 @@ locations:
       en: Konkuk University Glocal Campus
       ko: 건국대학교 글로컬캠퍼스
     address:
-      en: { street: "(27478) 268 Chungwon-daero, Chungju-si, Chungcheongbuk-do", city: "Chungcheongbuk-do" }
-      ko: { street: "(27478) 충청북도 충주시 충원대로 268", city: "충청북도" }
+      en:
+        street: (27478) 268 Chungwon-daero, Chungju-si, Chungcheongbuk-do
+        city: Chungcheongbuk-do
+      ko:
+        street: (27478) 충청북도 충주시 충원대로 268
+        city: 충청북도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 800

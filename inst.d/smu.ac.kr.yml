@@ -10,10 +10,14 @@ realms:
 name:
   en: Sangmyung University
   ko: 상명대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.smu.ac.kr/kor/life/eduroam.do"
 
@@ -29,7 +33,11 @@ locations:
       en: Sangmyung University, Seoul Campus
       ko: 상명대학교 서울캠퍼스
     address:
-      en: { street: "(03016) 20 Hongjimun 2-gil, Jongno-gu, Seoul", city: "Seoul" }
-      ko: { street: "(03016) 서울특별시 종로구 홍지문2길 20", city: "서울특별시" }
+      en:
+        street: (03016) 20 Hongjimun 2-gil, Jongno-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03016) 서울특별시 종로구 홍지문2길 20
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES

@@ -10,10 +10,14 @@ realms:
 name:
   en: Changwon National University
   ko: 창원대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&nttSn=782638"
 
@@ -29,7 +33,11 @@ locations:
       en: Changwon National University
       ko: 국립창원대학교
     address:
-      en: { street: "(51140) 20 Changwondaehak-ro, Uichang-gu, Changwon-si, Gyeongsangnam-do", city: "Gyeongsangnam-do" }
-      ko: { street: "(51140) 경상남도 창원시 의창구 창원대학로 20", city: "경상남도" }
+      en:
+        street: (51140) 20 Changwondaehak-ro, Uichang-gu, Changwon-si, Gyeongsangnam-do
+        city: Gyeongsangnam-do
+      ko:
+        street: (51140) 경상남도 창원시 의창구 창원대학로 20
+        city: 경상남도
     ssid: eduroam
     enc_level: WPA2/AES

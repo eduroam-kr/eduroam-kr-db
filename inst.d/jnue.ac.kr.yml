@@ -10,10 +10,14 @@ realms:
 name:
   en: Jeonju National University of Education
   ko: 전주교육대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000"
 
@@ -29,8 +33,12 @@ locations:
       en: Jeonju National University of Education
       ko: 전주교육대학교
     address:
-      en: { street: "(55101) 50 Seohak-ro, Wansan-gu, Jeonju-si, Jeollabuk-do", city: "Jeollabuk-do" }
-      ko: { street: "(55101) 전라북도 전주시 완산구 서학로 50", city: "전라북도" }
+      en:
+        street: (55101) 50 Seohak-ro, Wansan-gu, Jeonju-si, Jeollabuk-do
+        city: Jeollabuk-do
+      ko:
+        street: (55101) 전라북도 전주시 완산구 서학로 50
+        city: 전라북도
     ssid: eduroam
     enc_level: WPA2/AES
     ap_no: 249

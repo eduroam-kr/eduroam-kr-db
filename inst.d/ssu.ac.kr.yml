@@ -10,10 +10,14 @@ realms:
 name:
   en: Soongsil University
   ko: 숭실대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/"
 
@@ -29,7 +33,11 @@ locations:
       en: Soongsil University, Sangdo Campus
       ko: 숭실대학교 상도캠퍼스
     address:
-      en: { street: "(06978) 369 Sangdo-ro, Dongjak-gu, Seoul", city: "Seoul" }
-      ko: { street: "(06978) 서울특별시 동작구 상도로 369", city: "서울특별시" }
+      en:
+        street: (06978) 369 Sangdo-ro, Dongjak-gu, Seoul
+        city: Seoul
+      ko:
+        street: (06978) 서울특별시 동작구 상도로 369
+        city: 서울특별시
     ssid: eduroam
     enc_level: WPA2/AES

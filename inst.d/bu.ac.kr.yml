@@ -10,10 +10,14 @@ realms:
 name:
   en: Baekseok University
   ko: 백석대학교
-# TODO: contacts 는 스펙상 필수인데 원본에 없었다. 기관 담당 연락처를 넣어야
-#       institution.xml 이 빌드된다.
+# contacts 는 스펙상 필수인데 원본 XML 에 없었다.
+# 아래 주석을 풀고 기관 담당 연락처를 넣어야 institution.xml 이 빌드된다.
 # contacts:
-#   - { name: "", email: "", phone: "", type: 1, privacy: 1 }
+#   - name:
+#     email:
+#     phone:
+#     type: 1
+#     privacy: 1
 info_url:
   ko: "http://www.bu.ac.kr/web/3739/subview.do"
 
@@ -29,8 +33,12 @@ locations:
       en: Baekseok University
       ko: 백석대학교
     address:
-      en: { street: "(31065) 76 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(31065) 충청남도 천안시 동남구 문암로 76", city: "충청남도" }
+      en:
+        street: (31065) 76 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (31065) 충청남도 천안시 동남구 문암로 76
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES
   - id: bu.ac.kr.02
@@ -41,7 +49,11 @@ locations:
       en: Baekseok Culture University
       ko: 백석문화대학교
     address:
-      en: { street: "(31001) 58 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do", city: "Chungcheongnam-do" }
-      ko: { street: "(31001) 충청남도 천안시 동남구 문암로 58", city: "충청남도" }
+      en:
+        street: (31001) 58 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Chungcheongnam-do
+      ko:
+        street: (31001) 충청남도 천안시 동남구 문암로 58
+        city: 충청남도
     ssid: eduroam
     enc_level: WPA2/AES
