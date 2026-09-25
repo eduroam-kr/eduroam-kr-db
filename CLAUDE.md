@@ -101,18 +101,25 @@ YAML 은 XML 을 그대로 옮긴 것이 아니다. 같은 값을 두 번 쓰게
 
 ## 등록 기관과 RADIUS 서버의 관계
 
-대한민국 eduroam 은 두 층으로 나뉜다.
+NRO 서버는 `134.75.30.51` (`ssh -J ns root@...`), 설정은 `/opt/kr-nro/freeradius/` 다. 기관이 실제로 인증되는지 보려면 이 구조를 알아야 한다.
 
-- **KREN RO** — 대부분의 `.ac.kr` 대학이 여기 붙는다. NRO 서버에는 realm conf 가 없는 것이 정상이다.
-- **NRO** — 연구소(`.re.kr`)는 전부 여기 직접 붙고, `.ac.kr` 중에도 KAIST·GIST·POSTECH·DGIST 처럼 직결인 곳이 있다. 서버는 `134.75.30.51` (`ssh -J ns root@...`), realm conf 는 `/opt/kr-nro/freeradius/conf.d/<realm>.conf` 다.
+- **`.ac.kr` 은 전부 KREN RO 로 넘어간다.** `kren_ro.conf` 에 catch-all 정규식 realm `~^(.*\.)*ac\.kr$` 이 있어서 개별 conf 없이 모두 프록시된다. 즉 **`.ac.kr` 은 conf.d 에 없는 게 정상이다** — 없다고 빼면 100여 곳을 잘못 지운다.
+- **그 밖의 `.kr` 은 기본이 거부다.** `~^(.*\.)*kr$` 이 `auth-reject` 로 잡혀 있다. 그래서 비(非) `.ac.kr` 기관은 `conf.d/` 에 자기 realm 이나 client 가 있어야만 동작한다.
+- **`conf.disabled/` 는 읽히지 않는다.** `$INCLUDE conf.d/` 범위 밖이다. 여기 있으면 꺼진 것이다.
 
-따라서 **"NRO 서버에 realm 이 없다" 는 사실만으로 기관을 뺄 수 없다.** KREN RO 산하면 없는 게 맞다. 뺄 수 있는 것은 **KREN RO 산하도 아니고 NRO 서버에도 없는** 경우뿐이다 — 인증이 실제로 동작하지 않는 상태다.
+### 서버에 있는지 확인할 때 파일명만 보지 않는다
 
-## `inst.disabled/`
+**SP-only 기관은 realm 이 없고 `client` 블록만 있다. 그 블록이 다른 기관 파일 안에 들어 있을 수 있다.** 대전컨벤션센터(`dcckorea.or.kr`)가 실제로 `conf.d/dime.or.kr.conf` 안에 `client 2015_dcckorea_or_kr_13` 으로 들어 있다 — 파일명으로 찾으면 "없음"으로 잘못 판단한다. 한 번 그렇게 틀렸다.
 
-제출 XML 에서 빼되 기록은 남길 기관을 둔다. `build.py` 는 `inst.d/` 만 읽으므로 여기 있는 파일은 빌드에 들어가지 않는다.
+확인은 내용까지 본다.
 
-파일 머리에 **왜 껐는지와 언제 다시 켤 수 있는지**를 적는다. 조건이 충족되면 `inst.d/` 로 옮기고 머리말을 지운다. 지우지 말고 옮기는 이유는, 기관이 빠진 사실 자체가 나중에 설명이 필요한 정보이기 때문이다.
+```sh
+ssh -J ns root@134.75.30.51 \
+  'cd /opt/kr-nro/freeradius && grep -ohE "^realm[[:space:]]+[^ {]+" conf.d/*.conf;
+   grep -rhoE "^client[[:space:]]+[0-9]{4}_[A-Za-z0-9_]+" conf.d/*.conf'
+```
+
+`conf.d/*.conf` 에는 RADIUS 공유 비밀키가 평문으로 있다. 필요한 필드만 뽑아 쓰고 키는 어디에도 남기지 않는다.
 
 ## 기관 파일
 

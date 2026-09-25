@@ -1,10 +1,14 @@
 # ─────────────────────────────────────────────────────────────────
 # 비활성 (2026-09-25)
 #
-# KREN RO 산하가 아닌데 NRO RADIUS 서버(/opt/kr-nro/freeradius/conf.d)에
-# realm conf 가 없다. 인증이 실제로 동작하지 않는 상태라 제출 XML 에서 뺀다.
+# teincc.kr 은 KREN RO 가 직접 운영하던 realm 인데, NRO 서버에서 꺼져 있다.
+#   /opt/kr-nro/freeradius/conf.d/          → 없음
+#   /opt/kr-nro/freeradius/conf.disabled/   → teincc.kr.empty.conf
+#                                              kren-ro-realms.conf
+# 서버 쪽 사유: 2024-09 ~ 2026-09 전 기간 요청 1건, 그마저 실패. 사실상 미사용.
 #
-# 서버에 realm 이 올라가면 이 파일을 inst.d/ 로 옮기고 이 머리말을 지운다.
+# 인증이 동작하지 않으므로 제출 XML 에서 뺀다.
+# 서버에서 되살아나면 이 파일을 inst.d/ 로 옮기고 이 머리말을 지운다.
 # ─────────────────────────────────────────────────────────────────
 
 # (재)테인협력센터
