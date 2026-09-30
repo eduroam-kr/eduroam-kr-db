@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: kyungnam.ac.kr
+type: IdP+SP
+realms:
+  - kyungnam.ac.kr
+name:
+  en: Kyungnam University
+  ko: 경남대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://library.kyungnam.ac.kr/webcontent/info/52"
+
+locations:
+  - id: kyungnam.ac.kr.01
+    coordinates:
+      latitude: 35.1843204
+      longitude: 128.5550972
+    name:
+      en: Kyungnam University Wolyeong Campus
+      ko: 경남대학교 월영캠퍼스
+    address:
+      en:
+        street: (51767) 7 Kyungnamdaehak-ro, Masanhappo-gu, Changwon-si, Gyeongsangnam-do
+        city: Changwon-si
+      ko:
+        street: (51767) 경상남도 창원시 마산합포구 경남대학로 7
+        city: 창원시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 569
