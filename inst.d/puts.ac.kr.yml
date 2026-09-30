@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: puts.ac.kr
+type: IdP+SP
+realms:
+  - puts.ac.kr
+name:
+  en: Presbyterian University and Theological Seminary
+  ko: 장로회신학대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp"
+
+locations:
+  - id: puts.ac.kr.01
+    coordinates:
+      latitude: 37.5502658
+      longitude: 127.1031345
+    name:
+      en: Presbyterian University and Theological Seminary
+      ko: 장로회신학대학교
+    address:
+      en:
+        street: (04965) 25-1 Gwangjang-ro 5-gil, Gwangjin-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04965) 서울특별시 광진구 광장로5길 25-1
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
