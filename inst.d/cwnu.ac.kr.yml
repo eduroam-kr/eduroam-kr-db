@@ -1,0 +1,39 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2019
+
+instid: cwnu.ac.kr
+type: IdP+SP
+realms:
+  - cwnu.ac.kr
+name:
+  en: Changwon National University
+  ko: 창원대학교
+inst_type: 대학
+
+contacts:
+  - name: 국립창원대 정보전산원
+    phone: "055-213-2518"
+
+info_url:
+  ko: "https://www.changwon.ac.kr/ccenter/cm/cntnts/cntntsView.do?mi=13101&cntntsId=4896"
+
+locations:
+  - id: cwnu.ac.kr.01
+    coordinates:
+      latitude: 35.2459592
+      longitude: 128.6948485
+    name:
+      en: Changwon National University
+      ko: 국립창원대학교
+    address:
+      en:
+        street: (51140) 20 Changwondaehak-ro, Uichang-gu, Changwon-si, Gyeongsangnam-do
+        city: Changwon-si
+      ko:
+        street: (51140) 경상남도 창원시 의창구 창원대학로 20
+        city: 창원시
+    ssid: eduroam
+    enc_level: WPA2/AES
