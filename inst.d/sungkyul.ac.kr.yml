@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2018
+
+instid: sungkyul.ac.kr
+type: IdP+SP
+realms:
+  - sungkyul.ac.kr
+name:
+  en: Sungkyul University
+  ko: 성결대학교
+inst_type: 대학
+
+locations:
+  - id: sungkyul.ac.kr.01
+    coordinates:
+      latitude: 37.3798649
+      longitude: 126.9288086
+    name:
+      en: Sungkyul University
+      ko: 성결대학교
+    address:
+      en:
+        street: (14097) 53 Sungkyuldaehak-ro, Manan-gu, Anyang-si, Gyeonggi-do
+        city: Anyang-si
+      ko:
+        street: (14097) 경기도 안양시 만안구 성결대학로 53
+        city: 안양시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 236
