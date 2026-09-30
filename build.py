@@ -377,7 +377,9 @@ def write_site_json(here, files, out):
             "campus": kr.get("campus") or [],
             "info_url": (d.get("info_url") or {}).get("ko") or (d.get("info_url") or {}).get("en"),
             "logo": logos.get(realm),
-            "locations": len(locs),
+            # 캠퍼스를 적지 않은 기관도 한 곳에서는 서비스한다. 0 으로 두면
+            # 사이트 합계에서 그 기관이 통째로 빠진다.
+            "locations": len(locs) or 1,
         })
         for loc in locs:
             c = loc.get("coordinates") or {}
@@ -399,7 +401,9 @@ def write_site_json(here, files, out):
     d = out / "site"
     d.mkdir(parents=True, exist_ok=True)
     (d / "institutions.json").write_text(json.dumps(
-        {"built": built, "count": len(insts), "institutions": insts},
+        {"built": built, "count": len(insts),
+         "locations": sum(i["locations"] for i in insts),
+         "institutions": insts},
         ensure_ascii=False, indent=1), encoding="utf-8")
     (d / "locations.geojson").write_text(json.dumps(
         {"type": "FeatureCollection", "built": built, "features": feats},

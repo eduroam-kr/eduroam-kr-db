@@ -48,6 +48,8 @@ dist/site/institutions.json    NRO 사이트가 쓴다. 필요하면 모양을 �
 dist/site/locations.geojson    지도용
 ```
 
+`institutions.json` 의 `locations` 는 캠퍼스 수다. `locations` 를 적지 않은 기관도 한 곳에서는 서비스하므로 최소 1 로 센다. 지도용 `locations.geojson` 은 좌표가 있는 것만 담으니 둘의 합이 다를 수 있다 — 화면의 캠퍼스 수는 `institutions.json` 쪽을 쓴다.
+
 `general/` 은 GÉANT harvester 가 보는 자리라 경로도 스키마도 고정이다. 사이트가 쓰기에는 XML 이 무거워서 `site/` 를 따로 낸다. 둘을 한 파일로 합치지 않는다 — 사이트 편의로 제출 형식을 건드리게 된다.
 
 
