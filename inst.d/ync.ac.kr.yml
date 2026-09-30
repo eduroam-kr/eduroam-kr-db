@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: ync.ac.kr
+type: IdP+SP
+realms:
+  - ync.ac.kr
+name:
+  en: Yeungnam University College
+  ko: 영남이공대학교
+inst_type: 대학
+
+locations:
+  - id: ync.ac.kr.01
+    coordinates:
+      latitude: 35.8457916
+      longitude: 128.5857555
+    name:
+      en: Yeungnam University College
+      ko: 영남이공대학교
+    address:
+      en:
+        street: (42415) 170 Hyeonchung-ro, Nam-gu, Daegu
+        city: Daegu
+      ko:
+        street: (42415) 대구광역시 남구 현충로 170
+        city: 대구광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
