@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: ghu.ac.kr
+type: IdP+SP
+realms:
+  - ghu.ac.kr
+name:
+  en: Gwangju Health University
+  ko: 광주보건대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp"
+
+locations:
+  - id: ghu.ac.kr.01
+    coordinates:
+      latitude: 35.1919706
+      longitude: 126.8446634
+    name:
+      en: Gwangju Health University
+      ko: 광주보건대학교
+    address:
+      en:
+        street: (62287) 73 Bukmun-daero 419beon-gil, Gwangsan-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (62287) 광주광역시 광산구 북문대로419번길 73
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1
