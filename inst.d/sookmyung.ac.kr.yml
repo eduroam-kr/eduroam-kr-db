@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2016
+
+instid: sookmyung.ac.kr
+type: IdP+SP
+realms:
+  - sookmyung.ac.kr
+name:
+  en: Sookmyung Women's University
+  ko: 숙명여자대학교
+inst_type: 대학
+
+locations:
+  - id: sookmyung.ac.kr.01
+    coordinates:
+      latitude: 37.5449609
+      longitude: 126.9650253
+    name:
+      en: Sookmyung Women's University, Cheongpa Campus
+      ko: 숙명여자대학교 청파캠퍼스
+    address:
+      en:
+        street: (04310) 100 Cheongpa-ro 47-gil, Yongsan-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04310) 서울특별시 용산구 청파로47길 100
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
