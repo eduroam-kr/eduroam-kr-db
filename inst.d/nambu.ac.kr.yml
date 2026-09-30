@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: nambu.ac.kr
+type: IdP+SP
+realms:
+  - nambu.ac.kr
+name:
+  en: Nambu University
+  ko: 남부대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001"
+
+locations:
+  - id: nambu.ac.kr.01
+    coordinates:
+      latitude: 35.2070609
+      longitude: 126.8422582
+    name:
+      en: Nambu University
+      ko: 남부대학교
+    address:
+      en:
+        street: (62271) 23 Cheomdanjungang-ro, Gwangsan-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (62271) 광주광역시 광산구 첨단중앙로 23
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 111
