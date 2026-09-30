@@ -1,0 +1,33 @@
+# bin/check-kren.py 가 보고에서 뺄 것.
+#
+# 여기 적는 기준은 "확인했고, 앞으로도 계속 다를 것" 이다. 아직 처리하지 않은
+# 차이는 적지 않는다 — 적는 순간 잊어버린다.
+
+# realm 집합 차이를 무시할 realm
+realms:
+  # NRO 가 직접 realm 을 잡는 기관들. KREN 의 institution.xml 은 대학 RO 가
+  # 맡는 기관만 담아서 이쪽이 구조적으로 빠진다. 저쪽이 고칠 성질이 아니다.
+  - gist.ac.kr
+  - kaist.ac.kr
+  - seoul.kaist.ac.kr
+  - kigam.re.kr
+  - kopri.re.kr
+  - ibs.re.kr
+  - kias.re.kr
+  - kisti.re.kr
+  - kriss.re.kr
+  - nims.re.kr
+
+  # 프로브해도 의미가 없는 realm. teincc.org 는 .kr 이 아니라 proxy.conf 의
+  # DEFAULT 로 빠져 ETLR1 이 거절하고, kren.kr 은 kren_ro.conf 의 "~.kr$" 에
+  # 걸려 로컬에서 거절된다. 둘 다 기관이 답하는 것이 아니다.
+  - teincc.org
+  - kren.kr
+
+  # 2026-03-01 강릉원주대가 강원대로 통합됐다. 계정이 아직 살아 있어
+  # kangwon.ac.kr 의 두 번째 realm 으로 두는데, KREN 쪽은 기관을 지우면서
+  # realm 까지 같이 뺐다. 계정을 옮기면 우리도 지운다.
+  - gwnu.ac.kr
+
+# 기관명이 다른 것을 무시할 realm
+names: []
