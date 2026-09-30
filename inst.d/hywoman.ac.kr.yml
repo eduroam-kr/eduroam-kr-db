@@ -1,0 +1,31 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: hywoman.ac.kr
+type: IdP+SP
+realms:
+  - hywoman.ac.kr
+name:
+  en: Hanyang Women's University
+  ko: 한양여자대학교
+inst_type: 대학
+
+locations:
+  - id: hywoman.ac.kr.01
+    coordinates:
+      latitude: 37.5584964
+      longitude: 127.0496305
+    name:
+      en: Hanyang Women's University
+      ko: 한양여자대학교
+    address:
+      en:
+        street: (04763) 200 Salgoji-gil, Seongdong-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04763) 서울특별시 성동구 살곶이길 200
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
