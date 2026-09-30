@@ -1,0 +1,53 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2023
+  campus:
+    - 본교
+    - 운정
+
+instid: sungshin.ac.kr
+type: IdP+SP
+realms:
+  - sungshin.ac.kr
+name:
+  en: Sungshin Women's University
+  ko: 성신여자대학교
+inst_type: 대학
+
+locations:
+  - id: sungshin.ac.kr.01
+    coordinates:
+      latitude: 37.5916525
+      longitude: 127.0221456
+    name:
+      en: Sungshin Women's University, Sujeong Campus
+      ko: 성신여자대학교 수정캠퍼스
+    address:
+      en:
+        street: (02844) 2 Bomun-ro 34da-gil, Seongbuk-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02844) 서울특별시 성북구 보문로34다길 2
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 494
+  - id: sungshin.ac.kr.02
+    coordinates:
+      latitude: 37.632038
+      longitude: 127.0271242
+    name:
+      en: Sungshin Women's University, Unjeong Green Campus
+      ko: 성신여자대학교 운정그린캠퍼스
+    address:
+      en:
+        street: (01133) 55 Samyang-ro 144-gil, Gangbuk-gu, Seoul
+        city: Seoul
+      ko:
+        street: (01133) 서울특별시 강북구 삼양로 144길 55
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 217
