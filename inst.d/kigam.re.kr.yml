@@ -1,0 +1,35 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2021
+
+instid: kigam.re.kr
+type: IdP+SP
+realms:
+  - kigam.re.kr
+name:
+  en: Korea Institute of Geoscience and Mineral Resources
+  ko: 한국지질자원연구원
+inst_type: 연구
+
+contacts:
+  - name: 한국지질자원연구원 정보화실
+    phone: "042-868-3114"
+
+locations:
+  - id: kigam.re.kr.01
+    coordinates:
+      latitude: 36.3789572
+      longitude: 127.3605026
+    name:
+      en: Korea Institute of Geoscience and Mineral Resources
+      ko: 한국지질자원연구원
+    address:
+      en:
+        street: (34132) 124 Gwahak-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34132) 대전광역시 유성구 과학로 124
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
