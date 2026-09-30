@@ -1,0 +1,37 @@
+# 비활성 (2026-09-30)
+# 대학 RO(KREN) 밑에 있다가 빠졌다. KREN 의 institution.xml 과 eduroam.kr
+# 이용 가능 대학 목록에 없고, NRO 로그에 실사용 요청도 없다.
+# 다시 붙으면 inst.d/ 로 옮기고 이 머리말을 지운다.
+
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2022
+
+instid: yuhan.ac.kr
+type: IdP+SP
+realms:
+  - yuhan.ac.kr
+name:
+  en: Yuhan University
+  ko: 유한대학교
+inst_type: 대학
+
+locations:
+  - id: yuhan.ac.kr.01
+    coordinates:
+      latitude: 37.4881299
+      longitude: 126.8223663
+    name:
+      en: Yuhan University
+      ko: 유한대학교
+    address:
+      en:
+        street: (14780) 590 Gyeongin-ro, Bucheon-si, Gyeonggi-do
+        city: Bucheon-si
+      ko:
+        street: (14780) 경기도 부천시 경인로 590
+        city: 부천시
+    ssid: eduroam
+    enc_level: WPA2/AES
