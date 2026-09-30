@@ -1,0 +1,57 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2024
+
+instid: hongik.ac.kr
+type: IdP+SP
+realms:
+  - hongik.ac.kr
+name:
+  en: Hongik University
+  ko: 홍익대학교
+inst_type: 대학
+
+contacts:
+  - name: 홍익대학교 정보전산원
+    phone: "02-320-1405"
+
+info_url:
+  ko: "https://wifi.hongik.ac.kr"
+
+locations:
+  - id: hongik.ac.kr.01
+    coordinates:
+      latitude: 36.6197753
+      longitude: 127.288098
+    name:
+      en: Hongik University, Sejong Campus
+      ko: 홍익대학교 세종캠퍼스
+    address:
+      en:
+        street: (30016) 2639 Sejong-ro, Jochiwon-eup, Sejong
+        city: Sejong
+      ko:
+        street: (30016) 세종특별자치시 조치원읍 세종로 2639
+        city: 세종특별자치시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1291
+  - id: hongik.ac.kr.02
+    coordinates:
+      latitude: 37.5525246
+      longitude: 126.9250355
+    name:
+      en: Hongik University, Seoul Campus
+      ko: 홍익대학교 서울캠퍼스
+    address:
+      en:
+        street: (04066) 94 Wausan-ro, Mapo-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04066) 서울특별시 마포구 와우산로 94
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1291
