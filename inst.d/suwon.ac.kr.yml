@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2024
+
+instid: suwon.ac.kr
+type: IdP+SP
+realms:
+  - suwon.ac.kr
+name:
+  en: THE UNIVERSITY OF SUWON
+  ko: 수원대학교
+inst_type: 대학
+
+contacts:
+  - name: 수원대학교 정보전산원
+    phone: "031-220-2278"
+
+info_url:
+  ko: "https://ici.suwon.ac.kr/index.html?menuno=340"
+
+locations:
+  - id: suwon.ac.kr.01
+    coordinates:
+      latitude: 37.2101175
+      longitude: 126.9794804
+    name:
+      en: The University of Suwon, Hwaseong Campus
+      ko: 수원대학교 화성캠퍼스
+    address:
+      en:
+        street: (18323) 17 Wauan-gil, Bongdam-eup, Hwaseong-si, Gyeonggi-do
+        city: Hwaseong-si
+      ko:
+        street: (18323) 경기도 화성시 봉담읍 와우안길 17
+        city: 화성시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 536
