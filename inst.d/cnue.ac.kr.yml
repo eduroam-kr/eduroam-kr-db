@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2015
+
+instid: cnue.ac.kr
+type: IdP+SP
+realms:
+  - cnue.ac.kr
+name:
+  en: Chuncheon National University of Education
+  ko: 춘천교육대학교
+inst_type: 대학
+
+contacts:
+  - name: 춘천교육대학교 정보전산원 정보화지원팀
+    phone: "033-260-6329"
+
+info_url:
+  ko: "https://www.cnue.ac.kr/cnue/life/wireless-lan.do"
+
+locations:
+  - id: cnue.ac.kr.01
+    coordinates:
+      latitude: 37.8594161
+      longitude: 127.7486049
+    name:
+      en: Chuncheon National University of Education
+      ko: 춘천교육대학교
+    address:
+      en:
+        street: (24328) 126 Gongji-ro, Chuncheon-si, Gangwon-do
+        city: Chuncheon-si
+      ko:
+        street: (24328) 강원특별자치도 춘천시 공지로 126
+        city: 춘천시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 393
