@@ -1,0 +1,31 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: dima.ac.kr
+type: IdP+SP
+realms:
+  - dima.ac.kr
+name:
+  en: Dong-Ah Institute of Media and Arts
+  ko: 동아방송예술대학교
+inst_type: 대학
+
+locations:
+  - id: dima.ac.kr.01
+    coordinates:
+      latitude: 37.0591309
+      longitude: 127.3578353
+    name:
+      en: Dong-Ah Institute of Media and Arts
+      ko: 동아방송예술대학교
+    address:
+      en:
+        street: (17516) 47 Dongahyedae-gil, Samjuk-myeon, Anseong-si, Gyeonggi-do
+        city: Anseong-si
+      ko:
+        street: (17516) 경기도 안성시 삼죽면 동아예대길 47
+        city: 안성시
+    ssid: eduroam
+    enc_level: WPA2/AES
