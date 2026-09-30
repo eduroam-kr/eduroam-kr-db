@@ -1,0 +1,51 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+  campus:
+    - 본교
+    - 당진
+
+instid: sehan.ac.kr
+type: IdP+SP
+realms:
+  - sehan.ac.kr
+name:
+  en: Sehan University
+  ko: 세한대학교
+inst_type: 대학
+
+locations:
+  - id: sehan.ac.kr.01
+    coordinates:
+      latitude: 34.7453782
+      longitude: 126.4832658
+    name:
+      en: Sehan University, Yeongam Campus
+      ko: 세한대학교 영암캠퍼스
+    address:
+      en:
+        street: (58447) 1113 Noksaek-ro, Samho-eup, Yeongam-gun, Jeollanam-do
+        city: Yeongam-gun
+      ko:
+        street: (58447) 전라남도 영암군 삼호읍 녹색로 1113
+        city: 영암군
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: sehan.ac.kr.02
+    coordinates:
+      latitude: 36.8761556
+      longitude: 126.7806583
+    name:
+      en: Sehan University, Dangjin Campus
+      ko: 세한대학교 당진캠퍼스
+    address:
+      en:
+        street: (31746) 7065 Seohae-ro, Sinpyeong-myeon, Dangjin-si, Chungcheongnam-do
+        city: Dangjin-si
+      ko:
+        street: (31746) 충청남도 당진시 신평면 서해로 7065
+        city: 당진시
+    ssid: eduroam
+    enc_level: WPA2/AES
