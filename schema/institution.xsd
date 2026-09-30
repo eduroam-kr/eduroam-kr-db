@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="stage_type">
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="0">
+				<xs:annotation>
+					<xs:documentation>Preproduction/test</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Active</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="eduroam_institution_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="IdP">
+				<xs:annotation>
+					<xs:documentation>IdP</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SP">
+				<xs:annotation>
+					<xs:documentation>SP</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IdP+SP">
+				<xs:annotation>
+					<xs:documentation>IdP+SP</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="location_type">
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="0">
+				<xs:annotation>
+					<xs:documentation>Single Spot</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Area</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Mobile</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="location_availability">
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="0">
+				<xs:annotation>
+					<xs:documentation>No restriction</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Physical access restriction</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+        <xs:simpleType name="IN_Contact_type_type">
+                <xs:restriction base="xs:int">
+                        <xs:enumeration value="0">
+                                <xs:annotation>
+                                        <xs:documentation>Person</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="1">
+                                <xs:annotation>
+                                        <xs:documentation>Service/department</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType name="IN_Contact_privacy_type">
+                <xs:restriction base="xs:int">
+                        <xs:enumeration value="0">
+                                <xs:annotation>
+                                        <xs:documentation>Private</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="1">
+                                <xs:annotation>
+                                        <xs:documentation>Public</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                </xs:restriction>
+        </xs:simpleType>
+
+	<xs:simpleType name="server_type_tag-type">
+                <xs:restriction base="xs:int">
+                        <xs:enumeration value="0">
+                                <xs:annotation>
+                                        <xs:documentation>UDP</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="1">
+                                <xs:annotation>
+                                        <xs:documentation>TLS</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="2">
+                                <xs:annotation>
+                                        <xs:documentation>F-ticks</xs:documentation>
+                                </xs:annotation>
+                        </xs:enumeration>
+                </xs:restriction>
+        </xs:simpleType>
+
+	<xs:element name="schema_version" type="xs:int"/>
+	<xs:element name="institutions">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="institution">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="instid" type="xs:string"/>
+							<xs:element name="ROid" type="xs:string"/>
+							<xs:element name="type" type="eduroam_institution_type"/>
+							<xs:element name="stage" type="stage_type"/>
+							<xs:element name="inst_realm" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+
+
+							<xs:element name="server" minOccurs="0" maxOccurs="unbounded">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="server_name" type="xs:string"/>
+                                                                    <xs:element name="server_type" type="server_type_tag-type"/>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+
+							<xs:element name="inst_name" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="lang" type="xs:string" use="required"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="address" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="street">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" type="xs:string"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="city">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" type="xs:string"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="coordinates" type="xs:string" minOccurs="0"/>
+							<xs:element name="inst_type" type="xs:string" minOccurs="0"/>
+							<xs:element name="contact" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="email" type="xs:string"/>
+										<xs:element name="phone" type="xs:string"/>
+										<xs:element name="type" type="IN_Contact_type_type"/>
+										<xs:element name="privacy" type="IN_Contact_privacy_type"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="info_URL" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:anyURI">
+											<xs:attribute name="lang" type="xs:string"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="policy_URL" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:anyURI">
+											<xs:attribute name="lang" type="xs:string"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ts" type="xs:dateTime">
+								<xs:annotation>
+									<xs:documentation> Format: 2008-02-29T12:00:00 </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="location" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>						
+										<xs:element name="locationid" type="xs:string"/>
+										<xs:element name="coordinates" type="xs:string"/>
+										<xs:element name="stage" type="stage_type"/>
+							            		<xs:element name="type" type="location_type"/>
+										<xs:element name="loc_name" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" type="xs:string" use="required"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+		                                	                        <xs:element name="address" maxOccurs="unbounded" minOccurs="0">
+                		                        	                        <xs:complexType>
+                                		                	                        <xs:sequence>
+                                                		        	                        <xs:element name="street">
+                                                                			                        <xs:complexType>
+                                                                                			                <xs:simpleContent>
+                                                                                                			        <xs:extension base="xs:string">
+                                                                                                        	        		<xs:attribute name="lang" type="xs:string" use="required"/>
+		                                                                                                	        </xs:extension>
+	                		                                                                                </xs:simpleContent>
+        	                        		                                                        </xs:complexType>
+                	                                		                                </xs:element>
+                        	                                        		                <xs:element name="city">
+                                	                                                		        <xs:complexType>
+                                        	                                                        		<xs:simpleContent>
+		                                	                                                                        <xs:extension base="xs:string">
+                		                        	                                                                        <xs:attribute name="lang" type="xs:string" use="required"/>
+                                		                	                                                        </xs:extension>
+                                                		        	                                        </xs:simpleContent>
+                                                                			                        </xs:complexType>
+                                                                                			</xs:element>
+			                                                                        </xs:sequence>
+        	        		                                                </xs:complexType>
+                	                		                        </xs:element>
+										<xs:element name="location_type" type="xs:string" minOccurs="0"/>
+										<xs:element name="contact" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name" type="xs:string"/>
+													<xs:element name="email" type="xs:string"/>
+													<xs:element name="phone" type="xs:string"/>
+													<xs:element name="type" type="IN_Contact_type_type"/>
+													<xs:element name="privacy" type="IN_Contact_privacy_type"/>
+													
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="SSID" type="xs:string"/>
+										<xs:element name="operator_name" type="xs:string" minOccurs="0"/>
+										<xs:element name="enc_level" type="xs:string" minOccurs="0"/>
+										<xs:element name="AP_no" type="xs:int" minOccurs="0"/>
+										<xs:element name="wired_no" type="xs:int" minOccurs="0"/>
+										<xs:element name="tag" type="xs:string" minOccurs="0"/>
+										<xs:element name="availability" type="location_availability" default="0"  minOccurs="0"/>
+										<xs:element name="operation_hours" type="xs:string" minOccurs="0"/>
+										<xs:element name="info_URL" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:anyURI">
+														<xs:attribute name="lang" type="xs:string" use="required"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ts" type="xs:dateTime" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
