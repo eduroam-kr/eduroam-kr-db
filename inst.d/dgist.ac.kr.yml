@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: nro
+  univ_type: 특별법법인
+  year_joined: 2018
+
+instid: dgist.ac.kr
+type: IdP+SP
+realms:
+  - dgist.ac.kr
+name:
+  en: Daegu Gyeongbuk Institute of Science and Technology
+  ko: 대구경북과학기술원
+inst_type: 대학
+
+locations:
+  - id: dgist.ac.kr.01
+    coordinates:
+      latitude: 35.7056378
+      longitude: 128.4550107
+    name:
+      en: Daegu Gyeongbuk Institute of Science and Technology
+      ko: 대구경북과학기술원(DGIST)
+    address:
+      en:
+        street: (42988) 333 Techno jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu
+        city: Daegu
+      ko:
+        street: (42988) 대구광역시 달성군 현풍읍 테크노중앙대로 333
+        city: 대구광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 759
