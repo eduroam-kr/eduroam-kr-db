@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: kiu.ac.kr
+type: IdP+SP
+realms:
+  - kiu.ac.kr
+name:
+  en: Kyungil University
+  ko: 경일대학교
+inst_type: 대학
+
+contacts:
+  - name: 경일대학교 정보원 정보개발팀
+    phone: "053-600-4672"
+
+locations:
+  - id: kiu.ac.kr.01
+    coordinates:
+      latitude: 35.906797
+      longitude: 128.801115
+    name:
+      en: Kyungil University
+      ko: 경일대학교
+    address:
+      en:
+        street: (38428) 50 Gamasil-gil, Hayang-eup, Gyeongsan-si, Gyeongsangbuk-do
+        city: Gyeongsan-si
+      ko:
+        street: (38428) 경상북도 경산시 하양읍 가마실길 50
+        city: 경산시
+    ssid: eduroam
+    enc_level: WPA2/AES
