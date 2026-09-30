@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: koreatech.ac.kr
+type: IdP+SP
+realms:
+  - koreatech.ac.kr
+name:
+  en: Korea University of Technology and Education
+  ko: 한국기술교육대학교
+inst_type: 대학
+
+locations:
+  - id: koreatech.ac.kr.01
+    coordinates:
+      latitude: 36.765105
+      longitude: 127.2812004
+    name:
+      en: Korea University of Technology and Education
+      ko: 한국기술교육대학교
+    address:
+      en:
+        street: (31253) 1600 Chungjeol-ro, Byeongcheon-myeon, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Cheonan-si
+      ko:
+        street: (31253) 충청남도 천안시 동남구 병천면 충절로 1600
+        city: 천안시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1
