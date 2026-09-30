@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: kmcu.ac.kr
+type: IdP+SP
+realms:
+  - kmcu.ac.kr
+name:
+  en: Keimyung College University
+  ko: 계명문화대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi"
+
+locations:
+  - id: kmcu.ac.kr.01
+    coordinates:
+      latitude: 35.8590061
+      longitude: 128.4910262
+    name:
+      en: Keimyung College University
+      ko: 계명문화대학교
+    address:
+      en:
+        street: (42601) 675 Dalseo-daero, Dalseo-gu, Daegu
+        city: Daegu
+      ko:
+        street: (42601) 대구광역시 달서구 달서대로 675
+        city: 대구광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
