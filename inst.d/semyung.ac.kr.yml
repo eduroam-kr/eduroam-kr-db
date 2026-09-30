@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2026
+
+instid: semyung.ac.kr
+type: IdP+SP
+realms:
+  - semyung.ac.kr
+name:
+  en: Semyung University
+  ko: 세명대학교
+inst_type: 대학
+
+locations:
+  - id: semyung.ac.kr.01
+    coordinates:
+      latitude: 37.1783983
+      longitude: 128.1968878
+    name:
+      en: Semyung University
+      ko: 세명대학교
+    address:
+      en:
+        street: (27136) 65 Semyeong-ro, Jecheon-si, Chungcheongbuk-do
+        city: Jecheon-si
+      ko:
+        street: (27136) 충청북도 제천시 세명로 65
+        city: 제천시
+    ssid: eduroam
+    enc_level: WPA2/AES
