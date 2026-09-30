@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: seoil.ac.kr
+type: IdP+SP
+realms:
+  - seoil.ac.kr
+name:
+  en: Seoil University
+  ko: 서일대학교
+inst_type: 대학
+
+locations:
+  - id: seoil.ac.kr.01
+    coordinates:
+      latitude: 37.585831
+      longitude: 127.0976268
+    name:
+      en: Seoil University
+      ko: 서일대학교
+    address:
+      en:
+        street: (02192) 28 Yongmasan-ro 90-gil, Jungnang-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02192) 서울특별시 중랑구 용마산로90길 28
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
