@@ -1,0 +1,123 @@
+# ─────────────────────────────────────────────────────────────────
+# 기관 등록 예시
+#
+# 파일명 앞의 _ 는 "빌드에서 제외"를 뜻한다. 자기 기관을 등록할 때는 이 파일을
+# 복사해서 inst.d/<realm>.yml 로 만든다.
+#   예)  inst.d/example.re.kr.yml
+#
+# 영문(en)은 항목마다 요구 수준이 다르다. 각 항목 위에 적어 두었다.
+#   빠지면 빌드 실패 — name, address, locations[].address
+#   빠지면 경고    — info_url, policy_url, locations[].name
+# ─────────────────────────────────────────────────────────────────
+
+# kr: 아래는 대한민국 eduroam 고유 항목이다. 글로벌 eduroam 모니터링에는 활용되지 않는다.
+kr:
+  # 대학 | 출연 | 기타
+  type: 대학
+  # 인증 요청이 어디를 거치는가. nro | kren_ro
+  parent_ro: nro
+  # 설립 형태. 대학에만 적는다.
+  # 국립 | 국립대법인 | 공립 | 사립 | 특별법법인 | 기타
+  univ_type: 사립
+  # 대한민국 eduroam 가입년도. eduroamKR 위키에 있다.
+  year_joined: 2022
+  # 캠퍼스가 둘 이상일 때만 적는다. 본원(본교) 하나뿐이면 이 항목을 지운다.
+  campus:
+    - 본원
+    - 서울 분원
+
+# instid: 기관 고유 ID. 한국 eduroam 에서는 도메인 형식으로 한다
+instid: example.re.kr
+
+# IdP | SP | IdP+SP
+type: IdP+SP
+
+# SP 전용 기관이면 이 항목을 통째로 지운다. 빈 목록으로 두지 않는다.
+realms:
+  - example.re.kr
+
+# en 이 없으면 빌드가 실패한다. 기관명은 GÉANT 모니터에 그대로 노출된다.
+name:
+  en: Example Research Institute
+  ko: 예제연구소
+
+# street 는 우편번호를 앞에 붙인 국내 전체 주소이다.
+# city 는 시 이름으로 적는다.
+# 스펙에 우편번호 항목이 따로 없으므로 street 안에 넣는다.
+# en 이 없으면 빌드가 실패한다.
+address:
+  en:
+    street: (34141) 1 Example-ro, Yuseong-gu, Daejeon
+    city: Daejeon
+  ko:
+    street: (34141) 대전광역시 유성구 예시로 1
+    city: 대전광역시
+
+# OpenStreetMap 에서 주소보기로 좌표값 획득
+# https://www.openstreetmap.org/#map=19/36.365800/127.359418
+# latitude 위도, longitude 경도
+coordinate:
+  latitude: 36.3657991
+  longitude: 127.3594198
+
+# 대학 | 연구 | 기타
+# 빌드가 IEEE 802.11-2012 Venue Info 코드로 옮긴다. 대학도 연구기관도 아니면
+# 표의 코드를 그대로 적는다. 예) 컨벤션센터는 inst_type: "1,7"
+inst_type: 대학
+
+# 최소 1개. 연락처에는 lang 속성이 없으므로 영문·국문을 각각 항목으로 넣는다.
+# 부서 수준에서 공개 가능한 정보를 기술한다.
+contacts:
+  - name: IT Helpdesk
+    email: helpdesk@example.re.kr
+    phone: "+82-42-000-0000"
+  - name: 정보통신팀
+    email: helpdesk@example.re.kr
+    phone: "+82-42-000-0000"
+
+# 기관의 eduroam 안내 페이지. 방문자가 접속 설정을 보러 오는 곳이다.
+# GÉANT 모니터와 eduroam 앱이 이 주소를 그대로 띄우므로, 로그인 없이
+# 열리는 공개 페이지여야 한다.
+# en 이 없으면 경고만 나온다. 한국어 안내만 있는 기관이 많아 막지 않는다.
+info_url:
+  en: "https://eduroam.example.re.kr/en/"
+  ko: "https://eduroam.example.re.kr/"
+
+# 기관의 eduroam 이용 정책 페이지. 포트 차단, 금지 행위, 접속 기록 보관
+# 같은 것을 적어 둔 곳이다.
+# 정책을 따로 두지 않았으면 info_url 과 같은 주소를 적는다. 안내 페이지
+# 안에 정책을 함께 써 둔 기관이 많고, 비워 두는 것보다 낫다.
+# en 이 없으면 경고만 나온다.
+policy_url:
+  en: "https://eduroam.example.re.kr/en/policy/"
+  ko: "https://eduroam.example.re.kr/policy/"
+
+# AP 위치. 건물별로 나누는 게 번거로우면 본관 하나로 표시한다.
+# 안내 URL 은 위 info_url 을 물려받으므로 여기 다시 적지 않는다.
+locations:
+  # id: 위치 고유 ID. 한국 eduroam 에서는 도메인.숫자 형식으로 한다
+  - id: example.re.kr.01
+    coordinates:
+      latitude: 36.3657991
+      longitude: 127.3594198
+    # 위치 이름은 en 이 없어도 경고만 나온다.
+    name:
+      en: Example Research Institute Main Bld.
+      ko: 예제연구소 본관
+    # 위치 주소는 en 이 없으면 빌드가 실패한다. 위 address 와 규칙이 같다.
+    address:
+      en:
+        street: (34141) 1 Example-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34141) 대전광역시 유성구 예시로 1
+        city: 대전광역시
+    # 고정값. 생략하면 eduroam 이 들어간다.
+    ssid: eduroam
+    enc_level: WPA2/AES
+    # ap_no: AP 개수
+    ap_no: 200
+    # availability: 0=제한 없음, 1=물리적 접근 제한
+    availability: 1
+    # operation_hours: 24시간 제공이 아닌 경우에만 자유롭게 기술한다.
+    # operation_hours: 09:00-18:00
