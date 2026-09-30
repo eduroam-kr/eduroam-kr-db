@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2013
+
+instid: gjue.ac.kr
+type: IdP+SP
+realms:
+  - gjue.ac.kr
+name:
+  en: Gongju National University of Education
+  ko: 공주교육대학교
+inst_type: 대학
+
+contacts:
+  - name: 공주교육대학교 정보전산원
+    phone: "041-850-1331"
+
+info_url:
+  ko: "https://www.gjue.ac.kr/kor/contents/68"
+
+locations:
+  - id: gjue.ac.kr.01
+    coordinates:
+      latitude: 36.4452027
+      longitude: 127.1196553
+    name:
+      en: Gongju National University of Education
+      ko: 국립공주교육대학교
+    address:
+      en:
+        street: (32553) 27 Ungjin-ro, Gongju-si, Chungcheongnam-do
+        city: Gongju-si
+      ko:
+        street: (32553) 충청남도 공주시 웅진로 27
+        city: 공주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 324
