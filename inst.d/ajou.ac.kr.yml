@@ -1,0 +1,41 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2025
+
+instid: ajou.ac.kr
+type: IdP+SP
+realms:
+  - ajou.ac.kr
+name:
+  en: Ajou University
+  ko: 아주대학교
+inst_type: 대학
+
+contacts:
+  - name: 아주대학교 정보시스템팀
+    email: netadm@ajou.ac.kr
+    phone: "031-219-2186"
+
+info_url:
+  ko: "https://pc119.ajou.ac.kr/pc119/service/lan.do"
+
+locations:
+  - id: ajou.ac.kr.01
+    coordinates:
+      latitude: 37.2831922
+      longitude: 127.0441282
+    name:
+      en: Ajou University, Suwon Campus
+      ko: 아주대학교 수원캠퍼스
+    address:
+      en:
+        street: (16499) 206 World cup-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do
+        city: Suwon-si
+      ko:
+        street: (16499) 경기도 수원시 영통구 월드컵로 206
+        city: 수원시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 943
