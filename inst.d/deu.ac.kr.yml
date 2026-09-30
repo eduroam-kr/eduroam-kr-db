@@ -1,0 +1,60 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2017
+  campus:
+    - 본교
+    - 양정
+
+instid: deu.ac.kr
+type: IdP+SP
+realms:
+  - deu.ac.kr
+name:
+  en: Dong-Eui University
+  ko: 동의대학교
+inst_type: 대학
+
+contacts:
+  - name: 동의대학교 전산정보원
+    phone: "051-890-1120"
+
+info_url:
+  ko: "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10"
+
+locations:
+  - id: deu.ac.kr.01
+    coordinates:
+      latitude: 35.1437214
+      longitude: 129.0352536
+    name:
+      en: Dong-Eui University, Gaya Campus
+      ko: 동의대학교 가야캠퍼스
+    address:
+      en:
+        street: (47340) 176 Eomgwang-ro, Busanjin-gu, Busan
+        city: Busan
+      ko:
+        street: (47340) 부산광역시 부산진구 엄광로 176
+        city: 부산광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 499
+  - id: deu.ac.kr.02
+    coordinates:
+      latitude: 35.1693164
+      longitude: 129.0773841
+    name:
+      en: Dong-Eui University, Yangjeong Campus
+      ko: 동의대학교 양정캠퍼스
+    address:
+      en:
+        street: (47227) 54 Yangji-ro, Busanjin-gu, Busan
+        city: Busan
+      ko:
+        street: (47227) 부산광역시 부산진구 양지로 54
+        city: 부산광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 32
