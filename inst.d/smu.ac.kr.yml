@@ -1,0 +1,41 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2026
+
+instid: smu.ac.kr
+type: IdP+SP
+realms:
+  - smu.ac.kr
+name:
+  en: Sangmyung University
+  ko: 상명대학교
+inst_type: 대학
+
+contacts:
+  - name: 상명대학교 정보통신팀
+    phone: "02-2287-6400"
+  - name: 상명대학교 정보통신지원팀
+    phone: "041-550-5041"
+
+info_url:
+  ko: "https://www.smu.ac.kr/kor/life/eduroam.do"
+
+locations:
+  - id: smu.ac.kr.01
+    coordinates:
+      latitude: 37.6041089
+      longitude: 126.9551595
+    name:
+      en: Sangmyung University, Seoul Campus
+      ko: 상명대학교 서울캠퍼스
+    address:
+      en:
+        street: (03016) 20 Hongjimun 2-gil, Jongno-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03016) 서울특별시 종로구 홍지문2길 20
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
