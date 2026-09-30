@@ -1,0 +1,60 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2022
+  campus:
+    - 본교
+    - 메디컬
+
+instid: gachon.ac.kr
+type: IdP+SP
+realms:
+  - gachon.ac.kr
+name:
+  en: Gachon University
+  ko: 가천대학교
+inst_type: 대학
+
+contacts:
+  - name: 가천대학교 디지털정보처
+    phone: "031-750-8885"
+
+info_url:
+  ko: "https://www.gachon.ac.kr/ist/2990/subview.do"
+
+locations:
+  - id: gachon.ac.kr.01
+    coordinates:
+      latitude: 37.4512349
+      longitude: 127.1293943
+    name:
+      en: Gachon University Global Campus
+      ko: 가천대학교 글로벌캠퍼스
+    address:
+      en:
+        street: (13120) 1342 Seongnamdaero, Sujeong-gu, Seongnam-si, Gyeonggi-do
+        city: Seongnam-si
+      ko:
+        street: (13120) 경기도 성남시 수정구 성남대로 1342
+        city: 성남시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 2360
+  - id: gachon.ac.kr.02
+    coordinates:
+      latitude: 37.4222545
+      longitude: 126.6874834
+    name:
+      en: Gachon University Medical Campus
+      ko: 가천대학교 메디컬캠퍼스
+    address:
+      en:
+        street: (21936) 191 Hambangmoe-ro, Yeonsu-gu, Incheon
+        city: Incheon
+      ko:
+        street: (21936) 인천광역시 연수구 함박뫼로 191
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 110
