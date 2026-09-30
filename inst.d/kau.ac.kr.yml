@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: kau.ac.kr
+type: IdP+SP
+realms:
+  - kau.ac.kr
+name:
+  en: Korea Aerospace University
+  ko: 한국항공대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://kau.ac.kr/kaulife/itnoti.php?searchkey=&searchvalue=&code=s1801&page=&mode=read&seq=6546"
+
+locations:
+  - id: kau.ac.kr.01
+    coordinates:
+      latitude: 37.5989369
+      longitude: 126.8641855
+    name:
+      en: Korea Aerospace University
+      ko: 한국항공대학교
+    address:
+      en:
+        street: (10540) 76 Hanggongdaehak-ro, Deogyang-gu, Goyang-si, Gyeonggi-do
+        city: Goyang-si
+      ko:
+        street: (10540) 경기도 고양시 덕양구 항공대학로 76
+        city: 고양시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 341
