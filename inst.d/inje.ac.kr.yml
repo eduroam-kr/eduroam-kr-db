@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2018
+
+instid: inje.ac.kr
+type: IdP+SP
+realms:
+  - inje.ac.kr
+name:
+  en: Inje University
+  ko: 인제대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp"
+
+locations:
+  - id: inje.ac.kr.01
+    coordinates:
+      latitude: 35.2528091
+      longitude: 128.900516
+    name:
+      en: Inje University, Gimhae Campus
+      ko: 인제대학교 김해캠퍼스
+    address:
+      en:
+        street: (50834) 197 Inje-ro, Gimhae-si, Gyeongsangnam-do
+        city: Gimhae-si
+      ko:
+        street: (50834) 경상남도 김해시 인제로 197
+        city: 김해시
+    ssid: eduroam
+    enc_level: WPA2/AES
