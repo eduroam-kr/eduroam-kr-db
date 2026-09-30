@@ -1,0 +1,60 @@
+# 비활성 (2026-09-30)
+# 대학 RO(KREN) 밑에 있다가 빠졌다. KREN 의 institution.xml 과 eduroam.kr
+# 이용 가능 대학 목록에 없고, NRO 로그에 실사용 요청도 없다.
+# 다시 붙으면 inst.d/ 로 옮기고 이 머리말을 지운다.
+
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: bu.ac.kr
+type: IdP+SP
+realms:
+  - bu.ac.kr
+name:
+  en: Baekseok University
+  ko: 백석대학교
+inst_type: 대학
+
+contacts:
+  - name: 백석대학교 전산정보원
+    phone: "041-550-0656"
+
+info_url:
+  ko: "http://www.bu.ac.kr/web/3739/subview.do"
+
+locations:
+  - id: bu.ac.kr.01
+    coordinates:
+      latitude: 36.8413484
+      longitude: 127.1873755
+    name:
+      en: Baekseok University
+      ko: 백석대학교
+    address:
+      en:
+        street: (31065) 76 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Cheonan-si
+      ko:
+        street: (31065) 충청남도 천안시 동남구 문암로 76
+        city: 천안시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: bu.ac.kr.02
+    coordinates:
+      latitude: 36.8385690
+      longitude: 127.1830368
+    name:
+      en: Baekseok Culture University
+      ko: 백석문화대학교
+    address:
+      en:
+        street: (31001) 58 Munam-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Cheonan-si
+      ko:
+        street: (31001) 충청남도 천안시 동남구 문암로 58
+        city: 천안시
+    ssid: eduroam
+    enc_level: WPA2/AES
