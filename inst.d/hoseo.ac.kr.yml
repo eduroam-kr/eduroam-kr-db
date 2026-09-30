@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: hoseo.ac.kr
+type: IdP+SP
+realms:
+  - hoseo.ac.kr
+name:
+  en: Hoseo University
+  ko: 호서대학교
+inst_type: 대학
+
+locations:
+  - id: hoseo.ac.kr.01
+    coordinates:
+      latitude: 36.73497
+      longitude: 127.0757964
+    name:
+      en: Hoseo University
+      ko: 호서대학교
+    address:
+      en:
+        street: (31499) 20 Hoseo-ro 79beon-gil, Baebang-eup, Asan-si, Chungcheongnam-do
+        city: Asan-si
+      ko:
+        street: (31499) 충청남도 아산시 배방읍 호서로79번길 20
+        city: 아산시
+    ssid: eduroam
+    enc_level: WPA2/AES
