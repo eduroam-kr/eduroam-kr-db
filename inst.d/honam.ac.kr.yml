@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: honam.ac.kr
+type: IdP+SP
+realms:
+  - honam.ac.kr
+name:
+  en: Honam University
+  ko: 호남대학교
+inst_type: 대학
+
+locations:
+  - id: honam.ac.kr.01
+    coordinates:
+      latitude: 35.1499689
+      longitude: 126.7650387
+    name:
+      en: Honam University, Gwangsan Campus
+      ko: 호남대학교 광산캠퍼스
+    address:
+      en:
+        street: (62399) 417 Eodeung-daero, Gwangsan-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (62399) 광주광역시 광산구 어등대로 417
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 617
