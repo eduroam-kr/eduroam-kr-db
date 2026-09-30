@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: kornu.ac.kr
+type: IdP+SP
+realms:
+  - kornu.ac.kr
+name:
+  en: Korea Nazarene University
+  ko: 나사렛대학교
+inst_type: 대학
+
+contacts:
+  - name: 나사렛대학교 정보혁신팀
+    phone: "041-570-7740"
+
+info_url:
+  ko: "https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000"
+
+locations:
+  - id: kornu.ac.kr.01
+    coordinates:
+      latitude: 36.7983486
+      longitude: 127.1194762
+    name:
+      en: Korea Nazarene University
+      ko: 나사렛대학교
+    address:
+      en:
+        street: (31172) 48 Wolbong-ro, Seobuk-gu, Cheonan-si, Chungcheongnam-do
+        city: Cheonan-si
+      ko:
+        street: (31172) 충청남도 천안시 서북구 월봉로 48
+        city: 천안시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 486
