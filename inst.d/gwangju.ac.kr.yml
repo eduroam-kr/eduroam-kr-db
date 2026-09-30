@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: gwangju.ac.kr
+type: IdP+SP
+realms:
+  - gwangju.ac.kr
+name:
+  en: Gwangju University
+  ko: 광주대학교
+inst_type: 대학
+
+contacts:
+  - name: 광주대학교 정보전산원
+    phone: "062-670-2871"
+
+info_url:
+  ko: "http://icc.gwangju.ac.kr/icc/page/sub0401.html"
+
+locations:
+  - id: gwangju.ac.kr.01
+    coordinates:
+      latitude: 35.1059025
+      longitude: 126.8961681
+    name:
+      en: Gwangju University
+      ko: 광주대학교
+    address:
+      en:
+        street: (61743) 277 Hyodeok-ro, Nam-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (61743) 광주광역시 남구 효덕로 277
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 45
