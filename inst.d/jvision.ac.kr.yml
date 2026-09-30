@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: jvision.ac.kr
+type: IdP+SP
+realms:
+  - jvision.ac.kr
+name:
+  en: Vision College of Jeonju
+  ko: 전주비전대학교
+inst_type: 대학
+
+locations:
+  - id: jvision.ac.kr.01
+    coordinates:
+      latitude: 35.8108779
+      longitude: 127.0909641
+    name:
+      en: Vision College of Jeonju
+      ko: 전주비전대학교
+    address:
+      en:
+        street: (55069) 235 Cheonjam-ro, Wansan-gu, Jeonju-si, Jeollabuk-do
+        city: Jeonju-si
+      ko:
+        street: (55069) 전라북도 전주시 완산구 천잠로 235
+        city: 전주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 260
