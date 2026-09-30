@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: hallym.ac.kr
+type: IdP+SP
+realms:
+  - hallym.ac.kr
+name:
+  en: Hallym University
+  ko: 한림대학교
+inst_type: 대학
+
+locations:
+  - id: hallym.ac.kr.01
+    coordinates:
+      latitude: 37.8861062
+      longitude: 127.7399038
+    name:
+      en: Hallym University
+      ko: 한림대학교
+    address:
+      en:
+        street: (24252) 1 Hallymdaehak-gil, Chuncheon-si, Gangwon-do
+        city: Chuncheon-si
+      ko:
+        street: (24252) 강원특별자치도 춘천시 한림대학길 1
+        city: 춘천시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 944
