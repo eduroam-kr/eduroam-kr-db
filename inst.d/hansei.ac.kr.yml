@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2015
+
+instid: hansei.ac.kr
+type: IdP+SP
+realms:
+  - hansei.ac.kr
+name:
+  en: Hansei University
+  ko: 한세대학교
+inst_type: 대학
+
+info_url:
+  ko: "http://www.hansei.ac.kr/kor/345/subview.do"
+
+locations:
+  - id: hansei.ac.kr.01
+    coordinates:
+      latitude: 37.3441462
+      longitude: 126.9538557
+    name:
+      en: Hansei University
+      ko: 한세대학교
+    address:
+      en:
+        street: (15852) 30 Hansei-ro, Gunpo-si, Gyeonggi-do
+        city: Gunpo-si
+      ko:
+        street: (15852) 경기도 군포시 한세로 30
+        city: 군포시
+    ssid: eduroam
+    enc_level: WPA2/AES
