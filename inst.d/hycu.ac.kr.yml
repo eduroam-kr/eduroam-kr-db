@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: hycu.ac.kr
+type: IdP+SP
+realms:
+  - hycu.ac.kr
+name:
+  en: Hanyang Cyber University
+  ko: 한양사이버대학교
+inst_type: 대학
+
+locations:
+  - id: hycu.ac.kr.01
+    coordinates:
+      latitude: 37.5571828
+      longitude: 127.0474977
+    name:
+      en: Hanyang Cyber University
+      ko: 한양사이버대학교
+    address:
+      en:
+        street: (04763) 220 Wangsimni-ro, Seongdong-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04763) 서울특별시 성동구 왕십리로 220
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
