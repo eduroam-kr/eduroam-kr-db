@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2021
+
+instid: chsu.ac.kr
+type: IdP+SP
+realms:
+  - chsu.ac.kr
+name:
+  en: Chungbuk Health & Science University
+  ko: 충북보건과학대학교
+inst_type: 대학
+
+locations:
+  - id: chsu.ac.kr.01
+    coordinates:
+      latitude: 36.7035004
+      longitude: 127.5533575
+    name:
+      en: Chungbuk Health & Science University
+      ko: 충북보건과학대학교
+    address:
+      en:
+        street: (28150) 10 Deogam-gil, Naesu-eup, Cheongwon-gu, Cheongju-si, Chungcheongbuk-do
+        city: Cheongju-si
+      ko:
+        street: (28150) 충청북도 청주시 청원구 내수읍 덕암길 10
+        city: 청주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 10
