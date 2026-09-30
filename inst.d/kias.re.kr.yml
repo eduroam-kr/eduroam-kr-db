@@ -1,0 +1,32 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2012
+
+instid: kias.re.kr
+type: IdP+SP
+realms:
+  - kias.re.kr
+name:
+  en: KIAS, Korea Institute for Advanced Study
+  ko: 고등과학원
+inst_type: 연구
+
+locations:
+  - id: kias.re.kr.01
+    coordinates:
+      latitude: 37.5926
+      longitude: 127.0534
+    name:
+      en: Korea Institute for Advanced Study
+      ko: 고등과학원
+    address:
+      en:
+        street: (02455) 85 Hoegi-ro, Dongdaemun-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02455) 서울특별시 동대문구 회기로 85
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0
