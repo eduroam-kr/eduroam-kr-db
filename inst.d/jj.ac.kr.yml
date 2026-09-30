@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2014
+
+instid: jj.ac.kr
+type: IdP+SP
+realms:
+  - jj.ac.kr
+name:
+  en: Jeonju University
+  ko: 전주대학교
+inst_type: 대학
+
+info_url:
+  ko: "http://wlan.jj.ac.kr/"
+
+locations:
+  - id: jj.ac.kr.01
+    coordinates:
+      latitude: 35.8162221
+      longitude: 127.0888855
+    name:
+      en: Jeonju University
+      ko: 전주대학교
+    address:
+      en:
+        street: (55069) 303 Cheonjam-ro, Wansan-gu, Jeonju-si, Jeollabuk-do
+        city: Jeonju-si
+      ko:
+        street: (55069) 전라북도 전주시 완산구 천잠로 303
+        city: 전주시
+    ssid: eduroam
+    enc_level: WPA2/AES
