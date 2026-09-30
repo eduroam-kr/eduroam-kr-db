@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2017
+
+instid: yu.ac.kr
+type: IdP+SP
+realms:
+  - yu.ac.kr
+name:
+  en: Yeungnam University
+  ko: 영남대학교
+inst_type: 대학
+
+info_url:
+  ko: "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07"
+
+locations:
+  - id: yu.ac.kr.01
+    coordinates:
+      latitude: 35.8304926
+      longitude: 128.7521818
+    name:
+      en: Yeungnam University, Gyeongsan Campus
+      ko: 영남대학교 경산캠퍼스
+    address:
+      en:
+        street: (38541) 280 Daehak-ro, Gyeongsan-si, Gyeongsangbuk-do
+        city: Gyeongsan-si
+      ko:
+        street: (38541) 경상북도 경산시 대학로 280
+        city: 경산시
+    ssid: eduroam
+    enc_level: WPA2/AES
