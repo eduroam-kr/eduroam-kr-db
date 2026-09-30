@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2017
+
+instid: cje.ac.kr
+type: IdP+SP
+realms:
+  - cje.ac.kr
+name:
+  en: Cheongju National University Of Education
+  ko: 청주교육대학교
+inst_type: 대학
+
+contacts:
+  - name: 청주교육대학교 정보전산원
+    phone: "043-299-0676"
+
+info_url:
+  ko: "https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157"
+
+locations:
+  - id: cje.ac.kr.01
+    coordinates:
+      latitude: 36.6154305
+      longitude: 127.4840113
+    name:
+      en: Cheongju National University of Education
+      ko: 청주교육대학교
+    address:
+      en:
+        street: (28690) 2065 Cheongnam-ro, Seowon-gu, Cheongju-si, Chungcheongbuk-do
+        city: Cheongju-si
+      ko:
+        street: (28690) 충청북도 청주시 서원구 청남로 2065
+        city: 청주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 474
