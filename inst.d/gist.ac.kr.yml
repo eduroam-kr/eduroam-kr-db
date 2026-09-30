@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: nro
+  univ_type: 특별법법인
+  year_joined: 2015
+
+instid: gist.ac.kr
+type: IdP+SP
+realms:
+  - gist.ac.kr
+name:
+  en: Gwangju Institute of Science and Technology
+  ko: 광주과학기술원
+inst_type: 대학
+
+contacts:
+  - name: 광주과학기술원
+    phone: "062-715-2114"
+
+locations:
+  - id: gist.ac.kr.01
+    coordinates:
+      latitude: 35.2281557
+      longitude: 126.8421662
+    name:
+      en: Gwangju Institute of Science and Technology
+      ko: 광주과학기술원
+    address:
+      en:
+        street: (61005) 123 Cheomdangwagi-ro, Buk-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (61005) 광주광역시 북구 첨단과기로 123
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
