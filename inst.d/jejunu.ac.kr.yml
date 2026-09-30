@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2012
+
+instid: jejunu.ac.kr
+type: IdP+SP
+realms:
+  - jejunu.ac.kr
+name:
+  en: Jeju National University
+  ko: 제주대학교
+inst_type: 대학
+
+contacts:
+  - name: 제주대학교 정보화본부
+    phone: "064-754-8390"
+
+info_url:
+  ko: "https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm"
+
+locations:
+  - id: jejunu.ac.kr.01
+    coordinates:
+      latitude: 33.4572478
+      longitude: 126.5643602
+    name:
+      en: Jeju National University, Ara Campus
+      ko: 국립제주대학교 아라캠퍼스
+    address:
+      en:
+        street: (63243) 102 Jejudaehak-ro, Jeju-si, Jeju-do
+        city: Jeju-si
+      ko:
+        street: (63243) 제주특별자치도 제주시 제주대학로 102
+        city: 제주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 934
