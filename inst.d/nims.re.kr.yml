@@ -1,0 +1,32 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2017
+
+instid: nims.re.kr
+type: IdP+SP
+realms:
+  - nims.re.kr
+name:
+  en: NIMS, National Institute for Mathematical Sciences
+  ko: 국가수리과학연구소
+inst_type: 연구
+
+locations:
+  - id: nims.re.kr.01
+    coordinates:
+      latitude: 36.4016
+      longitude: 127.4008
+    name:
+      en: National Institute for Mathematical Sciences
+      ko: 국가수리과학연구소
+    address:
+      en:
+        street: (34047) 70 Yuseong-daero 1689beon-gil, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34047) 대전광역시 유성구 유성대로1689번길 70
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0
