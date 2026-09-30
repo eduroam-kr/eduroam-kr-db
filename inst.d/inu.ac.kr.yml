@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 공립
+  year_joined: 2015
+
+instid: inu.ac.kr
+type: IdP+SP
+realms:
+  - inu.ac.kr
+name:
+  en: Incheon National University
+  ko: 인천대학교
+inst_type: 대학
+
+locations:
+  - id: inu.ac.kr.01
+    coordinates:
+      latitude: 37.3778557
+      longitude: 126.6325053
+    name:
+      en: Incheon National University, Songdo Campus
+      ko: 국립인천대학교 송도캠퍼스
+    address:
+      en:
+        street: (22012) 119 Academy-ro, Yeonsu-gu, Incheon
+        city: Incheon
+      ko:
+        street: (22012) 인천광역시 연수구 아카데미로 119
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
