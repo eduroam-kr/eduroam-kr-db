@@ -1,0 +1,41 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립대법인
+  year_joined: 2012
+
+instid: snu.ac.kr
+type: IdP+SP
+realms:
+  - snu.ac.kr
+name:
+  en: Seoul National University
+  ko: 서울대학교
+inst_type: 대학
+
+contacts:
+  - name: 서울대학교 정보화본부
+    email: snunet@snu.ac.kr
+    phone: "02-880-8282"
+
+info_url:
+  ko: "https://ist.snu.ac.kr/wifi/"
+
+locations:
+  - id: snu.ac.kr.01
+    coordinates:
+      latitude: 37.4680385
+      longitude: 126.9592961
+    name:
+      en: Seoul National University, Gwanak Campus
+      ko: 서울대학교 관악캠퍼스
+    address:
+      en:
+        street: (08826) 1 Gwanak-ro, Gwanak-gu, Seoul
+        city: Seoul
+      ko:
+        street: (08826) 서울특별시 관악구 관악로 1
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 717
