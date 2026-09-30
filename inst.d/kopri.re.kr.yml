@@ -1,0 +1,35 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2026
+
+instid: kopri.re.kr
+type: IdP+SP
+realms:
+  - kopri.re.kr
+name:
+  en: Korea Polar Research Institute
+  ko: 극지연구소
+inst_type: 연구
+
+contacts:
+  - name: 극지연구소 정보전산실
+    phone: "032-770-8400"
+
+locations:
+  - id: kopri.re.kr.01
+    coordinates:
+      latitude: 37.3691972
+      longitude: 126.6474362
+    name:
+      en: Korea Polar Research Institute
+      ko: 극지연구소
+    address:
+      en:
+        street: (21990) 26 Songdomirae-ro, Yeonsu-gu, Incheon
+        city: Incheon
+      ko:
+        street: (21990) 인천광역시 연수구 송도미래로 26
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
