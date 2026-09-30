@@ -1,0 +1,33 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2012
+
+instid: kisti.re.kr
+type: IdP+SP
+realms:
+  - kisti.re.kr
+name:
+  en: Korea Institute of Science and Technology Information
+  ko: 한국과학기술정보연구원
+inst_type: 연구
+
+info_url:
+  ko: "http://www.kreonet.net/eduroam/en"
+
+locations:
+  - id: kisti.re.kr.01
+    coordinates:
+      latitude: 36.365786
+      longitude: 127.359266
+    name:
+      ko: 본원
+    address:
+      en:
+        street: (34141) 245 Daehangno, Yuseong-gu, Daejeon 34141
+        city: Daejeon
+      ko:
+        street: (34141) 대전광역시 유성구 대학로 245
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
