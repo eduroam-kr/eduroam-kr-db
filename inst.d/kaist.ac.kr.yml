@@ -1,0 +1,57 @@
+kr:
+  type: 대학
+  parent_ro: nro
+  univ_type: 특별법법인
+  year_joined: 2012
+
+instid: kaist.ac.kr
+type: IdP+SP
+realms:
+  - kaist.ac.kr
+  - seoul.kaist.ac.kr
+name:
+  en: Korea Advanced Institute of Science and Technology
+  ko: 한국과학기술원
+inst_type: 대학
+
+contacts:
+  - name: 한국과학기술원 정보통신팀
+    phone: "042-350-2412"
+
+info_url:
+  en: "https://ict.kaist.ac.kr/english/notice/view/id/137"
+  ko: "https://ict.kaist.ac.kr/wireless-n-vpn-service"
+
+locations:
+  - id: kaist.ac.kr.01
+    coordinates:
+      latitude: 36.3703054
+      longitude: 127.3620118
+    name:
+      en: KAIST Daejeon Campus
+      ko: 한국과학기술원 대전캠퍼스
+    address:
+      en:
+        street: (34141) 291 Daehak-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34141) 대전광역시 유성구 대학로 291
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: kaist.ac.kr.02
+    coordinates:
+      latitude: 37.5937974
+      longitude: 127.046716
+    name:
+      en: KAIST Seoul Campus
+      ko: 한국과학기술원 서울캠퍼스
+    address:
+      en:
+        street: (02455) 85 Hoegi-ro, Dongdaemun-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02455) 서울특별시 동대문구 회기로 85
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
