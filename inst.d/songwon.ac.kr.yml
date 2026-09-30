@@ -1,0 +1,31 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: songwon.ac.kr
+type: IdP+SP
+realms:
+  - songwon.ac.kr
+name:
+  en: Songwon University
+  ko: 송원대학교
+inst_type: 대학
+
+locations:
+  - id: songwon.ac.kr.01
+    coordinates:
+      latitude: 35.1085836
+      longitude: 126.8744808
+    name:
+      en: Songwon University
+      ko: 송원대학교
+    address:
+      en:
+        street: (61756) 73 Songam-ro, Nam-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (61756) 광주광역시 남구 송암로 73
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
