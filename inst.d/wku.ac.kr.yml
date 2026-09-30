@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: wku.ac.kr
+type: IdP+SP
+realms:
+  - wku.ac.kr
+name:
+  en: Wonkwang University
+  ko: 원광대학교
+inst_type: 대학
+
+locations:
+  - id: wku.ac.kr.01
+    coordinates:
+      latitude: 35.971714
+      longitude: 126.9602243
+    name:
+      en: Wonkwang University, Iksan Campus
+      ko: 원광대학교 익산캠퍼스
+    address:
+      en:
+        street: (54538) 460 Iksan-daero, Iksan-si, Jeollabuk-do
+        city: Iksan-si
+      ko:
+        street: (54538) 전라북도 익산시 익산대로 460
+        city: 익산시
+    ssid: eduroam
+    enc_level: WPA2/AES
