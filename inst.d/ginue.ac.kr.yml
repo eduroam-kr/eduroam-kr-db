@@ -1,0 +1,56 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2023
+  campus:
+    - 본교
+    - 경기
+
+instid: ginue.ac.kr
+type: IdP+SP
+realms:
+  - ginue.ac.kr
+name:
+  en: Gyeongin National University of Education
+  ko: 경인교육대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313"
+
+locations:
+  - id: ginue.ac.kr.01
+    coordinates:
+      latitude: 37.5372624
+      longitude: 126.7175668
+    name:
+      en: Gyeongin National University of Education Incheon Campus
+      ko: 경인교육대학교 인천캠퍼스
+    address:
+      en:
+        street: (21044) 62 Gyesan-ro, Gyeyang-gu, Incheon
+        city: Incheon
+      ko:
+        street: (21044) 인천광역시 계양구 계산로 62
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0
+  - id: ginue.ac.kr.02
+    coordinates:
+      latitude: 37.4331772
+      longitude: 126.9172677
+    name:
+      en: Gyeongin National University of Education Gyeonggi Campus
+      ko: 경인교육대학교 경기캠퍼스
+    address:
+      en:
+        street: (13910) 155 Sammak-ro, Manan-gu, Anyang-si, Gyeonggi-do
+        city: Anyang-si
+      ko:
+        street: (13910) 경기도 안양시 만안구 삼막로 155
+        city: 안양시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0
