@@ -1,0 +1,53 @@
+name: Publish
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # ts 를 커밋 시각에서 뽑으므로 전체 이력이 필요하다
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+      - name: xmllint (XSD 검증용)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libxml2-utils
+      - run: python3 build.py --validate
+      - name: Index page, logos, custom domain
+        run: |
+          cp public/index.html dist/index.html
+          cp -R logo dist/logo
+          rm -f dist/logo/README.md
+          # Actions 로 배포하면 저장소 루트의 CNAME 은 읽히지 않는다.
+          # 게시하는 아티팩트 안에 있어야 사용자 도메인이 유지된다.
+          cp public/CNAME dist/CNAME
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

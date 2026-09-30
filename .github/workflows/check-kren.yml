@@ -1,0 +1,76 @@
+name: Check KREN
+
+# KREN 이 올리는 institution.xml 과 이 저장소가 어긋나는지 주마다 본다.
+# 값을 자동으로 가져오지 않는다 — 저쪽에 확인된 오류가 있어서, 사람이 보고
+# 판단해야 한다. 그래서 차이가 생기면 이슈 하나를 열고 그 안에서 갱신한다.
+# 내용이 지난번과 같으면 댓글을 달지 않는다 — 이슈도 댓글도 늘지 않는다.
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"        # 매주 월요일 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+
+      - name: Compare with KREN
+        id: diff
+        run: |
+          set +e
+          python3 bin/check-kren.py > report.txt 2>&1
+          echo "changed=$?" >> "$GITHUB_OUTPUT"
+          cat report.txt
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '### KREN institution.xml 대조'
+            echo
+            echo '```'
+            cat report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the issue
+        if: steps.diff.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "KREN institution.xml 과 어긋나는 곳이 있다"
+        run: |
+          {
+            echo "주간 대조 결과다. 확인하고 한쪽을 고친 뒤 이 이슈를 닫는다."
+            echo "되풀이해도 되는 차이는 \`etc/kren-ignore.yml\` 에 적으면 다음부터 빠진다."
+            echo
+            echo '```'
+            cat report.txt
+            echo '```'
+            echo
+            echo "— $(date -u '+%Y-%m-%d %H:%M UTC') 자동 실행"
+          } > body.md
+
+          num=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number')
+          if [ -z "$num" ]; then
+            gh issue create --title "$TITLE" --body-file body.md
+            exit 0
+          fi
+
+          # 지난번과 내용이 같으면 댓글을 달지 않는다. 저쪽이 몇 주 동안
+          # 그대로면 같은 글이 매주 쌓여서, 정작 달라진 주를 못 찾게 된다.
+          prev=$(gh issue view "$num" --json comments --jq '.comments[-1].body // ""')
+          if [ "$(sed -n '/^```$/,/^```$/p' body.md)" = "$(printf '%s' "$prev" | sed -n '/^```$/,/^```$/p')" ]; then
+            echo "지난주와 같은 내용이라 댓글을 달지 않는다 (#$num)"
+            exit 0
+          fi
+          gh issue comment "$num" --body-file body.md
