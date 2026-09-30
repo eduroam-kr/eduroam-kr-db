@@ -1,0 +1,24 @@
+kr:
+  type: 출연
+  parent_ro: nro
+  year_joined: 2017
+
+instid: kriss.re.kr
+type: IdP+SP
+realms:
+  - kriss.re.kr
+name:
+  en: Korea Research Institute of Standards and Science
+  ko: 한국표준과학연구원
+inst_type: 연구
+
+locations:
+  - id: kriss.re.kr.01
+    coordinates:
+      latitude: 36.387983
+      longitude: 127.372314
+    name:
+      en: KRISS, Korea Research Institute of Standards and Science
+      ko: 본원
+    ssid: eduroam
+    enc_level: WPA2/AES
