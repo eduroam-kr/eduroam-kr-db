@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: inha.ac.kr
+type: IdP+SP
+realms:
+  - inha.ac.kr
+name:
+  en: Inha University
+  ko: 인하대학교
+inst_type: 대학
+
+locations:
+  - id: inha.ac.kr.01
+    coordinates:
+      latitude: 37.4500221
+      longitude: 126.653488
+    name:
+      en: Inha University
+      ko: 인하대학교
+    address:
+      en:
+        street: (22212) 100 Inha-ro, Michuhol-gu, Incheon
+        city: Incheon
+      ko:
+        street: (22212) 인천광역시 미추홀구 인하로 100
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 750
