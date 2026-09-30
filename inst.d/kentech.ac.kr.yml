@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 특별법법인
+  year_joined: 2022
+
+instid: kentech.ac.kr
+type: IdP+SP
+realms:
+  - kentech.ac.kr
+name:
+  en: Korea Institute of Energy Technology
+  ko: 한국에너지공과대학교
+inst_type: 대학
+
+locations:
+  - id: kentech.ac.kr.01
+    coordinates:
+      latitude: 35.0106284
+      longitude: 126.8032939
+    name:
+      en: Korea Institute of Energy Technology
+      ko: 한국에너지공과대학교
+    address:
+      en:
+        street: (58330) 200 Energygongdae-gil, Naju-si, Jeollanam-do
+        city: Naju-si
+      ko:
+        street: (58330) 전라남도 나주시 에너지공대길 200
+        city: 나주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 40
