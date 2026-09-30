@@ -1,0 +1,31 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+
+instid: ca.ac.kr
+type: IdP+SP
+realms:
+  - ca.ac.kr
+name:
+  en: Chungam College
+  ko: 청암대학교
+inst_type: 대학
+
+locations:
+  - id: ca.ac.kr.01
+    coordinates:
+      latitude: 34.92793
+      longitude: 127.4889253
+    name:
+      en: Chungam College
+      ko: 청암대학교
+    address:
+      en:
+        street: (57997) 1641 Noksaek-ro, Suncheon-si, Jeollanam-do
+        city: Suncheon-si
+      ko:
+        street: (57997) 전라남도 순천시 녹색로 1641
+        city: 순천시
+    ssid: eduroam
+    enc_level: WPA2/AES
