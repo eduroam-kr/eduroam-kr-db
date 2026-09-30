@@ -1,0 +1,60 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2013
+  campus:
+    - 본교
+    - 새만금
+
+instid: kunsan.ac.kr
+type: IdP+SP
+realms:
+  - kunsan.ac.kr
+name:
+  en: Kunsan National University
+  ko: 군산대학교
+inst_type: 대학
+
+contacts:
+  - name: 군산대학교 정보전산원 IT서비스센터
+    phone: "063-469-4235"
+
+info_url:
+  ko: "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000"
+
+locations:
+  - id: kunsan.ac.kr.01
+    coordinates:
+      latitude: 35.9503465
+      longitude: 126.6803558
+    name:
+      en: Kunsan National University Miryong Campus
+      ko: 국립군산대학교 미룡캠퍼스
+    address:
+      en:
+        street: (54150) 558 Daehak-ro, Gunsan-si, Jeonbuk-do
+        city: Gunsan-si
+      ko:
+        street: (54150) 전북특별자치도 군산시 대학로 558
+        city: 군산시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1352
+  - id: kunsan.ac.kr.02
+    coordinates:
+      latitude: 35.961698
+      longitude: 126.5596494
+    name:
+      en: Kunsan National University Saemangeum Campus
+      ko: 국립군산대학교 새만금캠퍼스
+    address:
+      en:
+        street: (54150) 558 Daehak-ro, Gunsan-si, Jeonbuk-do
+        city: Gunsan-si
+      ko:
+        street: (54150) 전북특별자치도 군산시 대학로 558
+        city: 군산시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 48
