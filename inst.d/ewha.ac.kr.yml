@@ -1,0 +1,39 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2016
+
+instid: ewha.ac.kr
+type: IdP+SP
+realms:
+  - ewha.ac.kr
+name:
+  en: Ewha Womans University
+  ko: 이화여자대학교
+inst_type: 대학
+
+contacts:
+  - name: 이화여자대학교 정보통신처 IT One-Stop 서비스센터
+    phone: "02-3277-4777"
+
+info_url:
+  ko: "https://www.ewha.ac.kr/ewha/life/eduroam.do"
+
+locations:
+  - id: ewha.ac.kr.01
+    coordinates:
+      latitude: 37.5644641
+      longitude: 126.9502883
+    name:
+      en: Ewha Womans University
+      ko: 이화여자대학교
+    address:
+      en:
+        street: (03760) 52 Ewhayeodae-gil, Seodaemun-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03760) 서울특별시 서대문구 이화여대길 52
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
