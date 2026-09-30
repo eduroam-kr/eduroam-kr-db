@@ -1,0 +1,348 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2022
+  campus:
+    - 본교
+    - 제주지역대학
+    - 서울지역대학
+    - 남부학습센터
+    - 서울지역대학
+    - 서부학습센터
+    - 경기지역대학
+    - 성남시학습관
+    - 강원지역대학
+    - 강릉시학습관
+    - 경남지역대학
+    - 창원시학습관
+    - 서울지역대학
+    - 강원지역대학
+    - 경기지역대학
+    - 광주전남지역대학
+    - 대구경북지역대학
+    - 대전충남지역대학
+    - 부산지역대학
+    - 울산지역대학
+    - 인천지역대학
+    - 전북지역대학
+    - 충북지역대학
+
+instid: knou.ac.kr
+type: IdP+SP
+realms:
+  - knou.ac.kr
+name:
+  en: Korea National Open University
+  ko: 한국방송통신대학교
+inst_type: 대학
+
+contacts:
+  - name: 한국방송통신대학교 교육정보화본부 정보인프라팀
+    phone: "02-3668-4515"
+
+info_url:
+  ko: "https://eist.knou.ac.kr/eist/10344/subview.do"
+
+locations:
+  - id: knou.ac.kr.01
+    coordinates:
+      latitude: 37.5791955
+      longitude: 127.0032909
+    name:
+      en: Korea National Open University
+      ko: 국립한국방송통신대학교 본부
+    address:
+      en:
+        street: (03087) 86 Daehak-ro, Jongno-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03087) 서울특별시 종로구 대학로 86
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 348
+  - id: knou.ac.kr.02
+    coordinates:
+      latitude: 37.7748776
+      longitude: 128.9303092
+    name:
+      en: Korea National Open University Gangwon Regional College Gangneung Study Center
+      ko: 국립한국방송통신대학교 강원지역대학 강릉시학습관
+    address:
+      en:
+        street: (25522) 29 Namgu-gil, Gangneung-si, Gangwon-do
+        city: Gangneung-si
+      ko:
+        street: (25522) 강원특별자치도 강릉시 남구길 29
+        city: 강릉시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: knou.ac.kr.03
+    coordinates:
+      latitude: 33.4859246
+      longitude: 126.473631
+    name:
+      en: Korea National Open University Jeju Regional College
+      ko: 국립한국방송통신대학교 제주지역대학
+    address:
+      en:
+        street: (63219) 261 Myeongnim-ro, Jeju-si, Jeju-do
+        city: Jeju-si
+      ko:
+        street: (63219) 제주특별자치도 제주시 명림로 261
+        city: 제주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 16
+  - id: knou.ac.kr.04
+    coordinates:
+      latitude: 35.2240259
+      longitude: 129.0064812
+    name:
+      en: Korea National Open University Busan Regional College
+      ko: 국립한국방송통신대학교 부산지역대학
+    address:
+      en:
+        street: (47340) 997 Jungang-daero, Busanjin-gu, Busan
+        city: Busan
+      ko:
+        street: (47340) 부산광역시 부산진구 중앙대로 997
+        city: 부산광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 18
+  - id: knou.ac.kr.05
+    coordinates:
+      latitude: 36.4150616
+      longitude: 127.40105
+    name:
+      en: Korea National Open University Daejeon-Chungnam Regional College
+      ko: 국립한국방송통신대학교 대전충남지역대학
+    address:
+      en:
+        street: (35203) 314 Gyeryong-ro, Seo-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (35203) 대전광역시 서구 계룡로 314
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 18
+  - id: knou.ac.kr.06
+    coordinates:
+      latitude: 37.5475777
+      longitude: 127.0456712
+    name:
+      en: Korea National Open University Seoul Regional College
+      ko: 국립한국방송통신대학교 서울지역대학
+    address:
+      en:
+        street: (04799) 66 Achasan-ro, Seongdong-gu, Seoul
+        city: Seoul
+      ko:
+        street: (04799) 서울특별시 성동구 아차산로 66
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 77
+  - id: knou.ac.kr.07
+    coordinates:
+      latitude: 35.8597865
+      longitude: 128.4948399
+    name:
+      en: Korea National Open University Daegu-Gyeongbuk Regional College
+      ko: 국립한국방송통신대학교 대구경북지역대학
+    address:
+      en:
+        street: (41937) 731 Gukchaebosang-ro, Jung-gu, Daegu
+        city: Daegu
+      ko:
+        street: (41937) 대구광역시 중구 국채보상로 731
+        city: 대구광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 18
+  - id: knou.ac.kr.08
+    coordinates:
+      latitude: 37.5294934
+      longitude: 126.8653435
+    name:
+      en: Korea National Open University Seoul Regional College Southern Study Center
+      ko: 국립한국방송통신대학교 서울지역대학 남부학습센터
+    address:
+      en:
+        street: (08505) 391 Siheung-daero, Geumcheon-gu, Seoul
+        city: Seoul
+      ko:
+        street: (08505) 서울특별시 금천구 시흥대로 391
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: knou.ac.kr.09
+    coordinates:
+      latitude: 37.6505307
+      longitude: 126.8764479
+    name:
+      en: Korea National Open University Seoul Regional College Western Study Center
+      ko: 국립한국방송통신대학교 서울지역대학 서부학습센터
+    address:
+      en:
+        street: (10364) 38-10 Jungang-ro 1275beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do
+        city: Goyang-si
+      ko:
+        street: (10364) 경기도 고양시 일산동구 중앙로 1275번길 38-10
+        city: 고양시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: knou.ac.kr.10
+    coordinates:
+      latitude: 35.8249177
+      longitude: 127.1408141
+    name:
+      en: Korea National Open University Jeonbuk Regional College
+      ko: 국립한국방송통신대학교 전북지역대학
+    address:
+      en:
+        street: (54906) 54 Beotkkot-ro, Deokjin-gu, Jeonju-si, Jeollabuk-do
+        city: Jeonju-si
+      ko:
+        street: (54906) 전북특별자치도 전주시 덕진구 벚꽃로 54
+        city: 전주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 16
+  - id: knou.ac.kr.11
+    coordinates:
+      latitude: 37.8713418
+      longitude: 127.7211125
+    name:
+      en: Korea National Open University Gangwon Regional College
+      ko: 국립한국방송통신대학교 강원지역대학
+    address:
+      en:
+        street: (24239) 2854 Yeongseo-ro, Chuncheon-si, Gangwon-do
+        city: Chuncheon-si
+      ko:
+        street: (24239) 강원특별자치도 춘천시 영서로 2854
+        city: 춘천시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 21
+  - id: knou.ac.kr.12
+    coordinates:
+      latitude: 35.5784695
+      longitude: 129.314289
+    name:
+      en: Korea National Open University Ulsan Regional College
+      ko: 국립한국방송통신대학교 울산지역대학
+    address:
+      en:
+        street: (44676) 93 Daehak-ro, Nam-gu, Ulsan
+        city: Ulsan
+      ko:
+        street: (44676) 울산광역시 남구 대학로 93
+        city: 울산광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 20
+  - id: knou.ac.kr.13
+    coordinates:
+      latitude: 37.4528465
+      longitude: 126.7044411
+    name:
+      en: Korea National Open University Incheon Regional College
+      ko: 국립한국방송통신대학교 인천지역대학
+    address:
+      en:
+        street: (22123) 175 Aam-daero, Michuhol-gu, Incheon
+        city: Incheon
+      ko:
+        street: (22123) 인천광역시 미추홀구 아암대로 175
+        city: 인천광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 22
+  - id: knou.ac.kr.14
+    coordinates:
+      latitude: 36.6241354
+      longitude: 127.4677602
+    name:
+      en: Korea National Open University Chungbuk Regional College
+      ko: 국립한국방송통신대학교 충북지역대학
+    address:
+      en:
+        street: (28515) 106 Sangdang-ro, Sangdang-gu, Cheongju-si, Chungcheongbuk-do
+        city: Cheongju-si
+      ko:
+        street: (28515) 충청북도 청주시 상당구 상당로 106
+        city: 청주시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 16
+  - id: knou.ac.kr.15
+    coordinates:
+      latitude: 35.207452
+      longitude: 126.8360555
+    name:
+      en: Korea National Open University Gwangju-Jeonnam Regional College
+      ko: 국립한국방송통신대학교 광주전남지역대학
+    address:
+      en:
+        street: (62204) 312 Sangmu-daero, Gwangsan-gu, Gwangju
+        city: Gwangju
+      ko:
+        street: (62204) 광주광역시 광산구 상무대로 312
+        city: 광주광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 18
+  - id: knou.ac.kr.16
+    coordinates:
+      latitude: 35.1771144
+      longitude: 128.5670251
+    name:
+      en: Korea National Open University Gyeongnam Regional College Changwon Study Center
+      ko: 국립한국방송통신대학교 경남지역대학 창원시학습관
+    address:
+      en:
+        street: (51439) 362 Wonidaero, Uichang-gu, Changwon-si, Gyeongsangnam-do
+        city: Changwon-si
+      ko:
+        street: (51439) 경상남도 창원시 의창구 원이대로 362
+        city: 창원시
+    ssid: eduroam
+    enc_level: WPA2/AES
+  - id: knou.ac.kr.17
+    coordinates:
+      latitude: 37.2407527
+      longitude: 126.9582424
+    name:
+      en: Korea National Open University Gyeonggi Regional College
+      ko: 국립한국방송통신대학교 경기지역대학
+    address:
+      en:
+        street: (16490) 270 Gyeongsu-daero, Gwonseon-gu, Suwon-si, Gyeonggi-do
+        city: Suwon-si
+      ko:
+        street: (16490) 경기도 수원시 권선구 경수대로 270
+        city: 수원시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 37
+  - id: knou.ac.kr.18
+    coordinates:
+      latitude: 37.3493348
+      longitude: 127.1095216
+    name:
+      en: Korea National Open University Gyeonggi Regional College Seongnam Study Center
+      ko: 국립한국방송통신대학교 경기지역대학 성남시학습관
+    address:
+      en:
+        street: (13590) 2 Seongnam-daero, Bundang-gu, Seongnam-si, Gyeonggi-do
+        city: Seongnam-si
+      ko:
+        street: (13590) 경기도 성남시 분당구 성남대로 2
+        city: 성남시
+    ssid: eduroam
+    enc_level: WPA2/AES
