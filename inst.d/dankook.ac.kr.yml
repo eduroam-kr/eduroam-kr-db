@@ -1,0 +1,54 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  campus:
+    - 죽전
+    - 천안
+
+instid: dankook.ac.kr
+type: IdP+SP
+realms:
+  - dankook.ac.kr
+name:
+  en: Dankook University
+  ko: 단국대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-"
+
+locations:
+  - id: dankook.ac.kr.01
+    coordinates:
+      latitude: 37.3211939
+      longitude: 127.1325359
+    name:
+      en: Dankook University, Jukjeon Campus
+      ko: 단국대학교 죽전캠퍼스
+    address:
+      en:
+        street: (16890) 152 Jukjeon-ro, Suji-gu, Yongin-si, Gyeonggi-do
+        city: Yongin-si
+      ko:
+        street: (16890) 경기도 용인시 수지구 죽전로 152
+        city: 용인시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 2812
+  - id: dankook.ac.kr.02
+    coordinates:
+      latitude: 36.8359525
+      longitude: 127.1652134
+    name:
+      en: Dankook University, Cheonan Campus
+      ko: 단국대학교 천안캠퍼스
+    address:
+      en:
+        street: (31116) 119 Dandae-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do
+        city: Cheonan-si
+      ko:
+        street: (31116) 충청남도 천안시 동남구 단대로 119
+        city: 천안시
+    ssid: eduroam
+    enc_level: WPA2/AES
