@@ -1,0 +1,46 @@
+# eduroamKR — 대한민국 국가 로밍 운영자(NRO) 정보
+
+# 0=preprod/test, 1=active
+stage: 1
+
+name:
+  en: Korea Institute of Science and Technology Information
+  ko: 한국과학기술정보연구원
+
+address:
+  en:
+    street: (34141) 245 Daehak-ro, Yuseong-gu, Daejeon
+    city: Daejeon
+  ko:
+    street: (34141) 대전광역시 유성구 대학로 245
+    city: 대전광역시
+
+coordinate:
+  latitude: 36.3778
+  longitude: 127.3656
+
+# 첫 연락처의 이메일이 cat.eduroam.org 에서 대한민국 관리자 계정이 된다.
+# 그래서 메일링리스트가 아니라 사람을 먼저 적는다.
+contacts:
+  - name: Minseok Jang
+    email: msjang@kisti.re.kr
+    phone: "+82-42-869-1292"
+  - name: eduroam KR Operating Team
+    email: eduroam-kr-nro-ops@lists.kreonet.net
+    phone: "+82-42-869-1292"
+
+info_url:
+  en: "https://eduroam.kreonet.net/en/"
+  ko: "https://eduroam.kreonet.net/"
+
+policy_url:
+  en: "https://eduroam.kreonet.net/en/policy/"
+  ko: "https://eduroam.kreonet.net/policy/"
+
+# 연락처를 주지 않은 기관의 contact 자리에 대신 들어간다.
+# 스펙상 기관마다 contact 이 최소 하나 필요하므로 NRO로 갈음한다.
+default_contact:
+  name: eduroam KR Operating Team
+  email: eduroam-kr-nro-ops@lists.kreonet.net
+  phone: "+82-42-869-1292"
+  privacy: 0
