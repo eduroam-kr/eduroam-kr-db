@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2019
+
+instid: seowon.ac.kr
+type: IdP+SP
+realms:
+  - seowon.ac.kr
+name:
+  en: Seowon University
+  ko: 서원대학교
+inst_type: 대학
+
+locations:
+  - id: seowon.ac.kr.01
+    coordinates:
+      latitude: 36.6259814
+      longitude: 127.4821185
+    name:
+      en: Seowon University
+      ko: 서원대학교
+    address:
+      en:
+        street: (28674) 377-3 Musimseo-ro, Seowon-gu, Cheongju-si, Chungcheongbuk-do
+        city: Cheongju-si
+      ko:
+        street: (28674) 충청북도 청주시 서원구 무심서로 377-3
+        city: 청주시
+    ssid: eduroam
+    enc_level: WPA2/AES
