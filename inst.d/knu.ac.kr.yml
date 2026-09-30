@@ -1,0 +1,36 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2012
+
+instid: knu.ac.kr
+type: IdP+SP
+realms:
+  - knu.ac.kr
+name:
+  en: Kyungpook National University
+  ko: 경북대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://wifi.knu.ac.kr/"
+
+locations:
+  - id: knu.ac.kr.01
+    coordinates:
+      latitude: 35.8890975
+      longitude: 128.6143223
+    name:
+      en: Kyungpook National University Daegu Campus
+      ko: 국립경북대학교 대구캠퍼스(산격)
+    address:
+      en:
+        street: (41566) 80 Daehak-ro, Buk-gu, Daegu
+        city: Daegu
+      ko:
+        street: (41566) 대구광역시 북구 대학로 80
+        city: 대구광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 223
