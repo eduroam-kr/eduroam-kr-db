@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립
+  year_joined: 2013
+
+instid: mokpo.ac.kr
+type: IdP+SP
+realms:
+  - mokpo.ac.kr
+name:
+  en: Mokpo National University
+  ko: 목포대학교
+inst_type: 대학
+
+contacts:
+  - name: 목포대학교 정보전산원
+    phone: "061-450-2924"
+
+info_url:
+  ko: "https://www.mokpo.ac.kr/www/291/subview.do"
+
+locations:
+  - id: mokpo.ac.kr.01
+    coordinates:
+      latitude: 34.9103089
+      longitude: 126.4402121
+    name:
+      en: Mokpo National University
+      ko: 국립목포대학교
+    address:
+      en:
+        street: (58554) 1666 Yeongsan-ro, Cheonggye-myeon, Muan-gun, Jeollanam-do
+        city: Muan-gun
+      ko:
+        street: (58554) 전라남도 무안군 청계면 영산로 1666
+        city: 무안군
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1640
