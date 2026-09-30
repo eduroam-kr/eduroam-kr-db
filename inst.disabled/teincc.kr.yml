@@ -1,0 +1,37 @@
+# 비활성 (2026-09-25)
+# KREN RO 가 운영하던 realm 인데 NRO 서버에서 꺼져 있다 (conf.disabled/).
+# 2024-09 ~ 2026-09 요청 1건, 그마저 실패. 사실상 미사용.
+# 되살아나면 inst.d/ 로 옮기고 이 머리말을 지운다.
+
+kr:
+  type: 기타
+  parent_ro: kren_ro
+  year_joined: 2016
+
+instid: teincc.kr
+type: IdP+SP
+realms:
+  - teincc.kr
+name:
+  en: TEIN Cooperation Centre
+  ko: (재)테인협력센터
+inst_type: "2,0"
+
+locations:
+  - id: teincc.kr.01
+    coordinates:
+      latitude: 37.5849
+      longitude: 126.8857
+    name:
+      en: TEIN Cooperation Centre
+      ko: (재)테인협력센터
+    address:
+      en:
+        street: (03920) A-708, DMC High-Tech Industry Center, 330 Seongam-ro, Mapo-gu, Seoul
+        city: Seoul
+      ko:
+        street: (03920) 서울특별시 마포구 성암로 330 DMC첨단산업센터 A동 708호
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 0
