@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2026
+
+instid: hansung.ac.kr
+type: IdP+SP
+realms:
+  - hansung.ac.kr
+name:
+  en: Hansung University
+  ko: 한성대학교
+inst_type: 대학
+
+locations:
+  - id: hansung.ac.kr.01
+    coordinates:
+      latitude: 37.5821124
+      longitude: 127.0105404
+    name:
+      en: Hansung University
+      ko: 한성대학교
+    address:
+      en:
+        street: (02876) 116 Samseongyo-ro 16-gil, Seongbuk-gu, Seoul
+        city: Seoul
+      ko:
+        street: (02876) 서울특별시 성북구 삼선교로16길 116
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
