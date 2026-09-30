@@ -1,0 +1,35 @@
+kr:
+  type: 대학
+  parent_ro: nro
+  univ_type: 사립
+  year_joined: 2014
+
+instid: postech.ac.kr
+type: IdP+SP
+realms:
+  - postech.ac.kr
+name:
+  en: Pohang University of Science and Technology
+  ko: 포항공과대학교
+inst_type: 대학
+
+info_url:
+  ko: "https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi"
+
+locations:
+  - id: postech.ac.kr.01
+    coordinates:
+      latitude: 36.0105874
+      longitude: 129.3212998
+    name:
+      en: Pohang University of Science and Technology
+      ko: 포항공과대학교
+    address:
+      en:
+        street: (37673) 77 Cheongam-ro, Nam-gu, Pohang-si, Gyeongsangbuk-do
+        city: Pohang-si
+      ko:
+        street: (37673) 경상북도 포항시 남구 청암로 77
+        city: 포항시
+    ssid: eduroam
+    enc_level: WPA2/AES
