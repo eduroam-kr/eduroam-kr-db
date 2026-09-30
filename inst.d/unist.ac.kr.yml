@@ -1,0 +1,33 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 국립대법인
+  year_joined: 2013
+
+instid: unist.ac.kr
+type: IdP+SP
+realms:
+  - unist.ac.kr
+name:
+  en: Ulsan National Institute of Science and Technology
+  ko: 울산과학기술원
+inst_type: 대학
+
+locations:
+  - id: unist.ac.kr.01
+    coordinates:
+      latitude: 35.5734176
+      longitude: 129.189629
+    name:
+      en: Ulsan National Institute of Science and Technology
+      ko: 울산과학기술원
+    address:
+      en:
+        street: (44919) 50 UNIST-gil, Eonyang-eup, Ulju-gun, Ulsan
+        city: Ulsan
+      ko:
+        street: (44919) 울산광역시 울주군 언양읍 유니스트길 50
+        city: 울산광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 1200
