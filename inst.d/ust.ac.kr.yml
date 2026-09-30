@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 기타
+  year_joined: 2022
+
+instid: ust.ac.kr
+type: IdP+SP
+realms:
+  - ust.ac.kr
+name:
+  en: University of Science and Technology
+  ko: 과학기술연합대학원대학교
+inst_type: 대학
+
+locations:
+  - id: ust.ac.kr.01
+    coordinates:
+      latitude: 36.3849081
+      longitude: 127.367623
+    name:
+      en: University of Science and Technology
+      ko: 과학기술연합대학원대학교
+    address:
+      en:
+        street: (34113) 217 Gajeong-ro, Yuseong-gu, Daejeon
+        city: Daejeon
+      ko:
+        street: (34113) 대전광역시 유성구 가정로 217
+        city: 대전광역시
+    ssid: eduroam
+    enc_level: WPA2/AES
