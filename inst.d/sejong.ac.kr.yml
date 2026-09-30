@@ -1,0 +1,32 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2017
+
+instid: sejong.ac.kr
+type: IdP+SP
+realms:
+  - sejong.ac.kr
+name:
+  en: Sejong University
+  ko: 세종대학교
+inst_type: 대학
+
+locations:
+  - id: sejong.ac.kr.01
+    coordinates:
+      latitude: 37.5507981
+      longitude: 127.0745756
+    name:
+      en: Sejong University
+      ko: 세종대학교
+    address:
+      en:
+        street: (05006) 209 Neungdong-ro, Gwangjin-gu, Seoul
+        city: Seoul
+      ko:
+        street: (05006) 서울특별시 광진구 능동로 209
+        city: 서울특별시
+    ssid: eduroam
+    enc_level: WPA2/AES
