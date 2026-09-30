@@ -1,0 +1,40 @@
+kr:
+  type: 대학
+  parent_ro: kren_ro
+  univ_type: 사립
+  year_joined: 2024
+
+instid: wu.ac.kr
+type: IdP+SP
+realms:
+  - wu.ac.kr
+name:
+  en: Wonkwang Health Science University
+  ko: 원광보건대학교
+inst_type: 대학
+
+contacts:
+  - name: 원광보건대학교 정보전산원
+    phone: "063-840-1512"
+
+info_url:
+  ko: "https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D"
+
+locations:
+  - id: wu.ac.kr.01
+    coordinates:
+      latitude: 35.9727469
+      longitude: 126.9561967
+    name:
+      en: Wonkwang Health Science University
+      ko: 원광보건대학교
+    address:
+      en:
+        street: (54538) 514 Iksan-daero, Iksan-si, Jeollabuk-do
+        city: Iksan-si
+      ko:
+        street: (54538) 전라북도 익산시 익산대로 514
+        city: 익산시
+    ssid: eduroam
+    enc_level: WPA2/AES
+    ap_no: 380
