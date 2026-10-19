@@ -27,9 +27,14 @@ try:
 except ImportError:
     sys.exit("PyYAML 이 필요하다:  pip install pyyaml")
 
-# 대한민국 eduroam 참여기관은 ROid 가 전부 이 값이다 (스펙 고정)
-ROID = "kr01"
+# 대한민국 eduroam 참여기관은 ROid 가 전부 이 값이다 (스펙 고정).
+# 대문자다 — 2026-10-15 eduroam OT(Dubravko)가 kr01 을 KR01 로 고쳐 달라고 했다.
+ROID = "KR01"
 COUNTRY = "kr"
+
+# 모든 레코드에 들어가는 값을 바꾼 날. 아래 record_ts() 가 쓴다.
+# 공통 필드를 고칠 때마다 이 값을 그날로 올린다.
+TS_FLOOR = "2026-10-19T00:00:00+09:00"
 
 # 스펙 문서는 lang 이 붙는 항목에 영문을 요구하지만 XSD 는 강제하지 않는다.
 # 기관명은 GÉANT monitor 에 국제적으로 노출되므로 없으면 오류로 막고,
@@ -191,6 +196,26 @@ def git_ts(path):
     return mtime.isoformat(timespec="seconds")
 
 
+def record_ts(path):
+    """레코드의 ts. 데이터 파일 커밋 시각과 TS_FLOOR 중 나중 것.
+
+    수집기는 ts 로 변경을 알아챈다. 그런데 ROid 처럼 모든 레코드에 들어가는
+    값을 build.py 에서 바꾸면 inst.d/*.yml 은 그대로라 ts 가 움직이지 않고,
+    바뀐 XML 을 수집기가 가져가지 않는다. 그런 변경을 한 날을 TS_FLOOR 에
+    적어 모든 ts 를 그 뒤로 민다.
+
+    offset 이 섞이므로 문자열이 아니라 datetime 으로 견준다 — CI 는 UTC 라
+    +00:00, 로컬은 +09:00 이 붙는다.
+    """
+    ts = git_ts(path)
+    try:
+        if datetime.datetime.fromisoformat(ts) >= datetime.datetime.fromisoformat(TS_FLOOR):
+            return ts
+    except ValueError:
+        return ts
+    return TS_FLOOR
+
+
 # ── institution ───────────────────────────────────────────────────
 
 def build_institution(root, data, src, default_contact=None, fallback_log=None):
@@ -277,7 +302,7 @@ def build_institution(root, data, src, default_contact=None, fallback_log=None):
     lang_fields(inst, "info_URL", data.get("info_url"), where, require_en=False)
     lang_fields(inst, "policy_URL", data.get("policy_url"), where, require_en=False)
 
-    el(inst, "ts", data.get("ts") or git_ts(src))
+    el(inst, "ts", data.get("ts") or record_ts(src))
 
     for loc in data.get("locations", []):
         build_location(inst, loc, where, data.get("info_url"))
@@ -329,7 +354,7 @@ def build_ro(data, src):
     lang_fields(ro, "info_URL", data.get("info_url"), where, require_en=False)
     lang_fields(ro, "policy_URL", data.get("policy_url"), where, require_en=False)
 
-    el(ro, "ts", data.get("ts") or git_ts(src))
+    el(ro, "ts", data.get("ts") or record_ts(src))
     return root
 
 
