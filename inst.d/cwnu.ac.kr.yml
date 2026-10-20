@@ -10,11 +10,11 @@ realms:
   - cwnu.ac.kr
 name:
   en: Changwon National University
-  ko: 창원대학교
+  ko: 국립창원대학교
 inst_type: 대학
 
 contacts:
-  - name: 국립창원대 정보전산원
+  - name: 국립창원대학교 정보전산원
     phone: "055-213-2518"
 
 info_url:
