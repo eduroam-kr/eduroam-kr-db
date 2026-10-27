@@ -20,8 +20,8 @@ contacts:
     phone: "042-350-2412"
 
 info_url:
-  en: "https://ict.kaist.ac.kr/english/notice/view/id/137"
-  ko: "https://ict.kaist.ac.kr/wireless-n-vpn-service"
+  en: "https://eduroam.kaist.ac.kr"
+  ko: "https://eduroam.kaist.ac.kr"
 
 locations:
   - id: kaist.ac.kr.01
