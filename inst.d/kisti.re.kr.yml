@@ -12,6 +12,11 @@ name:
   ko: 한국과학기술정보연구원
 inst_type: 연구
 
+contacts:
+  - name: 한국과학기술정보연구원 과학기술연구망센터 (KREONET Center, KISTI)
+    email: eduroam-kr-ot@lists.kreonet.net
+    phone: "+82-42-869-1292"
+
 info_url:
   ko: "http://www.kreonet.net/eduroam/en"
 
