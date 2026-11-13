@@ -18,7 +18,8 @@ contacts:
     phone: "+82-42-869-1292"
 
 info_url:
-  ko: "http://www.kreonet.net/eduroam/en"
+  ko: "https://eduroam.kisti.re.kr/"
+  en: "https://eduroam.kisti.re.kr/en/"
 
 locations:
   - id: kisti.re.kr.01
